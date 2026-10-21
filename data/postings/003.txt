@@ -1,0 +1,25 @@
+About the job
+Als Pionierin des Schweizer Bauwesens zeichnet sich Losinger Marazzi seit über einem Jahrhundert durch ihre Innovationsfähigkeit aus. Von der ersten Idee eines Projekts bis hin zum Betrieb eines Gebäudes entwickelt unser Unternehmen nachhaltige Lösungen entlang der gesamten Wertschöpfungskette einer Immobilie. Wir entwickeln und realisieren qualitativ hochwertige Lebens- und Arbeitsräume, wobei wir die Bedürfnisse der heutigen und zukünftigen Generationen stets berücksichtigen und so das Engagement unserer Kunden nachhaltig sicherstellen.
+
+Während dieses 6-monatigen Praktikums werden Sie Teil des Data & Digitalization Teams innerhalb des Bereichs SGQP. Das Team ist für die Nachbetreuung eines umfangreichen Projektportfolios nach der Übergabe zuständig: Dutzende Baustellen und Tausende komplexe Daten, die in konkrete Lösungen umgewandelt werden müssen. Das Team verwandelt diese Daten in wertvolle Entscheidungsgrundlagen – von Dashboards und Datenmodellen über Automatisierungen bis hin zu fortgeschrittenen KI-gestützten Analysen der Schadensentwicklung. Sie werden direkt an produktiven Projekten mitarbeiten, echte Verantwortung übernehmen und einen konkreten Beitrag leisten.
+
+Das können Sie bei uns bewegen
+
+Sie erwartet eine grosse Vielfalt an Aufgaben, die sich deutlich von akademischen Projekten unterscheiden. Im Bereich Data & BI erstellen Sie aussagekräftige Power-BI-Dashboards und SQL-Views in Snowflake und arbeiten dabei nach einem professionellen Prozess (Exploration → Entwicklung → Testing → Produktion). Im Bereich angewandte KI setzen Sie konkrete Tools für die Analyse, Klassifizierung und Automatisierung von Geschäftsprozessen ein und evaluieren deren Nutzen. In der Softwareentwicklung unterstützen Sie die Entwicklung robuster interner Tools mit JS/React und Python im Backend.
+
+Sie arbeiten direkt mit den Fachbereichen zusammen, um deren Bedürfnisse zu verstehen und Ihre Lösungen gemeinsam zu testen. Einige Aufgaben werden nach einer strukturierten Agile-Methode (Sprints, Reviews) umgesetzt, andere im Rahmen von R&D-Projekten (Exploration, Prototyping). Und vor allem: In einem Umfeld, das Eigeninitiative fördert, können Sie Ihre Ideen einbringen, diese testen und bei Erfolg bis in die produktive Anwendung begleiten.
+
+Das bringen Sie mit
+
+ Ausbildung im Bereich Data, Informatik, KI oder digitale Transformation (Ingenieurschule, FH, Universität usw.)
+ Unverzichtbare Kenntnisse: SQL (Abfragen, Joins, Aggregationen), Power BI (Erstellung von Reports, semantisches Datenmodell), Python auf mittlerem Niveau (pandas, Datenverarbeitung)
+ Erste praktische Erfahrung (Praktikum, Hochschulprojekt oder persönliches Projekt) in den Bereichen Data, KI oder Softwareentwicklung – nicht ausschliesslich im Rahmen von Kursübungen
+ Von Vorteil: Applikationsentwicklung mit KI-Tools (Copilot, Cursor), Git/GitHub, Snowflake oder Data-Warehouse-Technologien, LLMs/APIs
+ Sie sind neugierig, sorgfältig und analytisch, bringen gerne eigene Ideen ein und zeichnen sich durch eine hohe Detailgenauigkeit aus
+ Sehr gute Französischkenntnisse in Wort und Schrift sind zwingend erforderlich; Deutschkenntnisse, auch auf mittlerem Niveau, sind von Vorteil
+
+Bewerbung
+
+Bitte reichen Sie Ihren Lebenslauf sowie eine A4-Seite mit zwei Projekten aus den Bereichen Data, KI oder Softwareentwicklung ein. Beschreiben Sie dabei kurz, was Sie gemacht haben, welche Vorgehensweise Sie gewählt haben und welche Kompetenzen Sie eingesetzt haben.
+
+Wenn Sie Fragen haben, wenden Sie sich bitte an Adrineh BINGGELI
