@@ -1,0 +1,95 @@
+About the job
+Job Description
+
+Location: Basel, Zurich, Geneva
+
+Work Pattern Percentage: 80-100%
+
+ Help our clients navigate the future with confidence and embrace decision making with clear data-driven choices 
+
+Deloitte AI & Data helps clients unlock the power of AI and data to deliver better human-centric solutions that catalyse growth and efficiencies. We enable them to leverage data, analytics, modern platforms, and data science & AI technologies to uncover hidden relationships from vast troves of data, generate insights, and inform their decision-making. 
+
+We help clients transform their business by designing and implementing data solutions to excel in their markets. Our role is to understand their business problems and use data-driven thinking and technology to achieve outcomes that drive their business forward.
+
+How You Can Make An Impact
+
+ Lead AI and analytics engagements from discovery to production 
+ Design complex data & analytics transformations by providing architectural, technical and organizational thought leadership and guide clients in executing these transformations, which have significant organizational implications. 
+ Serve as the business–IT translator, facilitating workshops, consolidating diverse requirements into coherent solution designs, and aligning stakeholders around clear decisions. 
+ Manage cross-functional delivery teams (onshore/nearshore/offshore), ensuring delivery governance, quality assurance, risk management and effective communications. 
+ Drive Generative and Agentic AI initiatives (where relevant), including LLM-enabled solutions, prompt engineering, RAG patterns, safety guardrails and evaluation approaches aligned to client policies. 
+ Develop and maintain trusted client relationships through project delivery and account growth; support business development by shaping proposals, POVs and demos, and identifying new opportunities. 
+ Be a role model for people you work with by demonstrating strong work ethic, leadership, and subject matter competence. 
+ Grow expertise in different industry and subject matter areas and share your knowledge with the rest of Deloitte talent. 
+
+
+ What We Are Looking For: 
+
+ Drive and Motivation:  
+
+ Passionate about building a career in consulting at the intersection of AI, analytics and business impact. 
+ Ownership mindset with the ability to manage multiple activities in a fast-paced environment and deliver independently and through teams. 
+
+
+ Consulting and Communication Skills:  
+
+ Strong Microsoft Power Point and storytelling skills: Ability to design and present meaningful, executive-ready materials. 
+ Strong Conceptual Capability: Ability to simplify complex problems and translate them into actionable solution designs and roadmaps. 
+ Business-IT Translator: Proficient in requirements leadership, stakeholder alignment and facilitation of client workshops. 
+ Team Collaboration and Leadership: Proven ability to guide nearshore and offshore technical implementation teams, ensuring effective collaboration and project success. 
+ Technical Integration: Skilful in integrating system components, providing clear business explanations, and leading technical workshops. 
+
+
+ Technical Expertise: 
+
+ Strong Engineering and/or Mathematics background. 
+ Solid experience with Python. Experience with R is a plus. 
+ Experience delivering Generative AI, AI, Machine Learning and/or Analytics solutions on one or more of the cloud services providers: Amazon Web Services (AWS), Azure or Google Cloud Platform (GCP). 
+ Familiarity with Large Language Models (LLMs) and adjacent services required to bring use cases to production on one or more of the cloud service providers above is highly preferred. 
+ Experience with data science workbench tools such as Snowflake, Databricks and Dataiku is a plus. 
+ Experience with Data Visualization tools such as PowerBI and Tableau is a plus. 
+
+
+ Language Proficiency: 
+
+ Fluent in English; fluency in German and/or French is highly preferred to facilitate communication with diverse teams and stakeholders. 
+
+
+ Industry Experience: 
+
+ At least 6 years of practical experience in consulting, tech companies, or industry-specific roles, particularly in data-driven fields. 
+ Previous experience in the Banking, Insurance, Life Science or Healthcare sector is advantageous. 
+
+
+ Your team 
+
+Become part of a diverse and multinational team of 50+ highly motivated individuals located in our Zurich, Geneva, or Basel offices. We specialise in AI & data - how to structure it, how to source it, how to transform it, how to store it, and how to consume it. Join our fast-paced and fun team, working alongside highly talented colleagues on varied and exciting projects, with access to excellent and continuous learning opportunities. 
+
+Deloitte AI & Data is the leading data & analytics consulting team in Switzerland. You will have a chance to work with outstanding colleagues and have access to variety of clients, vendors, and technologies. Our business is growing fast and there are plenty market opportunities to develop career in the direction that you want. 
+
+We will help you grow both personally and professionally: through our trainings, mentoring programmes, and on-the-job learning, but also by working with clients and vendors across different industries.
+
+ Careers at Deloitte. Choose your impact.  
+
+At Deloitte, your ideas create impact and spark meaningful change for our clients, people and society. Your unique expertise, background and perspective helps us find new ways into the most complex challenges so we can brighten the futures of those our work affects. At Deloitte, you can build a career that inspires and energises you. At Deloitte, you can choose your impact.
+
+In Switzerland, we provide industry-specific services in the areas of Audit & Assurance, Tax & Legal, Strategy, Risk & Transactions Advisory, and Technology & Transformation. With close to 3,000 employees at six locations, we serve companies and organisations of all sizes in all industry sectors. We offer meaningful and challenging work, an inclusive and supportive environment where you can be your best self and where you will never stop growing. You will benefit from flexible and hybrid working conditions, wellbeing and parental programmes as well as many opportunities to connect, collaborate and learn. 
+
+Join us and become part of a global network of like-minded people dedicated to making a difference, whether by  addressing climate change  or improving 100 million futures by 2030. Want to know more about opportunities at Deloitte? Visit  www.apply.deloitte.ch .
+
+How To Apply 
+
+We look forward to hearing from you! Please click on “apply now” to submit a complete application, including CV, cover letter, references and degree certificates. 
+
+If you have any questions, please contact Aarabi at  talent@deloitte.ch
+
+All qualified applicants will receive consideration for employment without regard to race, colour, religion, sex, sexual orientation, gender identity, national origin, age or disability, in accordance with applicable law.
+
+
+We do not accept applications from recruitment agencies for this position. 
+
+Deloitte Consulting AG and Deloitte AG are affiliates of Deloitte NSE LLP, a member firm of Deloitte Touche Tohmatsu Limited, a UK private company limited by guarantee (“DTTL”)
+
+Requisition code: 21731
+
+AI & Insights
