@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+
+# Virtual environment
+.venv/
+
+# Secrets
+.env
+
+# LLM cache (regenerable)
+outputs/cache/*
+!outputs/cache/.gitkeep
+
+# Editor / OS
+.vscode/
+.DS_Store
+Thumbs.db
