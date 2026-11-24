@@ -198,7 +198,7 @@ A rule written more precisely helped less than avoiding copyable values would ha
 1. Write a prompt v3 without copyable example values, developed on the dev set and scored once on the test set.
 2. Label 20–30 more postings as a development set. *Done: 26 paraphrased postings in `data/dev/`, labelled with the same guidelines.*
 3. Split `degree_level` into "required level" and "degree must be finished", and store duration ranges as two numbers.
-4. Use constrained decoding (Ollama's JSON-schema output) instead of relying on retries. *Implemented as prompt version `v1-schema` (the v1 messages, schema-constrained decoding); not measured yet.*
+4. Use constrained decoding (Ollama's JSON-schema output) instead of relying on retries. *Implemented as prompt version `v1-schema` (the v1 messages, schema-constrained decoding). On the dev set it scored clearly below v1 (workload 0.27 vs 0.92): fields with a default are optional in the schema, so the grammar let the model close the object without them. `v1-strict` lists every field as required; not measured yet. See [outputs/dev/comparison.md](outputs/dev/comparison.md).*
 5. Have a second person label a subset, to measure agreement.
 6. Add a paid model as a reference, to separate prompt problems from model-size problems.
 
@@ -208,7 +208,7 @@ A rule written more precisely helped less than avoiding copyable values would ha
 python -m pytest
 ```
 
-112 tests run in about 4 seconds, **without Ollama, without a `.env` file and without the cache**. The test files read as a specification: each test name states one behaviour.
+115 tests run in about 4 seconds, **without Ollama, without a `.env` file and without the cache**. The test files read as a specification: each test name states one behaviour.
 
 - **Schema:** invalid categories, out-of-range numbers, min > max, extra fields and an empty company or title are rejected, and skills are cleaned.
 - **LLM call:** the OpenAI client is replaced by a `unittest.mock.MagicMock`. The tests check the exact request, that an invalid answer is retried with the validation error, that the call gives up with a clear error after the last attempt, and that connection errors are not swallowed.
@@ -240,7 +240,7 @@ data/                 26 test postings and labels.csv (see data/README.md)
 docs/                 annotation guidelines, experiments, error analysis
 outputs/              published scores per run and comparison.md
 scripts/              check the LLM connection and validate the labels
-tests/                112 tests, no network
+tests/                115 tests, no network
 ```
 
 ## About this project

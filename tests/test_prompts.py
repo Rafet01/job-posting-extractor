@@ -29,6 +29,7 @@ def test_prompt_text_is_frozen_for_cached_runs(version: str) -> None:
 def test_schema_decoding_variant_changes_nothing_but_the_decoding() -> None:
     """v1-schema is a one-variable experiment: its messages are exactly those of v1."""
     assert build_messages("posting", "v1-schema") == build_messages("posting", "v1")
+    assert build_messages("posting", "v1-strict") == build_messages("posting", "v1")
 
 
 @pytest.mark.parametrize("version", PROMPTS)

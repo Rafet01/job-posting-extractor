@@ -64,12 +64,19 @@ PROMPTS = {
     # The v1 request with one change: the answer is constrained to the JSON Schema while the
     # model generates it, instead of only being required to be some JSON object.
     "v1-schema": SYSTEM_PROMPT_V1,
+    # v1-schema with every field required in the decoding schema. In v1-schema the fields
+    # with a default (workload, duration, start, ...) are optional, so the grammar lets
+    # the model close the object without them.
+    "v1-strict": SYSTEM_PROMPT_V1,
 }
 
 # Versions whose schema in the prompt keeps the field descriptions (see schema_for).
-DESCRIBED_SCHEMA = {"v1", "v1-schema"}
+DESCRIBED_SCHEMA = {"v1", "v1-schema", "v1-strict"}
 # Versions that ask the API for schema-constrained decoding instead of plain JSON mode.
-SCHEMA_DECODING = {"v1-schema"}
+SCHEMA_DECODING = {"v1-schema", "v1-strict"}
+# Schema-decoding versions that list every property as required. Optional values are
+# still possible, because those fields also accept null.
+ALL_FIELDS_REQUIRED = {"v1-strict"}
 
 
 def without_descriptions(node: object) -> object:
@@ -108,7 +115,9 @@ def response_format_for(version: str) -> dict:
     the structure. Rules the schema cannot express, such as workload_min <= workload_max,
     are still checked by Pydantic afterwards.
     """
-    if version in SCHEMA_DECODING:
-        return {"type": "json_schema",
-                "json_schema": {"name": "job_posting", "schema": JobPosting.model_json_schema()}}
-    return {"type": "json_object"}
+    if version not in SCHEMA_DECODING:
+        return {"type": "json_object"}
+    schema = JobPosting.model_json_schema()
+    if version in ALL_FIELDS_REQUIRED:
+        schema["required"] = list(schema["properties"])
+    return {"type": "json_schema", "json_schema": {"name": "job_posting", "schema": schema}}

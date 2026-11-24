@@ -67,6 +67,17 @@ def test_schema_version_constrains_decoding_with_the_job_posting_schema() -> Non
     }
 
 
+def test_strict_version_requires_every_field_in_the_decoding_schema() -> None:
+    """v1-strict lists all fields as required, so the grammar cannot skip workload or start."""
+    client = mock_client(VALID_ANSWER)
+    extract_posting(client, POSTING_TEXT, "demo-model", prompt_version="v1-strict")
+    request = client.chat.completions.create.call_args.kwargs
+    schema = request["response_format"]["json_schema"]["schema"]
+    assert request["messages"] == build_messages(POSTING_TEXT, "v1")
+    assert schema["required"] == list(JobPosting.model_json_schema()["properties"])
+    assert "workload_min" in schema["required"] and "start" in schema["required"]
+
+
 def test_invalid_answer_is_retried_with_the_validation_error() -> None:
     """The retry repeats the conversation, adds the invalid answer and explains what was wrong."""
     client = mock_client(INVALID_ANSWER, VALID_ANSWER)
