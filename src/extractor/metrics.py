@@ -10,11 +10,16 @@ def exact_match(gold: str | int | bool | None, pred: str | int | bool | None) ->
     return gold == pred
 
 
+def text_similarity(gold: str | None, pred: str | None) -> float:
+    """Return the continuous title score before applying a threshold."""
+    return SequenceMatcher(None, normalize_text(gold), normalize_text(pred)).ratio()
+
+
 def text_match(gold: str | None, pred: str | None, threshold: float = 0.85) -> bool:
     """Compare normalized strings using character-sequence similarity."""
     # Titles can differ slightly (Intern vs Internship) while describing the same job.
     # The threshold trades missed matches for false matches. Justify it with examples.
-    return SequenceMatcher(None, normalize_text(gold), normalize_text(pred)).ratio() >= threshold
+    return text_similarity(gold, pred) >= threshold
 
 
 def _f1(precision: float, recall: float) -> float:
@@ -55,14 +60,17 @@ def location_prf(gold: list[str], pred: list[str]) -> tuple[float, float, float]
     return set_prf({normalize_place(p) for p in gold}, {normalize_place(p) for p in pred})
 
 
-def classification_report(gold: list[str], pred: list[str]) -> dict:
-    """Report accuracy, class scores and macro F1. Undefined scores are zero."""
+def classification_report(gold: list[str], pred: list[str | None]) -> dict:
+    """Report accuracy, class scores and macro F1. A missing prediction is a miss
+    for its gold class, not a new class. Undefined scores are zero.
+    """
     if len(gold) != len(pred):
         raise ValueError("Gold and prediction lists must have the same length")
 
     per_class = {}
     correct = 0
-    for label in sorted(set(gold) | set(pred)):
+    classes = set(gold) | {label for label in pred if label is not None}
+    for label in sorted(classes):
         support = gold.count(label)
         predicted = pred.count(label)
         hits = sum(actual == guess == label for actual, guess in zip(gold, pred))
