@@ -9,3 +9,7 @@
 ## labels.csv
 
 One hand-made label per posting, written according to [docs/annotation_guidelines.md](../docs/annotation_guidelines.md). `scripts/check_labels.py` validates the file. The column `notes` records ambiguous cases.
+
+## dev/
+
+The development set for prompt work: 26 paraphrases of real Swiss job ads with their labels and source pages. See [dev/README.md](dev/README.md) for how it was made.

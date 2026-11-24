@@ -110,7 +110,7 @@ The results below come from local models only. No paid model was evaluated.
 
 - **26 real job postings**: 15 English, 8 German and 3 French, mostly Swiss internships and junior data or AI roles, copied from public job listings during my own search. See [data/README.md](data/README.md) for where they come from and how they may be used.
 - **One hand label per posting** in [data/labels.csv](data/labels.csv), written according to [docs/annotation_guidelines.md](docs/annotation_guidelines.md).
-- **A separate development set** in [data/dev/](data/dev/README.md) for prompt work, with ids `d001`, `d002`, … and the same guidelines. The 26 postings above are the test set: a new prompt version is scored on them once, when it is finished.
+- **A separate development set** of 26 more postings in [data/dev/](data/dev/README.md) for prompt work (13 English, 8 German, 5 French; ids `d001` … `d026`), labelled with the same guidelines. They are paraphrases of real Swiss job ads; the dev README explains why and what that means for the scores. The 26 postings above are the test set: a new prompt version is scored on them once, when it is finished.
 
 **Why written guidelines?** Without them, "the right answer" changes from posting to posting. Is "Python, R preferred" a requirement for R? Is a German ad evidence that German is required? The guidelines fix these decisions once, with examples, so the labels are consistent and the model can be held to the same rules. Some of the key decisions:
 
@@ -189,14 +189,14 @@ A rule written more precisely helped less than avoiding copyable values would ha
 **Limitations**
 
 - **26 postings, one annotator.** Only large differences are detectable. Inter-annotator agreement is unknown, so part of the remaining error is label noise.
-- **No development set for v1 and v2.** v2 was written from the guidelines, but I chose which rules to stress after seeing v1 errors on the same 26 postings. Any gain would have been optimistic. I wrote v2 once and did not tune it on the results. The repository now has a separate development split for all later prompt work; it is still being filled.
+- **No development set for v1 and v2.** v2 was written from the guidelines, but I chose which rules to stress after seeing v1 errors on the same 26 postings. Any gain would have been optimistic. I wrote v2 once and did not tune it on the results. All later prompt work uses the separate development set.
 - **Small local models.** Llama 3.1 8B and Qwen 2.5 7B only, with Ollama's default **4096-token context window**. The longest posting plus prompt v2 fits, but leaves little room for retries.
 - **Start is a textual proxy**, and the title threshold is a heuristic.
 
 **With more time I would:**
 
 1. Write a prompt v3 without copyable example values, developed on the dev set and scored once on the test set.
-2. Label 20–30 more postings as a development set. *The split, its commands and a duplicate check against the test set are in place; the postings are being collected.*
+2. Label 20–30 more postings as a development set. *Done: 26 paraphrased postings in `data/dev/`, labelled with the same guidelines.*
 3. Split `degree_level` into "required level" and "degree must be finished", and store duration ranges as two numbers.
 4. Use constrained decoding (Ollama's JSON-schema output) instead of relying on retries. *Implemented as prompt version `v1-schema` (the v1 messages, schema-constrained decoding); not measured yet.*
 5. Have a second person label a subset, to measure agreement.
