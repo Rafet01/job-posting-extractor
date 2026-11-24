@@ -275,18 +275,18 @@ d023,de,english_required,false,false,1.0,False,,llama3.1,v1-schema,2
 d023,de,degree_level,"""bachelor_ok""","""bachelor_ok""",1.0,False,,llama3.1,v1-schema,2
 d023,de,is_internship,true,true,1.0,False,,llama3.1,v1-schema,2
 d023,de,required_skills,"[""python"", ""sql""]","[""python"", ""sql"", ""statistik"", ""data mining"", ""machine learning""]",0.5714285714285715,False,,llama3.1,v1-schema,2
-d024,en,company,"""Unit8""",null,0.0,True,,llama3.1,v1-schema,2
-d024,en,role_title,"""Young Graduate in Data and Software Engineering (Zurich, Switzerland)""",null,0.0,True,,llama3.1,v1-schema,2
-d024,en,locations,"[""Zürich""]",null,0.0,True,,llama3.1,v1-schema,2
-d024,en,workload_min,null,null,0.0,True,,llama3.1,v1-schema,2
-d024,en,workload_max,null,null,0.0,True,,llama3.1,v1-schema,2
-d024,en,duration_months,6,null,0.0,True,,llama3.1,v1-schema,2
-d024,en,start,"""1st of February""",null,0.0,True,,llama3.1,v1-schema,2
-d024,en,german_level,"""required""",null,0.0,True,,llama3.1,v1-schema,2
-d024,en,english_required,true,null,0.0,True,,llama3.1,v1-schema,2
-d024,en,degree_level,"""bachelor_ok""",null,0.0,True,,llama3.1,v1-schema,2
-d024,en,is_internship,false,null,0.0,True,,llama3.1,v1-schema,2
-d024,en,required_skills,"[""git"", ""docker"", ""kubernetes""]",null,0.0,True,,llama3.1,v1-schema,2
+d024,en,company,"""Unit8""","""Unit8 SA""",1.0,False,,llama3.1,v1-schema,2
+d024,en,role_title,"""Young Graduate in Data and Software Engineering (Zurich, Switzerland)""","""Young Graduate in Data and Software Engineering""",0.0,False,0.8103448275862069,llama3.1,v1-schema,2
+d024,en,locations,"[""Zürich""]","[""Zürich, Switzerland""]",0.0,False,,llama3.1,v1-schema,2
+d024,en,workload_min,null,null,1.0,False,,llama3.1,v1-schema,2
+d024,en,workload_max,null,null,1.0,False,,llama3.1,v1-schema,2
+d024,en,duration_months,6,null,0.0,False,,llama3.1,v1-schema,2
+d024,en,start,"""1st of February""",null,0.0,False,,llama3.1,v1-schema,2
+d024,en,german_level,"""required""","""required""",1.0,False,,llama3.1,v1-schema,2
+d024,en,english_required,true,true,1.0,False,,llama3.1,v1-schema,2
+d024,en,degree_level,"""bachelor_ok""","""master_only""",0.0,False,,llama3.1,v1-schema,2
+d024,en,is_internship,false,true,0.0,False,,llama3.1,v1-schema,2
+d024,en,required_skills,"[""git"", ""docker"", ""kubernetes""]","[""git"", ""docker"", ""kubernetes"", ""ci/cd"", ""versioning"", ""automation"", ""ml"", ""python"", ""sql"", ""cloud infrastructure"", ""data infrastructure"", ""software engineering"", ""data analytics"", ""ai"", ""data science"", ""cloud engineering"", ""data engineering"", ""data scientists"", ""data engineers"", ""cloud engineers"", ""version control"", ""collaboration tooling"", ""ci/cd frameworks"", ""automated deployment concepts"", ""start_date""]",0.21428571428571425,False,,llama3.1,v1-schema,2
 d025,en,company,"""Julius Baer""",null,0.0,True,,llama3.1,v1-schema,2
 d025,en,role_title,"""University Graduate – Junior Data Scientist (Flex-Track) 100%""",null,0.0,True,,llama3.1,v1-schema,2
 d025,en,locations,"[""Zürich""]",null,0.0,True,,llama3.1,v1-schema,2
@@ -299,15 +299,15 @@ d025,en,english_required,true,null,0.0,True,,llama3.1,v1-schema,2
 d025,en,degree_level,"""graduate_only""",null,0.0,True,,llama3.1,v1-schema,2
 d025,en,is_internship,false,null,0.0,True,,llama3.1,v1-schema,2
 d025,en,required_skills,"[""r|python"", ""sql""]",null,0.0,True,,llama3.1,v1-schema,2
-d026,en,company,"""Swiss Re""",null,0.0,True,,llama3.1,v1-schema,2
-d026,en,role_title,"""Junior Financial Data Analyst Graduate""",null,0.0,True,,llama3.1,v1-schema,2
-d026,en,locations,"[""Zurich""]",null,0.0,True,,llama3.1,v1-schema,2
-d026,en,workload_min,null,null,0.0,True,,llama3.1,v1-schema,2
-d026,en,workload_max,null,null,0.0,True,,llama3.1,v1-schema,2
-d026,en,duration_months,18,null,0.0,True,,llama3.1,v1-schema,2
-d026,en,start,"""1 September 2026""",null,0.0,True,,llama3.1,v1-schema,2
-d026,en,german_level,"""none""",null,0.0,True,,llama3.1,v1-schema,2
-d026,en,english_required,true,null,0.0,True,,llama3.1,v1-schema,2
-d026,en,degree_level,"""graduate_only""",null,0.0,True,,llama3.1,v1-schema,2
-d026,en,is_internship,false,null,0.0,True,,llama3.1,v1-schema,2
-d026,en,required_skills,"[""r|python""]",null,0.0,True,,llama3.1,v1-schema,2
+d026,en,company,"""Swiss Re""","""Swiss Re""",1.0,False,,llama3.1,v1-schema,2
+d026,en,role_title,"""Junior Financial Data Analyst Graduate""","""Junior Financial Data Analyst Graduate""",1.0,False,1.0,llama3.1,v1-schema,2
+d026,en,locations,"[""Zurich""]","[""Zurich""]",1.0,False,,llama3.1,v1-schema,2
+d026,en,workload_min,null,null,1.0,False,,llama3.1,v1-schema,2
+d026,en,workload_max,null,null,1.0,False,,llama3.1,v1-schema,2
+d026,en,duration_months,18,null,0.0,False,,llama3.1,v1-schema,2
+d026,en,start,"""1 September 2026""",null,0.0,False,,llama3.1,v1-schema,2
+d026,en,german_level,"""none""","""none""",1.0,False,,llama3.1,v1-schema,2
+d026,en,english_required,true,true,1.0,False,,llama3.1,v1-schema,2
+d026,en,degree_level,"""graduate_only""","""master_only""",0.0,False,,llama3.1,v1-schema,2
+d026,en,is_internship,false,false,1.0,False,,llama3.1,v1-schema,2
+d026,en,required_skills,"[""r|python""]","[""python"", ""r"", ""sql"", ""ms sql server"", ""dax"", ""rshiny"", ""generative ai""]",0.4444444444444445,False,,llama3.1,v1-schema,2

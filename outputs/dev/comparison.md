@@ -9,43 +9,44 @@ Metric version 2. Postings per group: overall n=26, en n=13, de n=8, fr n=5.
 | run | failed or invalid |
 |---|---|
 | llama3.1 v1 | 0 |
-| llama3.1 v1-schema | 3 |
+| llama3.1 v1-schema | 1 |
+| llama3.1 v1-strict | 0 |
 
 ## Overall scores (n=26)
 
-| field | metric | llama3.1 v1 | llama3.1 v1-schema |
-|---|---|---|---|
-| company | normalized exact | 0.92 | 0.81 |
-| role_title | title >= 0.85 | 0.73 | 0.65 |
-| locations | mean posting F1 | 0.92 | 0.79 |
-| workload_min | exact | 0.92 | 0.27 |
-| workload_max | exact | 0.88 | 0.23 |
-| duration_months | exact | 0.81 | 0.54 |
-| start | normalized exact (proxy) | 0.81 | 0.54 |
-| german_level | macro F1 | 0.61 | 0.61 |
-| english_required | macro F1 | 0.81 | 0.61 |
-| degree_level | macro F1 | 0.47 | 0.41 |
-| is_internship | macro F1 | 0.94 | 0.83 |
-| required_skills | mean posting F1 | 0.49 | 0.39 |
+| field | metric | llama3.1 v1 | llama3.1 v1-schema | llama3.1 v1-strict |
+|---|---|---|---|---|
+| company | normalized exact | 0.92 | 0.88 | 0.92 |
+| role_title | title >= 0.85 | 0.73 | 0.69 | 0.73 |
+| locations | mean posting F1 | 0.92 | 0.83 | 0.92 |
+| workload_min | exact | 0.92 | 0.35 | 0.88 |
+| workload_max | exact | 0.88 | 0.31 | 0.88 |
+| duration_months | exact | 0.81 | 0.54 | 0.81 |
+| start | normalized exact (proxy) | 0.81 | 0.54 | 0.88 |
+| german_level | macro F1 | 0.61 | 0.68 | 0.61 |
+| english_required | macro F1 | 0.81 | 0.67 | 0.84 |
+| degree_level | macro F1 | 0.47 | 0.36 | 0.47 |
+| is_internship | macro F1 | 0.94 | 0.89 | 0.94 |
+| required_skills | mean posting F1 | 0.49 | 0.42 | 0.49 |
 
 ## Paired changes per posting
 
-Postings that scored higher / lower in the second run, ties left out. p is a two-sided exact sign test; only p < 0.05 is called significant. With 12 tests, about 1 could reach that by chance alone.
+Postings that scored higher / lower in the second run, ties left out. p is a two-sided exact sign test; only p < 0.05 is called significant. With 24 tests, about 1 could reach that by chance alone.
 
-| field | llama3.1 v1 → llama3.1 v1-schema |
-|---|---|
-| company | +0 / −3 (p=0.25, n.s.) |
-| role_title | +0 / −2 (p=0.50, n.s.) |
-| locations | +0 / −4 (p=0.12, n.s.) |
-| workload_min | +0 / −17 (p=0.00, **significant**) |
-| workload_max | +0 / −17 (p=0.00, **significant**) |
-| duration_months | +0 / −7 (p=0.02, **significant**) |
-| start | +1 / −8 (p=0.04, **significant**) |
-| german_level | +2 / −3 (p=1.00, n.s.) |
-| english_required | +1 / −7 (p=0.07, n.s.) |
-| degree_level | +0 / −1 (p=1.00, n.s.) |
-| is_internship | +0 / −2 (p=0.50, n.s.) |
-| required_skills | +4 / −7 (p=0.55, n.s.) |
+| field | llama3.1 v1 → llama3.1 v1-schema | llama3.1 v1 → llama3.1 v1-strict |
+|---|---|---|
+| company | +0 / −1 (p=1.00, n.s.) | +0 / −0 (p=1.00, n.s.) |
+| role_title | +0 / −1 (p=1.00, n.s.) | +0 / −0 (p=1.00, n.s.) |
+| locations | +0 / −3 (p=0.25, n.s.) | +0 / −0 (p=1.00, n.s.) |
+| workload_min | +0 / −15 (p=0.00, **significant**) | +0 / −1 (p=1.00, n.s.) |
+| workload_max | +0 / −15 (p=0.00, **significant**) | +0 / −0 (p=1.00, n.s.) |
+| duration_months | +0 / −7 (p=0.02, **significant**) | +0 / −0 (p=1.00, n.s.) |
+| start | +1 / −8 (p=0.04, **significant**) | +2 / −0 (p=0.50, n.s.) |
+| german_level | +2 / −1 (p=1.00, n.s.) | +0 / −0 (p=1.00, n.s.) |
+| english_required | +1 / −5 (p=0.22, n.s.) | +1 / −0 (p=1.00, n.s.) |
+| degree_level | +0 / −1 (p=1.00, n.s.) | +0 / −0 (p=1.00, n.s.) |
+| is_internship | +0 / −1 (p=1.00, n.s.) | +0 / −0 (p=1.00, n.s.) |
+| required_skills | +4 / −7 (p=0.55, n.s.) | +1 / −0 (p=1.00, n.s.) |
 
 ## Per field and language
 
@@ -54,35 +55,40 @@ Postings that scored higher / lower in the second run, ties left out. p is a two
 | run | overall (n=26) | en (n=13) | de (n=8) | fr (n=5) |
 |---|---|---|---|---|
 | llama3.1 v1 | 0.92 | 1.00 | 0.88 | 0.80 |
-| llama3.1 v1-schema | 0.81 | 0.77 | 0.88 | 0.80 |
+| llama3.1 v1-schema | 0.88 | 0.92 | 0.88 | 0.80 |
+| llama3.1 v1-strict | 0.92 | 1.00 | 0.88 | 0.80 |
 
 ### role_title (title >= 0.85)
 
 | run | overall (n=26) | en (n=13) | de (n=8) | fr (n=5) |
 |---|---|---|---|---|
 | llama3.1 v1 | 0.73 | 0.62 | 0.88 | 0.80 |
-| llama3.1 v1-schema | 0.65 | 0.46 | 0.88 | 0.80 |
+| llama3.1 v1-schema | 0.69 | 0.54 | 0.88 | 0.80 |
+| llama3.1 v1-strict | 0.73 | 0.62 | 0.88 | 0.80 |
 
 ### locations (mean posting F1)
 
 | run | overall (n=26) | en (n=13) | de (n=8) | fr (n=5) |
 |---|---|---|---|---|
 | llama3.1 v1 | 0.92 | 0.90 | 0.96 | 0.93 |
-| llama3.1 v1-schema | 0.79 | 0.72 | 0.96 | 0.73 |
+| llama3.1 v1-schema | 0.83 | 0.79 | 0.96 | 0.73 |
+| llama3.1 v1-strict | 0.92 | 0.90 | 0.96 | 0.93 |
 
 ### workload_min (exact)
 
 | run | overall (n=26) | en (n=13) | de (n=8) | fr (n=5) |
 |---|---|---|---|---|
 | llama3.1 v1 | 0.92 | 0.85 | 1.00 | 1.00 |
-| llama3.1 v1-schema | 0.27 | 0.31 | 0.38 | 0.00 |
+| llama3.1 v1-schema | 0.35 | 0.46 | 0.38 | 0.00 |
+| llama3.1 v1-strict | 0.88 | 0.77 | 1.00 | 1.00 |
 
 ### workload_max (exact)
 
 | run | overall (n=26) | en (n=13) | de (n=8) | fr (n=5) |
 |---|---|---|---|---|
 | llama3.1 v1 | 0.88 | 0.92 | 0.88 | 0.80 |
-| llama3.1 v1-schema | 0.23 | 0.31 | 0.25 | 0.00 |
+| llama3.1 v1-schema | 0.31 | 0.46 | 0.25 | 0.00 |
+| llama3.1 v1-strict | 0.88 | 0.92 | 0.88 | 0.80 |
 
 ### duration_months (exact)
 
@@ -90,6 +96,7 @@ Postings that scored higher / lower in the second run, ties left out. p is a two
 |---|---|---|---|---|
 | llama3.1 v1 | 0.81 | 0.85 | 0.88 | 0.60 |
 | llama3.1 v1-schema | 0.54 | 0.38 | 0.75 | 0.60 |
+| llama3.1 v1-strict | 0.81 | 0.85 | 0.88 | 0.60 |
 
 ### start (normalized exact (proxy))
 
@@ -97,39 +104,45 @@ Postings that scored higher / lower in the second run, ties left out. p is a two
 |---|---|---|---|---|
 | llama3.1 v1 | 0.81 | 0.77 | 0.88 | 0.80 |
 | llama3.1 v1-schema | 0.54 | 0.46 | 0.75 | 0.40 |
+| llama3.1 v1-strict | 0.88 | 0.85 | 0.88 | 1.00 |
 
 ### german_level (macro F1)
 
 | run | overall (n=26) | en (n=13) | de (n=8) | fr (n=5) |
 |---|---|---|---|---|
 | llama3.1 v1 | 0.61 | 1.00 | 0.28 | 0.33 |
-| llama3.1 v1-schema | 0.61 | 0.63 | 0.47 | 0.44 |
+| llama3.1 v1-schema | 0.68 | 0.98 | 0.47 | 0.44 |
+| llama3.1 v1-strict | 0.61 | 1.00 | 0.28 | 0.33 |
 
 ### english_required (macro F1)
 
 | run | overall (n=26) | en (n=13) | de (n=8) | fr (n=5) |
 |---|---|---|---|---|
 | llama3.1 v1 | 0.81 | 0.84 | 1.00 | 0.29 |
-| llama3.1 v1-schema | 0.61 | 0.24 | 1.00 | 0.37 |
+| llama3.1 v1-schema | 0.67 | 0.32 | 1.00 | 0.37 |
+| llama3.1 v1-strict | 0.84 | 0.92 | 1.00 | 0.29 |
 
 ### degree_level (macro F1)
 
 | run | overall (n=26) | en (n=13) | de (n=8) | fr (n=5) |
 |---|---|---|---|---|
 | llama3.1 v1 | 0.47 | 0.32 | 0.53 | 0.50 |
-| llama3.1 v1-schema | 0.41 | 0.43 | 0.18 | 0.50 |
+| llama3.1 v1-schema | 0.36 | 0.35 | 0.18 | 0.50 |
+| llama3.1 v1-strict | 0.47 | 0.32 | 0.53 | 0.50 |
 
 ### is_internship (macro F1)
 
 | run | overall (n=26) | en (n=13) | de (n=8) | fr (n=5) |
 |---|---|---|---|---|
 | llama3.1 v1 | 0.94 | 0.90 | 1.00 | 1.00 |
-| llama3.1 v1-schema | 0.83 | 0.70 | 1.00 | 1.00 |
+| llama3.1 v1-schema | 0.89 | 0.81 | 1.00 | 1.00 |
+| llama3.1 v1-strict | 0.94 | 0.90 | 1.00 | 1.00 |
 
 ### required_skills (mean posting F1)
 
 | run | overall (n=26) | en (n=13) | de (n=8) | fr (n=5) |
 |---|---|---|---|---|
 | llama3.1 v1 | 0.49 | 0.61 | 0.39 | 0.31 |
-| llama3.1 v1-schema | 0.39 | 0.42 | 0.43 | 0.27 |
+| llama3.1 v1-schema | 0.42 | 0.47 | 0.43 | 0.27 |
+| llama3.1 v1-strict | 0.49 | 0.62 | 0.39 | 0.31 |
 
