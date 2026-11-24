@@ -20,24 +20,28 @@ PROMPT_HASHES = {
 
 
 @pytest.mark.parametrize("version", PROMPT_HASHES)
-def test_prompt_is_frozen(version: str) -> None:
+def test_prompt_text_is_frozen_for_cached_runs(version: str) -> None:
     """The system prompt still matches the text the cached results were produced with."""
     system_prompt = build_messages("posting", version)[0]["content"]
     assert hashlib.sha256(system_prompt.encode()).hexdigest() == PROMPT_HASHES[version]
 
 
-def test_messages() -> None:
-    """Every version sends one system prompt and the posting text, fully formatted."""
-    for version in PROMPTS:
-        messages = build_messages("Data Intern\nExample AG\nBern", version)
-        assert [message["role"] for message in messages] == ["system", "user"]
-        assert messages[1]["content"] == "Data Intern\nExample AG\nBern"
-        assert "{schema}" not in messages[0]["content"]
-    with pytest.raises(ValueError, match="Unknown prompt version"):
+@pytest.mark.parametrize("version", PROMPTS)
+def test_every_version_sends_a_system_prompt_and_the_posting(version: str) -> None:
+    """The schema is filled in, and the posting text is sent unchanged as the user message."""
+    messages = build_messages("Data Intern\nExample AG\nBern", version)
+    assert [message["role"] for message in messages] == ["system", "user"]
+    assert messages[1]["content"] == "Data Intern\nExample AG\nBern"
+    assert "{schema}" not in messages[0]["content"]
+
+
+def test_unknown_prompt_version_is_rejected() -> None:
+    """A typo in --prompt fails with the list of valid versions."""
+    with pytest.raises(ValueError, match="Unknown prompt version 'v99'. Choose from: v1, v2"):
         build_messages("posting", "v99")
 
 
-def test_v2_schema_keeps_structure() -> None:
+def test_v2_schema_drops_descriptions_but_keeps_structure() -> None:
     """v2 drops the v1 field descriptions but keeps every type, enum and bound."""
     v1, v2 = json.loads(schema_for("v1")), json.loads(schema_for("v2"))
     assert "description" in v1["properties"]["degree_level"]
@@ -46,7 +50,7 @@ def test_v2_schema_keeps_structure() -> None:
     assert v2["properties"]["degree_level"]["enum"] == v1["properties"]["degree_level"]["enum"]
 
 
-def test_without_descriptions() -> None:
+def test_descriptions_are_removed_at_every_depth() -> None:
     """Descriptions disappear at every depth, including inside lists."""
     schema = {"description": "x", "anyOf": [{"type": "null", "description": "y"}], "title": "T"}
     assert without_descriptions(schema) == {"anyOf": [{"type": "null"}], "title": "T"}
@@ -59,7 +63,7 @@ def word_ngrams(text: str, n: int) -> set[tuple[str, ...]]:
 
 
 @pytest.mark.parametrize("version", [version for version in PROMPTS if version != "v1"])
-def test_no_posting_text_in_prompt(version: str) -> None:
+def test_prompt_shares_no_text_with_test_postings(version: str) -> None:
     """Instructions written for a version share no five-word sequence with a test posting.
 
     Shorter overlaps are allowed: they are generic phrases such as 'as soon as possible'.

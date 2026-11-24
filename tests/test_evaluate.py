@@ -1,4 +1,4 @@
-"""Offline integration tests for scoring and exporting cached runs."""
+"""Scoring cached runs against the labels, and exporting the results."""
 
 import csv
 import json
@@ -11,51 +11,68 @@ import pytest
 from extractor.evaluate import detail_rows, main, summarize
 from extractor.run import cache_path
 from extractor.schema import JobPosting
+from tests.factories import posting
 
 
-def posting(**changes: object) -> JobPosting:
-    """Create a small valid posting, optionally replacing individual fields."""
-    values = dict(company="Example AG", role_title="Engineer", locations=["Zurich", "Bern"],
-                  required_skills=["python", "aws|azure"], german_level="required",
-                  english_required=True, degree_level="unknown", is_internship=False)
-    return JobPosting.model_validate(values | changes)
+def label(**changes: object) -> JobPosting:
+    """A labelled posting with two locations and a skill requirement with alternatives."""
+    return posting(**({"company": "Example AG", "role_title": "Engineer", "locations": ["Zurich", "Bern"],
+                       "required_skills": ["python", "aws|azure"], "german_level": "required"} | changes))
 
 
-def test_field_scores_and_missing_prediction() -> None:
-    """Use every label in each denominator, including nulls in a failed posting."""
-    labels = {"001": posting(), "002": posting(german_level="plus")}
-    predictions = {"001": posting(company="Example", role_title="ENGINEER",
-                                  locations=["Zürich"], required_skills=["Azure"])}
-    details = detail_rows(labels, predictions, {"001": "de", "002": "fr"})
-    assert len(details) == 2 * len(JobPosting.model_fields)
-    assert details[details.id == "002"].score.eq(0).all()
-    scores = summarize(details).set_index(["language", "field"])
-    assert scores.at[("overall", "german_level"), "score"] == 0.5
-    assert scores.at[("overall", "required_skills"), "score"] == pytest.approx(1/3)
-    assert scores.at[("overall", "locations"), "score"] == pytest.approx(1/3)
+def overall(details: pd.DataFrame) -> pd.Series:
+    """Overall score per field."""
+    scores = summarize(details)
+    return scores[scores.language == "overall"].set_index("field").score
+
+
+def test_failed_extraction_scores_zero_on_every_field() -> None:
+    """A posting without a valid prediction stays in every denominator, even where the label is null."""
+    details = detail_rows({"001": label()}, {}, {"001": "en"})
+    assert len(details) == len(JobPosting.model_fields)
+    assert details.score.eq(0).all() and details.missing_prediction.all()
+
+
+def test_scores_are_averaged_over_all_labelled_postings() -> None:
+    """Posting 001 is predicted with spelling variants and partial lists. Posting 002 failed."""
+    labels = {"001": label(), "002": label(german_level="plus")}
+    predictions = {"001": label(company="Example", role_title="ENGINEER",
+                                locations=["Zürich"], required_skills=["Azure"])}
+    scores = overall(detail_rows(labels, predictions, {"001": "en", "002": "en"}))
+    # The legal suffix and case are normalised and start is null on both sides, so 001 scores 1.
     for field in ("company", "role_title", "start"):
-        assert scores.at[("overall", field), "score"] == 0.5
-    assert scores.at[("fr", "degree_level"), "n"] == 1
-    assert scores.at[("fr", "degree_level"), "missing_predictions"] == 1
+        assert scores[field] == 0.5
+    # One of two locations: F1 2/3. Azure satisfies one of two requirements: F1 2/3.
+    assert scores["locations"] == pytest.approx(1 / 3)
+    assert scores["required_skills"] == pytest.approx(1 / 3)
+    assert scores["german_level"] == 0.5
+
+
+def test_each_language_has_its_own_denominator() -> None:
+    """Language scores count only that language's postings, and an empty group has no score."""
+    details = detail_rows({"001": label(), "002": label()}, {"001": label()}, {"001": "de", "002": "fr"})
+    scores = summarize(details).set_index(["language", "field"])
+    assert scores.at[("de", "company"), "score"] == 1.0
+    assert scores.at[("fr", "company"), "n"] == 1
+    assert scores.at[("fr", "company"), "missing_predictions"] == 1
     assert pd.isna(scores.at[("en", "company"), "score"])
 
 
-def test_majority_class() -> None:
-    """Two correct majority guesses out of three give macro F1 of 0.4."""
-    labels = {"001": posting(), "002": posting(), "003": posting(is_internship=True)}
-    details = detail_rows(labels, dict.fromkeys(labels, posting()), dict.fromkeys(labels, "en"))
-    scores = summarize(details).set_index(["language", "field"])
-    assert scores.at[("overall", "is_internship"), "score"] == pytest.approx(0.4)
+def test_class_fields_use_macro_f1_so_majority_guessing_scores_low() -> None:
+    """Always predicting the majority class: 2 of 3 correct, but macro F1 is only 0.4."""
+    labels = {"001": label(is_internship=False), "002": label(is_internship=False), "003": label()}
+    predictions = dict.fromkeys(labels, label(is_internship=False))
+    scores = overall(detail_rows(labels, predictions, dict.fromkeys(labels, "en")))
+    assert scores["is_internship"] == pytest.approx(0.4)
 
 
-def test_command_exports(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
-    """Run the CLI with an invalid cached JSON and inspect the exported row."""
+def test_command_scores_invalid_cache_as_missing_and_writes_csvs(
+        tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    """The CLI reads labels and cache from the working folder and exports null predictions as JSON."""
     monkeypatch.chdir(tmp_path)
     Path("data").mkdir()
-    row = posting().model_dump()
-    for field in ("locations", "required_skills"):
-        row[field] = ";".join(row[field])
-    row.update(id="001", language="en", notes="")
+    row = label().model_dump() | {"id": "001", "language": "en", "notes": ""}
+    row["locations"], row["required_skills"] = ";".join(row["locations"]), ";".join(row["required_skills"])
     with Path("data/labels.csv").open("w", encoding="utf-8", newline="") as file:
         writer = csv.DictWriter(file, fieldnames=list(row))
         writer.writeheader()
@@ -64,7 +81,9 @@ def test_command_exports(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> Non
     cache.parent.mkdir(parents=True)
     cache.write_text("{}", encoding="utf-8")
     monkeypatch.setattr(sys, "argv", ["evaluate", "--model", "demo:7b", "--prompt", "v1"])
+
     main()
+
     details = pd.read_csv("outputs/details_demo_7b_v1.csv", dtype={"id": str}, keep_default_na=False)
     assert details.id.unique().tolist() == ["001"]
     assert details.score.eq(0).all()
