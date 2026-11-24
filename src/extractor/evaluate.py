@@ -124,6 +124,11 @@ def main() -> None:
     if not labels or set(languages.values()) - {"en", "de", "fr"}:
         parser.error("Expected labelled postings with language en, de or fr")
     predictions = {key: load_cached(cache_path(args.model, args.prompt, key)) for key in labels}
+    if all(prediction is None for prediction in predictions.values()):
+        # Most likely a fresh clone: the cache is not in git. Scoring it would publish all zeros.
+        run_dir = cache_path(args.model, args.prompt, "001").parent
+        raise SystemExit(f"No valid cached predictions in {run_dir}. Nothing was written. "
+                         f"Extract first: python -m extractor.run --model {args.model} --prompt {args.prompt}")
     details = detail_rows(labels, predictions, languages)
     summary = summarize(details)
     print(f"Model: {args.model}   Prompt: {args.prompt}   Metric version: {METRIC_VERSION}")

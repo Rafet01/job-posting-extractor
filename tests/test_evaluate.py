@@ -66,26 +66,59 @@ def test_class_fields_use_macro_f1_so_majority_guessing_scores_low() -> None:
     assert scores["is_internship"] == pytest.approx(0.4)
 
 
+def write_labels(*ids: str) -> None:
+    """Write data/labels.csv in the working folder with the default label for each id."""
+    Path("data").mkdir()
+    rows = []
+    for posting_id in ids:
+        row = label().model_dump() | {"id": posting_id, "language": "en", "notes": ""}
+        row["locations"], row["required_skills"] = ";".join(row["locations"]), ";".join(row["required_skills"])
+        rows.append(row)
+    with Path("data/labels.csv").open("w", encoding="utf-8", newline="") as file:
+        writer = csv.DictWriter(file, fieldnames=list(rows[0]))
+        writer.writeheader()
+        writer.writerows(rows)
+
+
+def write_cache(posting_id: str, content: str) -> None:
+    """Write one cache file for the demo run."""
+    cache = cache_path("demo:7b", "v1", posting_id)
+    cache.parent.mkdir(parents=True, exist_ok=True)
+    cache.write_text(content, encoding="utf-8")
+
+
 def test_command_scores_invalid_cache_as_missing_and_writes_csvs(
         tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
     """The CLI reads labels and cache from the working folder and exports null predictions as JSON."""
     monkeypatch.chdir(tmp_path)
-    Path("data").mkdir()
-    row = label().model_dump() | {"id": "001", "language": "en", "notes": ""}
-    row["locations"], row["required_skills"] = ";".join(row["locations"]), ";".join(row["required_skills"])
-    with Path("data/labels.csv").open("w", encoding="utf-8", newline="") as file:
-        writer = csv.DictWriter(file, fieldnames=list(row))
-        writer.writeheader()
-        writer.writerow(row)
-    cache = cache_path("demo:7b", "v1", "001")
-    cache.parent.mkdir(parents=True)
-    cache.write_text("{}", encoding="utf-8")
+    write_labels("001", "002")
+    write_cache("001", "{}")
+    write_cache("002", label(required_skills=["python", "aws"]).model_dump_json())
     monkeypatch.setattr(sys, "argv", ["evaluate", "--model", "demo:7b", "--prompt", "v1"])
 
     main()
 
     details = pd.read_csv("outputs/details_demo_7b_v1.csv", dtype={"id": str}, keep_default_na=False)
-    assert details.id.unique().tolist() == ["001"]
-    assert details.score.eq(0).all()
-    assert json.loads(details.pred.iloc[0]) is None
+    assert details.id.unique().tolist() == ["001", "002"]
+    invalid = details[details.id == "001"]
+    assert invalid.score.eq(0).all()
+    assert json.loads(invalid.pred.iloc[0]) is None
+    assert details[details.id == "002"].score.eq(1).all()
     assert Path("outputs/summary_demo_7b_v1.csv").exists()
+
+
+def test_command_without_any_cached_prediction_writes_nothing(
+        tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    """On a fresh clone there is no cache: stop with a hint instead of publishing all zeros."""
+    monkeypatch.chdir(tmp_path)
+    write_labels("001", "002")
+    Path("outputs").mkdir()
+    published = Path("outputs/summary_demo_7b_v1.csv")
+    published.write_text("published results", encoding="utf-8")
+    monkeypatch.setattr(sys, "argv", ["evaluate", "--model", "demo:7b", "--prompt", "v1"])
+
+    with pytest.raises(SystemExit, match="python -m extractor.run --model demo:7b"):
+        main()
+
+    assert published.read_text(encoding="utf-8") == "published results"
+    assert not Path("outputs/details_demo_7b_v1.csv").exists()
