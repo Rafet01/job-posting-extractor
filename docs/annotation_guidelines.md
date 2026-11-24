@@ -71,17 +71,17 @@ Record the stated length of the position in whole months. For a range, use the l
 
 ### start
 
-Keep the shortest phrase that preserves the stated start date or period, in the original language. “Starting February 2027” gives `February 2027`. Normalise “as soon as possible”, “immediately”, “ab sofort” and “dès que possible” to `asap`. Leave the cell empty when no start is given. An application deadline belongs to a different event.
+Keep the shortest phrase that preserves the stated start date or period, in the original language. “Starting February 2027” gives `February 2027`. Normalise “as soon as possible”, “immediately”, “ab sofort” and “dès que possible” to `asap`. Leave the cell empty when no start is given. An application deadline belongs to a different event. Drop additions such as “or by agreement”, “oder nach Vereinbarung” and “ou à convenir”. Keep only the date or period. Leave “to be discussed” empty.
 
 ### german_level
 
 | Label | When to use it |
 |---|---|
 | `required` | German itself is mandatory, e.g. “Fluent in German and English” or “sehr gute Deutschkenntnisse” in the candidate profile. |
-| `plus` | German is explicitly preferred, e.g. “Deutsch von Vorteil” or “German and/or French highly preferred”. |
+| `plus` | German is explicitly preferred or one of several acceptable languages, e.g. “Deutsch von Vorteil” or “German and/or French highly preferred”. |
 | `none` | The posting states no German-language qualification. The language of the posting is irrelevant. |
 
-“German or French required” is an alternative language requirement. German alone is neither mandatory nor described as a preference. Flag such a case for review before assigning a label, because the three current values cannot express it exactly.
+When German is one of several acceptable languages (e.g. “German or French required”), use `plus` and explain the alternative in `notes`.
 
 ### english_required
 
@@ -94,11 +94,11 @@ Read the eligibility wording. A job title such as *Hochschulpraktikum* can refer
 | Label | Evidence |
 |---|---|
 | `bachelor_ok` | Bachelor students can apply. This includes “Bachelor’s or Master’s student”, general enrolment with no advanced degree specified, and “student or recent graduate” when bachelor students are eligible. The dataset also accepts a general higher-education training requirement naming FH or university without a completed degree, as in 003. |
-| `master_only` | The posting restricts eligibility to current master’s students, e.g. “enrolled in a Master’s programme”. |
+| `master_only` | At least master-level studies are required. Current master’s or PhD students and/or master’s graduates are eligible. Bachelor students cannot apply. Use `graduate_only` when a completed degree is compulsory. |
 | `graduate_only` | A completed degree is compulsory, e.g. “Bachelor- oder Masterabschluss”, “completed Master’s” or a role restricted to recent graduates. |
 | `unknown` | No study or degree requirement is stated, or the posting gives only a field such as “engineering background”. |
 
-Posting 009 asks for enrolment in a bachelor’s or master’s programme and receives `bachelor_ok`. Posting 024 asks for a completed bachelor’s or master’s degree and receives `graduate_only`.
+Posting 009 asks for enrolment in a bachelor’s or master’s programme and receives `bachelor_ok`. Posting 024 asks for a completed bachelor’s or master’s degree and receives `graduate_only`. Posting 010 accepts MSc or PhD students. Posting 012 accepts current master’s students or master’s graduates. Both receive `master_only`.
 
 ### is_internship
 
