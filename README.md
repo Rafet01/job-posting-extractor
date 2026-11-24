@@ -10,6 +10,7 @@ Turns free-text job ads in English, German and French into structured, validated
 - **Why:** I was applying for internships in Switzerland and kept reading the same ads for the same facts: *Do I need German? Can bachelor students apply? Which tools are required?* I built this to automate that part of my own search, and to learn how to measure whether an LLM is actually right.
 - **How quality was measured:** I hand-labelled 26 real postings using written annotation guidelines. Four setups (two local models × two prompts) were scored field by field against those labels, with a significance test for the differences.
 - **Main result:** the best setup, Llama 3.1 8B with the simple prompt, got **254 of 312 values right (mean field score 0.81)**. It is near-perfect on company, locations and workload, but weak on required skills (0.48) and degree level (0.40). A longer prompt built from my annotation guidelines did **not** beat it: the small models copied example values from the prompt into their answers.
+- **Phase 2:** prompts were then developed on a separate development set and scored once on the 26 held-out postings. Prompt v4 raised required skills from 0.49 to 0.64 on the development set, but **not on the test set** (0.48 → 0.49), so v1 stays the best setup. Constrained decoding only matched JSON mode once every field was marked required in the schema. Details in [docs/experiments-phase-2.md](docs/experiments-phase-2.md).
 - **Skills shown:** LLM structured output, prompt design, Pydantic validation, evaluation design (annotation guidelines, field-specific metrics, macro F1, sign tests), error analysis, Python and pandas, testing with mocks, GitHub Actions CI.
 
 ## Contents
@@ -29,7 +30,7 @@ flowchart LR
     F --> G["Scores per field and language,<br/>run comparison"]
 ```
 
-1. **Prompt** ([prompts.py](src/extractor/prompts.py)). The system prompt contains the JSON Schema generated from the Pydantic model, and the posting is the user message. Two versions exist. **v1** is short and relies on the field descriptions in the schema. **v2** restates the annotation guidelines as explicit rules per field.
+1. **Prompt** ([prompts.py](src/extractor/prompts.py)). The system prompt contains the JSON Schema generated from the Pydantic model, and the posting is the user message. **v1** is short and relies on the field descriptions in the schema. **v2** restates the annotation guidelines as explicit rules per field. **v3** and **v4** add short rules for the errors seen on the development set, and **v1-schema** / **v1-strict** send the v1 messages with schema-constrained decoding (see [phase 2](docs/experiments-phase-2.md)).
 2. **LLM call** ([llm.py](src/extractor/llm.py)). It uses the OpenAI Python client in JSON mode with temperature 0, so the same code talks to a local Ollama server or to a paid API.
 3. **Validation and retries** ([schema.py](src/extractor/schema.py)). The answer must parse into a `JobPosting`: categories are fixed (`german_level` ∈ none/plus/required), percentages lie between 10 and 100, the minimum workload can't exceed the maximum, unknown fields are rejected and skills are cleaned. If validation fails, the error message is sent back to the model so it can correct itself. Answers are capped at 1024 tokens, so a model that keeps generating counts as a failed attempt instead of blocking the run.
 4. **Cache** ([run.py](src/extractor/run.py)). Each valid result is stored as JSON per model and prompt version, so a run can be interrupted and resumed, and evaluation never needs the LLM. Failed postings are not cached and are retried on the next run.
@@ -159,6 +160,8 @@ Two local models through Ollama: **Llama 3.1 8B** and **Qwen 2.5 7B**, each with
 
 The per-language tables (English n = 15, German n = 8, French n = 3) and all paired tests are in [outputs/comparison.md](outputs/comparison.md).
 
+Phase 2 (development set, constrained decoding, prompt v3 and v4, and the single test-set score of v4) is reported separately in [docs/experiments-phase-2.md](docs/experiments-phase-2.md). In short: no difference between v4 and v1 on the test set is significant, and v1 keeps the higher mean (0.81 vs 0.80).
+
 **What the paired tests say:**
 
 - **v2 did not improve the fields it targeted.** For skills, degree level and duration, postings moved in both directions. Qwen's degree macro F1 rose from 0.47 to 0.56, but that is 3 postings better and 5 worse, so not an improvement.
@@ -195,10 +198,10 @@ A rule written more precisely helped less than avoiding copyable values would ha
 
 **With more time I would:**
 
-1. Write a prompt v3 without copyable example values, developed on the dev set and scored once on the test set.
+1. Write a prompt v3 without copyable example values, developed on the dev set and scored once on the test set. *Done as v3 and v4: better on skills on the dev set, no significant difference on the test set.*
 2. Label 20–30 more postings as a development set. *Done: 26 paraphrased postings in `data/dev/`, labelled with the same guidelines.*
 3. Split `degree_level` into "required level" and "degree must be finished", and store duration ranges as two numbers.
-4. Use constrained decoding (Ollama's JSON-schema output) instead of relying on retries. *Implemented as prompt version `v1-schema` (the v1 messages, schema-constrained decoding). On the dev set it scored clearly below v1 (workload 0.27 vs 0.92): fields with a default are optional in the schema, so the grammar let the model close the object without them. `v1-strict` lists every field as required; not measured yet. See [outputs/dev/comparison.md](outputs/dev/comparison.md).*
+4. Use constrained decoding (Ollama's JSON-schema output) instead of relying on retries. *Implemented as prompt version `v1-schema` (the v1 messages, schema-constrained decoding). On the dev set it scored clearly below v1 (workload 0.27 vs 0.92): fields with a default are optional in the schema, so the grammar let the model close the object without them. `v1-strict` lists every field as required and matches v1 on the dev set with no retries. See [docs/experiments-phase-2.md](docs/experiments-phase-2.md).*
 5. Have a second person label a subset, to measure agreement.
 6. Add a paid model as a reference, to separate prompt problems from model-size problems.
 
@@ -208,7 +211,7 @@ A rule written more precisely helped less than avoiding copyable values would ha
 python -m pytest
 ```
 
-120 tests run in about 4 seconds, **without Ollama, without a `.env` file and without the cache**. The test files read as a specification: each test name states one behaviour.
+121 tests run in about 4 seconds, **without Ollama, without a `.env` file and without the cache**. The test files read as a specification: each test name states one behaviour.
 
 - **Schema:** invalid categories, out-of-range numbers, min > max, extra fields and an empty company or title are rejected, and skills are cleaned.
 - **LLM call:** the OpenAI client is replaced by a `unittest.mock.MagicMock`. The tests check the exact request, that an invalid answer is retried with the validation error, that the call gives up with a clear error after the last attempt, and that connection errors are not swallowed.
@@ -237,10 +240,10 @@ src/extractor/        the pipeline
   overlap.py          shared word sequences, for leakage checks
 data/                 26 test postings and labels.csv (see data/README.md)
   dev/                development set for prompt work (see data/dev/README.md)
-docs/                 annotation guidelines, experiments, error analysis
+docs/                 annotation guidelines, experiments (phase 1 and 2), error analysis
 outputs/              published scores per run and comparison.md
 scripts/              check the LLM connection and validate the labels
-tests/                120 tests, no network
+tests/                121 tests, no network
 ```
 
 ## About this project
