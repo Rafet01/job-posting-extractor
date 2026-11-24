@@ -77,6 +77,15 @@ python -m extractor.compare                                        # writes outp
 python -m pytest                                                   # the test suite, no LLM needed
 ```
 
+Prompt work happens on the **development set** in `data/dev/`, so the 26 test postings stay a fair, held-out test (see [data/dev/README.md](data/dev/README.md)). Every command takes `--split dev`, and dev results go to `outputs/dev/`:
+
+```powershell
+python scripts/check_labels.py                                              # label progress per split, flags dev copies of test ads
+python -m extractor.run --model llama3.1 --prompt v1-schema --split dev
+python -m extractor.evaluate --model llama3.1 --prompt v1-schema --split dev
+python -m extractor.compare --split dev --run llama3.1 v1 --run llama3.1 v1-schema
+```
+
 | | PowerShell (Windows) | bash / zsh (macOS, Linux) |
 |---|---|---|
 | Activate the virtual environment | `.\.venv\Scripts\Activate.ps1` | `source .venv/bin/activate` |
@@ -101,6 +110,7 @@ The results below come from local models only. No paid model was evaluated.
 
 - **26 real job postings**: 15 English, 8 German and 3 French, mostly Swiss internships and junior data or AI roles, copied from public job listings during my own search. See [data/README.md](data/README.md) for where they come from and how they may be used.
 - **One hand label per posting** in [data/labels.csv](data/labels.csv), written according to [docs/annotation_guidelines.md](docs/annotation_guidelines.md).
+- **A separate development set** in [data/dev/](data/dev/README.md) for prompt work, with ids `d001`, `d002`, … and the same guidelines. The 26 postings above are the test set: a new prompt version is scored on them once, when it is finished.
 
 **Why written guidelines?** Without them, "the right answer" changes from posting to posting. Is "Python, R preferred" a requirement for R? Is a German ad evidence that German is required? The guidelines fix these decisions once, with examples, so the labels are consistent and the model can be held to the same rules. Some of the key decisions:
 
@@ -179,16 +189,16 @@ A rule written more precisely helped less than avoiding copyable values would ha
 **Limitations**
 
 - **26 postings, one annotator.** Only large differences are detectable. Inter-annotator agreement is unknown, so part of the remaining error is label noise.
-- **No development set.** v2 was written from the guidelines, but I chose which rules to stress after seeing v1 errors on the same 26 postings. Any gain would have been optimistic. I wrote v2 once and did not tune it on the results.
+- **No development set for v1 and v2.** v2 was written from the guidelines, but I chose which rules to stress after seeing v1 errors on the same 26 postings. Any gain would have been optimistic. I wrote v2 once and did not tune it on the results. The repository now has a separate development split for all later prompt work; it is still being filled.
 - **Small local models.** Llama 3.1 8B and Qwen 2.5 7B only, with Ollama's default **4096-token context window**. The longest posting plus prompt v2 fits, but leaves little room for retries.
 - **Start is a textual proxy**, and the title threshold is a heuristic.
 
 **With more time I would:**
 
-1. Write a prompt v3 without copyable example values, and test it on new postings.
-2. Label 20–30 more postings as a development set, and keep these 26 as a held-out test set.
+1. Write a prompt v3 without copyable example values, developed on the dev set and scored once on the test set.
+2. Label 20–30 more postings as a development set. *The split, its commands and a duplicate check against the test set are in place; the postings are being collected.*
 3. Split `degree_level` into "required level" and "degree must be finished", and store duration ranges as two numbers.
-4. Use constrained decoding (Ollama's JSON-schema output) instead of relying on retries.
+4. Use constrained decoding (Ollama's JSON-schema output) instead of relying on retries. *Implemented as prompt version `v1-schema` (the v1 messages, schema-constrained decoding); not measured yet.*
 5. Have a second person label a subset, to measure agreement.
 6. Add a paid model as a reference, to separate prompt problems from model-size problems.
 
@@ -198,13 +208,14 @@ A rule written more precisely helped less than avoiding copyable values would ha
 python -m pytest
 ```
 
-95 tests run in about 4 seconds, **without Ollama, without a `.env` file and without the cache**. The test files read as a specification: each test name states one behaviour.
+111 tests run in about 4 seconds, **without Ollama, without a `.env` file and without the cache**. The test files read as a specification: each test name states one behaviour.
 
 - **Schema:** invalid categories, out-of-range numbers, min > max, extra fields and an empty company or title are rejected, and skills are cleaned.
 - **LLM call:** the OpenAI client is replaced by a `unittest.mock.MagicMock`. The tests check the exact request, that an invalid answer is retried with the validation error, that the call gives up with a clear error after the last attempt, and that connection errors are not swallowed.
 - **Batch run** (in temporary folders): cached postings are skipped, failures are reported and not cached, empty postings are never sent, and outdated cache files are re-extracted.
 - **Labels:** a malformed `labels.csv` fails with the line, ID and field.
 - **Scoring, comparison and prompts:** metrics on hand-calculated examples, the sign test, frozen prompt hashes (so cached results always match their prompt), and a leakage check that v2 shares no five-word sequence with a test posting.
+- **Splits and published results:** the test split keeps the published paths, dev and test never share a folder or an id, a dev posting copied from the test set fails the label check, and `evaluate` never overwrites results without `--overwrite`.
 
 A fixture in [tests/conftest.py](tests/conftest.py) blocks all network connections, so a forgotten real LLM call fails the test instead of reaching a server. [GitHub Actions](.github/workflows/tests.yml) installs the project and runs the suite on every push and pull request.
 
@@ -213,7 +224,7 @@ A fixture in [tests/conftest.py](tests/conftest.py) blocks all network connectio
 ```
 src/extractor/        the pipeline
   schema.py           Pydantic model of the extracted fields
-  prompts.py          prompt versions v1 and v2
+  prompts.py          prompt versions v1, v2 and v1-schema
   llm.py              LLM call with validation and retries
   run.py              batch extraction with cache
   extract_one.py      extract a single posting
@@ -222,11 +233,14 @@ src/extractor/        the pipeline
   metrics.py          field metrics (exact, similarity, set F1, macro F1)
   evaluate.py         score one run and write summary/details CSVs
   compare.py          compare runs with paired sign tests
-data/                 26 postings and labels.csv (see data/README.md)
+  splits.py           where the test and dev split keep their files
+  overlap.py          shared word sequences, for leakage checks
+data/                 26 test postings and labels.csv (see data/README.md)
+  dev/                development set for prompt work (see data/dev/README.md)
 docs/                 annotation guidelines, experiments, error analysis
 outputs/              published scores per run and comparison.md
 scripts/              check the LLM connection and validate the labels
-tests/                95 tests, no network
+tests/                111 tests, no network
 ```
 
 ## About this project
