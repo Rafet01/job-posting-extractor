@@ -61,7 +61,15 @@ Answer with JSON only, no explanation."""
 PROMPTS = {
     "v1": SYSTEM_PROMPT_V1,
     "v2": SYSTEM_PROMPT_V2,
+    # The v1 request with one change: the answer is constrained to the JSON Schema while the
+    # model generates it, instead of only being required to be some JSON object.
+    "v1-schema": SYSTEM_PROMPT_V1,
 }
+
+# Versions whose schema in the prompt keeps the field descriptions (see schema_for).
+DESCRIBED_SCHEMA = {"v1", "v1-schema"}
+# Versions that ask the API for schema-constrained decoding instead of plain JSON mode.
+SCHEMA_DECODING = {"v1-schema"}
 
 
 def without_descriptions(node: object) -> object:
@@ -76,7 +84,7 @@ def without_descriptions(node: object) -> object:
 def schema_for(version: str) -> str:
     """The JSON Schema text embedded in the system prompt of a prompt version."""
     schema = JobPosting.model_json_schema()
-    if version != "v1":
+    if version not in DESCRIBED_SCHEMA:
         # Later versions explain the fields in their rules instead of in the schema.
         schema = without_descriptions(schema)
     return json.dumps(schema, indent=2)
@@ -91,3 +99,16 @@ def build_messages(posting_text: str, version: str = "v1") -> list[dict[str, str
         {"role": "system", "content": system_prompt},
         {"role": "user", "content": posting_text},
     ]
+
+
+def response_format_for(version: str) -> dict:
+    """The response_format of the chat request: JSON mode, or decoding constrained by the schema.
+
+    Ollama turns a JSON Schema into a grammar, so the model cannot produce a token that breaks
+    the structure. Rules the schema cannot express, such as workload_min <= workload_max,
+    are still checked by Pydantic afterwards.
+    """
+    if version in SCHEMA_DECODING:
+        return {"type": "json_schema",
+                "json_schema": {"name": "job_posting", "schema": JobPosting.model_json_schema()}}
+    return {"type": "json_object"}

@@ -26,6 +26,11 @@ def test_prompt_text_is_frozen_for_cached_runs(version: str) -> None:
     assert hashlib.sha256(system_prompt.encode()).hexdigest() == PROMPT_HASHES[version]
 
 
+def test_schema_decoding_variant_changes_nothing_but_the_decoding() -> None:
+    """v1-schema is a one-variable experiment: its messages are exactly those of v1."""
+    assert build_messages("posting", "v1-schema") == build_messages("posting", "v1")
+
+
 @pytest.mark.parametrize("version", PROMPTS)
 def test_every_version_sends_a_system_prompt_and_the_posting(version: str) -> None:
     """The schema is filled in, and the posting text is sent unchanged as the user message."""

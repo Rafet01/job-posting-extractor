@@ -10,6 +10,7 @@ import pytest
 
 from extractor.llm import ExtractionError, extract_posting, get_client
 from extractor.prompts import build_messages
+from extractor.schema import JobPosting
 from tests.factories import posting, posting_fields
 
 POSTING_TEXT = "Data Intern\nExample\nZurich\n\nYou will analyse data."
@@ -51,6 +52,18 @@ def test_prompt_version_selects_the_system_prompt() -> None:
     client = mock_client(VALID_ANSWER)
     extract_posting(client, POSTING_TEXT, "demo-model", prompt_version="v2")
     assert sent_messages(client, 0) == build_messages(POSTING_TEXT, "v2")
+
+
+def test_schema_version_constrains_decoding_with_the_job_posting_schema() -> None:
+    """v1-schema sends the v1 messages, but asks for decoding constrained by the JSON Schema."""
+    client = mock_client(VALID_ANSWER)
+    extract_posting(client, POSTING_TEXT, "demo-model", prompt_version="v1-schema")
+    request = client.chat.completions.create.call_args.kwargs
+    assert request["messages"] == build_messages(POSTING_TEXT, "v1")
+    assert request["response_format"] == {
+        "type": "json_schema",
+        "json_schema": {"name": "job_posting", "schema": JobPosting.model_json_schema()},
+    }
 
 
 def test_invalid_answer_is_retried_with_the_validation_error() -> None:

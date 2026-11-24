@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 from openai import OpenAI
 from pydantic import ValidationError
 
-from extractor.prompts import build_messages
+from extractor.prompts import build_messages, response_format_for
 from extractor.schema import JobPosting
 
 load_dotenv()
@@ -47,7 +47,7 @@ def extract_posting(
         response = client.chat.completions.create(
             model=model,
             messages=messages,
-            response_format={"type": "json_object"},
+            response_format=response_format_for(prompt_version),
             temperature=0,
         )
         answer = response.choices[0].message.content or ""
