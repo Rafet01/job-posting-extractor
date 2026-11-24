@@ -63,14 +63,17 @@ def test_field_outside_the_schema_is_rejected() -> None:
         posting(salary="CHF 2500")
 
 
-@pytest.mark.xfail(strict=True, reason=(
-    "Known gap: an empty company or title passes validation. Fixing it with min_length "
-    "changes the JSON Schema embedded in prompt v1, so it needs a new prompt version."))
 @pytest.mark.parametrize("field", ["company", "role_title"])
-def test_empty_company_or_title_is_rejected(field: str) -> None:
-    """An answer without a company name or title should be retried, not cached."""
-    with pytest.raises(ValidationError):
-        posting(**{field: "  "})
+@pytest.mark.parametrize("value", ["", "   "])
+def test_empty_company_or_title_is_rejected(field: str, value: str) -> None:
+    """An answer without a company name or title is retried, not cached."""
+    with pytest.raises(ValidationError, match=f"{field}\n.*must not be empty"):
+        posting(**{field: value})
+
+
+def test_blank_check_does_not_change_the_json_schema() -> None:
+    """The check is Python-only: the schema sent in the prompt has no minLength."""
+    assert "minLength" not in str(JobPosting.model_json_schema())
 
 
 def test_skills_are_lowercased_stripped_and_deduplicated() -> None:

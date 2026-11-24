@@ -67,6 +67,15 @@ class JobPosting(BaseModel):
         description="Mandatory technical skills, lowercase, e.g. ['python', 'sql'].",
     )
 
+    @field_validator("company", "role_title")
+    @classmethod
+    def reject_blank(cls, value: str) -> str:
+        """An empty company or title means the model found nothing, so the answer is retried."""
+        # A validator instead of min_length keeps the JSON Schema, and so prompt v1, unchanged.
+        if not value.strip():
+            raise ValueError("must not be empty")
+        return value
+
     @field_validator("required_skills")
     @classmethod
     def normalize_skills(cls, skills: list[str]) -> list[str]:
