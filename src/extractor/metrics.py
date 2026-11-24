@@ -18,7 +18,7 @@ def text_similarity(gold: str | None, pred: str | None) -> float:
 def text_match(gold: str | None, pred: str | None, threshold: float = 0.85) -> bool:
     """Compare normalized strings using character-sequence similarity."""
     # Titles can differ slightly (Intern vs Internship) while describing the same job.
-    # The threshold trades missed matches for false matches. Justify it with examples.
+    # The threshold trades missed matches for false matches. docs/experiments.md explains 0.85.
     return text_similarity(gold, pred) >= threshold
 
 
