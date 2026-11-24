@@ -2,7 +2,7 @@
 
 from difflib import SequenceMatcher
 
-from extractor.normalize import normalize_place, normalize_skill, normalize_text
+from extractor.normalize import normalize_place, normalize_skill, normalize_title
 
 
 def exact_match(gold: str | int | bool | None, pred: str | int | bool | None) -> bool:
@@ -12,7 +12,7 @@ def exact_match(gold: str | int | bool | None, pred: str | int | bool | None) ->
 
 def text_similarity(gold: str | None, pred: str | None) -> float:
     """Return the continuous title score before applying a threshold."""
-    return SequenceMatcher(None, normalize_text(gold), normalize_text(pred)).ratio()
+    return SequenceMatcher(None, normalize_title(gold), normalize_title(pred)).ratio()
 
 
 def text_match(gold: str | None, pred: str | None, threshold: float = 0.85) -> bool:

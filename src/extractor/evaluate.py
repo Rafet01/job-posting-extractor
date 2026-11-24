@@ -8,10 +8,15 @@ import pandas as pd
 
 from extractor.labels import load_labels
 from extractor.metrics import classification_report, exact_match, location_prf, skill_prf, text_similarity
-from extractor.normalize import normalize_company, normalize_text
+from extractor.normalize import normalize_company, normalize_start
 from extractor.run import cache_path, load_cached
 from extractor.schema import JobPosting
 
+# Bump when a scoring rule changes, then re-evaluate every run. See docs/experiments.md.
+# 1: first version. 2: gender markers in titles and guideline start wordings normalised.
+METRIC_VERSION = 2
+# Kept at 0.85 after inspecting v1 titles: the matches just above it differ by a short
+# suffix, and lowering it would split one error type (dropped title suffixes) arbitrarily.
 TITLE_THRESHOLD = 0.85
 CLASS_FIELDS = {"degree_level", "german_level", "english_required", "is_internship"}
 METRICS = {
@@ -19,9 +24,15 @@ METRICS = {
     "role_title": f"title >= {TITLE_THRESHOLD}",
     "locations": "mean posting F1",
     "required_skills": "mean posting F1",
-    "start": "text exact (proxy)",
+    "start": "normalized exact (proxy)",
     **dict.fromkeys(CLASS_FIELDS, "macro F1"),
 }
+
+
+def output_path(kind: str, model: str, prompt: str) -> Path:
+    """Where the details or summary CSV of one run is written, e.g. outputs/summary_qwen2.5_7b_v1.csv."""
+    run_dir = cache_path(model, prompt, "001").parent
+    return Path("outputs") / f"{kind}_{run_dir.parent.name}_{run_dir.name}.csv"
 
 
 def detail_rows(labels: dict[str, JobPosting], predictions: dict[str, JobPosting | None],
@@ -45,7 +56,7 @@ def detail_rows(labels: dict[str, JobPosting], predictions: dict[str, JobPosting
             elif field == "required_skills":
                 score = skill_prf(gold, pred)[2]
             elif field == "start":
-                score = exact_match(normalize_text(gold), normalize_text(pred))
+                score = exact_match(normalize_start(gold), normalize_start(pred))
             else:
                 score = exact_match(gold, pred)
             rows.append({
@@ -115,18 +126,18 @@ def main() -> None:
     predictions = {key: load_cached(cache_path(args.model, args.prompt, key)) for key in labels}
     details = detail_rows(labels, predictions, languages)
     summary = summarize(details)
-    print(f"Model: {args.model}   Prompt: {args.prompt}")
+    print(f"Model: {args.model}   Prompt: {args.prompt}   Metric version: {METRIC_VERSION}")
     show_report(summary, details)
 
     # JSON inside CSV preserves the difference between null, [], false and strings.
     export = details.copy()
     for column in ("gold", "pred"):
         export[column] = export[column].map(lambda value: json.dumps(value, ensure_ascii=False))
-    run_dir = cache_path(args.model, args.prompt, "001").parent
     for name, frame in (("details", export), ("summary", summary)):
-        output = Path("outputs") / f"{name}_{run_dir.parent.name}_{run_dir.name}.csv"
+        output = output_path(name, args.model, args.prompt)
         output.parent.mkdir(exist_ok=True)
-        frame.assign(model=args.model, prompt=args.prompt).to_csv(output, index=False)
+        frame.assign(model=args.model, prompt=args.prompt,
+                     metric_version=METRIC_VERSION).to_csv(output, index=False)
         print(output)
 
 
