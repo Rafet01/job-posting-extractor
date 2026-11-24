@@ -1,0 +1,32 @@
+Machine Learning / AI Internship (f/m/x)
+comparis.ch
+Zürich
+
+80–100%, 6–12 months, temporary
+
+About us
+
+comparis.ch is the leading comparison platform in Switzerland. For more than 25 years we have compared health insurers, telecom providers and banks, and we run the largest Swiss online marketplace for cars and real estate. Join our data team for 6 to 12 months and work on real machine learning and AI projects.
+
+What you will do
+- Help develop and improve machine learning models, with a focus on generative AI
+- Work on a variety of use cases and support the implementation and tuning of ML algorithms
+- Explore, clean and structure training data for our models
+- Help roll out AI tools across the company and shape how we use them
+
+What we expect from you
+- Curiosity and a real interest in finding data-driven solutions
+- You are currently studying computer science, data science or a similar subject
+- Some experience with at least one programming language, like Python, Scala or Java
+- Fluent English
+- An interest in modern AI models such as large language models is a plus
+
+In return, here is what you can expect from us
+- Flexible working hours and the freedom to work from almost anywhere, whether that is a few weeks in Portugal, Barcelona or the Swiss Alps
+- Flat hierarchies, a lot of autonomy and room for your own ideas
+- A culture of transparency, respect, trust and lifelong learning
+- A skilled team spread across Europe that supports you
+
+Have we triggered your interest?
+
+Send us your application through the form below. We only consider direct applications for this position.

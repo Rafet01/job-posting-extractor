@@ -1,0 +1,42 @@
+2026 Off-cycle Internship - Data Scientist Group Internal Consulting
+UBS
+Zurich, Switzerland
+
+Your role
+
+Are you looking for a hands-on start in data science and consulting? We are hiring students for our 2026 internship programme in Group Internal Consulting, in the Predictive and Behavioral Analytics practice. Start date: 1 September 2026 or by agreement.
+
+During the internship you will:
+- come up with ideas that improve the way the bank works and help turn them into working solutions
+- solve problems and design practical solutions for transformation and integration projects
+- present your findings to internal stakeholders and turn complex material into clear recommendations
+- deepen your understanding of machine learning algorithms and learning approaches (supervised, unsupervised and reinforcement learning), for example XGBoost or neural networks
+- write Python code and build solutions with common libraries such as Pandas, scikit-learn, TensorFlow, PyTorch, Keras and spaCy
+- manage timelines, stakeholders and risks of your projects
+- build business understanding and consulting skills to advise internal clients
+- maintain relationships with the Solutions team, the Group Functions and the Business Divisions
+
+Your team
+
+You will join Group Internal Consulting in Zurich. The team belongs to the Group Integration Office, counts more than 750 people across five regions and drives transformation and change across the firm.
+
+Your expertise
+
+You:
+- have completed at least four semesters of a bachelor's degree, or graduated no more than six months ago
+- have a minimum GPA of 4.5 on the Swiss grading scale
+- are hard-working, trustworthy, dedicated and collaborative
+- think strategically and communicate well
+- are motivated to work in a demanding environment with tight deadlines
+- can show how experimenting with AI in a responsible way has improved your results or your efficiency
+- may come from any major, but you are genuinely interested in the financial industry
+
+Tell us about achievements outside the classroom too, such as organising a fundraiser, playing a team sport or mastering a difficult subject.
+
+About us
+
+UBS is a global wealth manager and a universal bank in Switzerland, present in more than 50 markets.
+
+Join us
+
+We offer a broad range of projects across the firm, a fast onboarding and room to grow. Where possible, we support flexible ways of working. Apply via the button below.

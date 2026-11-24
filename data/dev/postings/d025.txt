@@ -1,0 +1,38 @@
+University Graduate – Junior Data Scientist (Flex-Track) 100% (f/m/d)
+Julius Baer
+Zürich
+
+Start your wealth management journey with us in October 2025. Start date: 1 October 2025.
+
+Your team
+
+The Chief Risk Officer (CRO) division of Julius Baer is recruiting for its 18-month Flex-Track Graduate Programme in the Analytics & Transformation team in Zurich. The team works on risk analytics, predictive modelling and data-driven risk monitoring. During the programme you complete three rotations across teams around the world, including an international assignment.
+
+YOUR CHALLENGE
+
+What to work on?
+- Design, build and maintain statistically sound solutions to the problems of our internal clients
+- Work with business analysts and CRO teams on risk questions using scientific methods
+- Analyse complex data sets and show trends to risk, compliance and senior management
+- Propose new opportunities for the analytics roadmap
+
+What to learn?
+- Building predictive and prescriptive models for the analytics roadmap
+- Implementing analytics solutions for banking processes with colleagues worldwide
+- Turning data and methods into risk monitoring strategies
+- Explaining the value of data and analytics solutions
+
+YOUR PROFILE
+- A Master's degree from a university or university of applied sciences with above-average grades in a quantitative field such as financial engineering, mathematics or physics
+- Graduation date no more than 12 months ago
+- Initial practical experience analysing data sets and building models in R or Python
+- Experience navigating SQL databases
+- Enthusiasm for applying data and statistics to complex problems
+- A curious researcher who questions ideas and is open to other views
+- A team player with a global mindset, strong interpersonal skills and an appetite for learning
+- Fluency in English; additional languages are a plus
+- Eligibility to work in the country where you apply
+
+What you get
+
+An individual career path, fast learning, real impact and regular exchange with experienced colleagues. You can help shape your second and third rotation.

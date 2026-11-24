@@ -1,0 +1,36 @@
+Junior Financial Data Analyst Graduate
+Swiss Re
+Zurich, Zurich, CH
+
+Launch your career with impact!
+
+If you hold a Bachelor's, Master's or PhD and have up to three years of professional experience, our 18-month Graduate Programme starting on 1 September 2026 could be your next step. The role combines reinsurance risk analytics with building data products that drive insight.
+
+About the Role
+
+You will join Swiss Re's Financial Risk Management team, which has a presence in Zurich, London, New York and Bangalore. During the programme you complete one or two rotations of 16 to 20 weeks in total, for example in Treasury, Asset Management, credit risk management or model validation.
+
+Key Responsibilities
+- Analyse scenarios and their impact on risk measures and balance sheet metrics
+- Support management reporting by running and improving risk reports
+- Assess financial market risks in reinsurance transactions with our in-house models
+- Combine internal and external data into unified insights
+- Build risk models and tools for analytics across the organisation
+
+About You
+- A Master's degree in a quantitative subject (mathematics, computer science, engineering, economics, finance) and up to 3 years of professional experience
+- Solid coding skills in at least one major programming language (R and/or Python)
+- Intellectual curiosity, drive and an interest in financial and quantitative topics
+- Full proficiency in English
+
+Desirable but not required:
+- Professional experience in financial risk management (quantitative, market or credit risk), Treasury or asset management in banking or (re)insurance
+
+Opportunities for further learning and growth:
+- How a large reinsurer manages assets, liabilities and capital
+- Modelling and valuation of financial securities and insurance products
+- MS SQL Server databases, Analysis Services and the DAX query language
+- Advanced R, including package development and RShiny dashboards
+- Generative AI use cases
+
+We will share the base salary range with you during the interview process.

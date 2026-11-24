@@ -1,0 +1,33 @@
+Research Internship – Data Analyst 80 - 100 %
+Wyss Zurich Translational Center
+Zürich
+
+Wyss Zurich is a joint accelerator of ETH Zurich and the University of Zurich, made possible by a donation from a Swiss philanthropist. It brings together multidisciplinary teams to move scientific discoveries towards application. One of its projects, Recolony, works on cancer immunology. We are looking for a research intern to analyse its data.
+
+Start of employment: 2nd of May or upon agreement, temporary.
+
+Your responsibilities
+- Review the literature and analyse quantitative research data
+- Curate, clean and integrate biological and clinical data sets
+- Work with OMICS data from NGS, metabolomics and proteomics
+- Implement, test and optimise methods such as variational autoencoders
+- Run neural network and statistical analyses in PyTorch, Python and R
+- Write a scientific report and document your findings
+- Collaborate with an interdisciplinary research team
+
+Your profile
+- You are currently enrolled in a Bachelor's or Master's programme in bioinformatics, computational biology, data science, biostatistics or a related field
+- A strong background in biological or clinical data analysis and quantitative research
+- You are proficient in Python and have data science experience with PyTorch as well as machine learning experience
+- You are comfortable with OMICS data (NGS, metabolomics, proteomics)
+- You work independently and ask for guidance when you need it
+- Strong scientific communication skills and the ability to write structured reports
+- Knowledge of command-line tools and Linux-based workflows is a plus
+
+Information on your application
+
+Please send a single PDF with your motivation letter, your CV and references through the job portal.
+
+What we offer
+
+Flexible working models, continuing education, a joint language centre with ETH, sports, discounts and support for international staff.

@@ -1,0 +1,39 @@
+Working Student Data Scientist (40-60%) 12 months
+Zürich Versicherungs-Gesellschaft AG
+Zürich
+
+Workload: 40–60%. Remote working: no.
+
+Do you want to see how data science supports investment decisions? As a working student you will apply statistical models and machine learning to financial and accounting data to forecast key financial figures for Zurich's Investment Management. You will work closely with the Investment Management, Finance and macroeconomics teams.
+
+What you will do
+- Extract, clean and harmonise financial and accounting data from different sources
+- Build and validate forecasting models for income, cash flow and performance attribution
+- Prototype and compare machine learning and statistical models, including AI-based forecasting
+- Run scenario analyses and stress tests and share the results with management
+- Work with Investment Management and Finance to extend the data set
+- Visualise your insights and present them to non-technical colleagues
+
+What you bring
+- You are currently enrolled in a Master's programme in data science, computer science, statistics, finance or a related field
+- You live in Switzerland for the whole duration of the contract
+- A foundation in time-series and probabilistic forecasting (ARIMA, ETS)
+- Experience in Python (pandas, scikit-learn)
+- Knowledge of machine learning methods that are useful for financial forecasting
+- Strong analytical skills and the ability to explain technical results to business stakeholders
+- Fluent English
+
+Nice to have
+- Understanding of financial data and basic accounting principles
+- SQL for data extraction and ETL or data modelling, ideally in Databricks
+- Experience with visualisation tools such as Power BI
+
+Learning opportunities
+- Hands-on data science on financial market data
+- Designing data workflows from end to end
+- Working with real accounting platforms and data
+- Close collaboration with senior finance and investment professionals
+
+Additional information
+
+Interviews for this position will start in January. You will work at our Quai Zurich Campus.

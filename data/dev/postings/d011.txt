@@ -1,0 +1,36 @@
+Intern Data Scientist (Hybrid; m/f/x/d; 80-100%)
+Swiss Re
+Adliswil, Zurich, CH
+
+Temporary employment
+
+Would you like to apply data science and AI to (re)insurance problems in a global business? This 4-6 month internship starting in spring 2026 is part of the Data Science & AI department in Group Data Services.
+
+About the Role
+
+You will work with experienced data scientists, engineers and business experts across the whole data science lifecycle, from framing the problem to deployment.
+
+Key Responsibilities
+- Support the end-to-end delivery of AI products: data engineering, visualisation, machine learning, model interpretation and monitoring
+- Use AI foundation models to build solutions for insurance challenges
+- Join knowledge-sharing sessions, team events and hackathons
+- Learn and apply data science techniques in a (re)insurance context
+- Build reusable toolboxes that several projects can use
+
+About You
+
+We are looking for candidates who meet these requirements:
+- You recently completed a bachelor's or master's degree in a technical discipline such as data science, mathematics, statistics, computer science, engineering or physics
+- Strong knowledge of applied AI, from statistical and machine learning methods to working with foundation models (prompting, context engineering, RAG)
+- Knowledge of software and data engineering, such as code versioning and distributed computing
+- Experience with Python programming
+- An open, curious and team-oriented mindset and the wish to learn new technologies
+- Strong collaboration and communication skills, including explaining models in non-technical terms
+- Fluent in English
+- Eligible to work in Switzerland
+
+These are additional nice to haves:
+- Experience with TypeScript and SQL
+- Familiarity with cloud or data platforms such as Microsoft Azure or Palantir Foundry
+
+We are a hybrid workplace: we expect you in the office at least three days per week. Citizens of non-EU/EFTA countries and the UK need a certificate from a Swiss university confirming that the internship is an integral part of their studies. We will share the base salary range during the interview process.

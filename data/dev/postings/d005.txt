@@ -1,0 +1,31 @@
+Hochschulpraktikant:in - Health Data Analyst 80-100 %
+Universitätsspital Zürich
+Zürich
+
+Das Universitätsspital Zürich gehört zu den grössten Spitälern der Schweiz. Über 8'000 Mitarbeitende betreuen jedes Jahr mehr als 42'000 stationäre Patientinnen und Patienten und führen rund 600'000 ambulante Konsultationen durch.
+
+Die Spitalhygiene überwacht und verhindert spitalerworbene Infektionen. Im Bereich Health Data Analytics entwickeln und betreuen wir IT-Systeme, mit denen Prozess- und Ergebnisindikatoren laufend gemessen werden. Die Stelle wird über Drittmittel finanziert und ist befristet, mit der Möglichkeit einer Verlängerung.
+
+Stellenantritt: ab 15. Januar 2026
+
+Ihre Aufgaben
+- Sie schreiben SQL-Abfragen auf unser Data Warehouse und strukturieren und dokumentieren die Daten
+- Sie wirken bei der Klassifizierung der Daten und bei der Sicherung der Datenqualität mit
+- Sie unterstützen die Oberärztinnen und Oberärzte sowie die Fachabteilung bei operativen Datenaufgaben
+- Sie führen explorative Analysen durch und erstellen Visualisierungen mit Python oder BI-Tools, zum Beispiel Power BI
+- Sie nehmen an Teamsitzungen teil und tauschen sich mit Klinik und IT aus
+
+Ihr Profil
+- Bachelorabschluss in Data Science, Informatik, Naturwissenschaften oder einem verwandten Gebiet
+- Interesse an medizinischen Daten und komplexen Datenstrukturen
+- Grundkenntnisse in Statistik und maschinellem Lernen sind wünschenswert
+- Erste praktische Projekterfahrung, etwa aus einem Praktikum oder einer Abschlussarbeit, ist von Vorteil; Berufserfahrung wird nicht vorausgesetzt
+- Freude an der Arbeit in einem interdisziplinären Team
+- Analytisches Denken sowie eine strukturierte und genaue Arbeitsweise
+- Selbstständigkeit, Lernbereitschaft und Lösungsorientierung
+- Kommunikationsstärke und Teamfähigkeit
+- Gute IT-Kenntnisse in SQL, Python und MS Office
+- Grundkenntnisse in BI-Tools (z. B. Power BI oder Tableau) und in Git
+- Sehr gute Deutsch- und Englischkenntnisse
+
+Wir freuen uns auf Ihre vollständige elektronische Bewerbung mit Lebenslauf, Diplomen und Zeugnissen über das Jobportal.

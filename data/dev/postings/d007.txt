@@ -1,0 +1,33 @@
+Ingénieur IA & Data Science
+F3DL
+Lausanne
+
+F3DL (Formations 3D Léman), société du groupe Moraine SA, est une ESN active en Suisse romande. Pour notre département informatique, nous recherchons un ou une spécialiste en intelligence artificielle et data science pour des missions à partir de janvier 2026 (CDD, temps partiel ou temps complet, 50 à 100 %). Vous rejoindrez une équipe d'experts en IA et en données.
+
+Mission
+
+Transformer les données en solutions d'IA concrètes qui apportent de la valeur à l'organisation et à ses utilisateurs.
+
+Votre rôle :
+- Identifier et prioriser les cas d'usage stratégiques de l'IA, par exemple la maintenance prédictive, la cybersécurité cognitive, l'optimisation de l'offre ou un assistant pour les voyageurs
+- Concevoir des architectures « AI-native » : gouvernance et qualité des données, data lakehouse et feature store, pipelines MLOps, intégration IoT et temps réel
+- Construire et industrialiser toute la chaîne IA, de la collecte des données à la modélisation (ML, deep learning, LLM) et au déploiement (microservices, edge, embarqué)
+- Garantir la conformité éthique et réglementaire (RGPD, AI Act européen)
+- Documenter les solutions, transmettre les compétences et rendre les équipes internes autonomes
+
+Profil recherché
+- Diplôme en informatique, mathématiques appliquées, IA ou équivalent
+- Expérience confirmée en data science et en ingénierie de l'IA
+- Très bonne maîtrise du machine learning et du deep learning
+- Connaissance des pipelines MLOps et des architectures de données modernes
+- Sensibilité aux questions éthiques et réglementaires (RGPD, AI Act)
+- Capacité à faire passer un prototype au stade de solution industrialisée avec un impact mesurable
+- Le poste est basé à Genève : si ce déplacement vous convient, n'hésitez pas à postuler
+
+Avantages
+- Des projets d'IA innovants et visibles
+- Des cas d'usage concrets à grande échelle
+- Un environnement stimulant entre data, IA et cybersécurité
+- Un développement continu de vos compétences au sein d'une équipe passionnée
+
+Prêt à relever le défi ? Envoyez-nous votre candidature en réponse à cette annonce.

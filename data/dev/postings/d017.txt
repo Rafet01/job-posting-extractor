@@ -1,0 +1,37 @@
+Stage de Data Science - Intelligence artificielle appliquée aux données hospitalières - 100%
+Hôpitaux Universitaires de Genève
+Genève
+
+Description de l'entreprise
+
+Les HUG emploient plus de 13'000 collaboratrices et collaborateurs dans 160 métiers. Le Service prévention et contrôle de l'infection (SPCI) prévient et contrôle les infections et les microorganismes résistants ; il est centre collaborateur de l'OMS.
+
+Description du poste
+
+Le projet SEARCH-AI, financé par la fondation privée des HUG, vise à mieux cibler le dépistage des patients porteurs de bactéries multirésistantes (BLSE, EPC, ERV) à l'admission et pendant le séjour, grâce au machine learning appliqué aux données cliniques.
+
+Vos missions :
+- Prétraiter et structurer des bases de données cliniques
+- Construire des variables à partir de données médicales longitudinales (feature engineering)
+- Développer et comparer des modèles de machine learning : régression logistique pénalisée, LASSO, modèles à base d'arbres, XGBoost
+- Évaluer la performance et l'interprétabilité des modèles, par exemple avec SHAP
+- Documenter le pipeline et participer aux discussions scientifiques
+- Contribuer éventuellement à une publication ou à une présentation en congrès
+
+Qualifications
+
+Ce stage s'adresse aux étudiantes et étudiants en fin d'études (Master ou école d'ingénieur) spécialisés en data science, machine learning, bioinformatique, statistiques appliquées ou informatique, et en possession d'une convention de stage.
+- Bonne maîtrise de Python ou R pour l'analyse de données
+- Connaissances en machine learning supervisé et bases solides en statistiques et en modélisation
+- Expérience de la manipulation de grandes bases de données
+- Intérêt marqué pour les applications de l'IA en santé ou en biomédecine
+- Seront considérés comme des atouts : une expérience avec des données médicales ou biologiques, des connaissances en épidémiologie ou en santé publique, la familiarité avec les méthodes d'interprétabilité des modèles
+- Une bonne maîtrise de l'anglais est également souhaitée
+
+Informations supplémentaires
+- Entrée en fonction : à convenir
+- Taux d'activité : 100 %
+- Type de contrat : CDD de 6 mois soumis à convention de stage
+- Délai de candidature : 17.04.2026
+
+Seules les candidatures déposées sur notre plateforme de recrutement sont prises en compte.

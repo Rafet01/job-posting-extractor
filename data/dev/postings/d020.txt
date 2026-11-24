@@ -1,0 +1,27 @@
+Data Analyst (m/w/d, 80 - 100%)
+Schweizerische Exportrisikoversicherung SERV
+Zürich
+
+Die SERV ist eine öffentlich-rechtliche Anstalt des Bundes. Wir versichern Exportgeschäfte von Schweizer Unternehmen gegen politische und wirtschaftliche Risiken und tragen so dazu bei, Arbeitsplätze in der Schweiz zu erhalten. Für eines unserer zwei Teams suchen wir in Zürich eine:n Data Analyst, die oder der unterschiedliche Datenquellen zusammenführt und auswertet.
+
+Deine Aufgaben
+- Du führst strukturierte und unstrukturierte Daten aus verschiedenen Formaten und Quellen zusammen
+- Du bereitest die Daten für die Auswertung in Analyse-Werkzeugen auf
+- Du erstellst aussagekräftige Berichte zu deinen Analysen
+- Du integrierst automatisierte Auswertungen in bestehende Prozesse
+- Du berätst bei Analysen und hältst Auswertungen und Werkzeuge aktuell und dokumentiert
+
+Dein Profil
+- Abgeschlossenes Bachelor- oder Masterstudium in Informatik, Statistik, Mathematik oder einem vergleichbaren Bereich
+- Erste Berufserfahrung in der Datenanalyse und Interesse an modernen Analyse- und Visualisierungstools
+- Erfahrung mit SQL und Microsoft-SQL-Server-Datenbanken
+- Kenntnisse in Python oder R sind von Vorteil
+- Teamfähigkeit, Kommunikationsstärke und eine proaktive Arbeitsweise
+- Lernbereitschaft und Lust, dich in der Datenanalyse weiterzuentwickeln
+
+Was wir dir bieten
+- Raum für eigene Ideen und Verantwortung
+- Eine sinnvolle Aufgabe zugunsten der Schweizer Exportwirtschaft
+- Ein kollegiales Umfeld mit einer Kultur der offenen Tür
+- Ein hybrides Arbeitsmodell in einem zentral gelegenen Büro in Zürich
+- Individuelle Weiterbildung und Unterstützung bei der Vereinbarkeit von Beruf und Privatleben

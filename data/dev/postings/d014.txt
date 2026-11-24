@@ -1,0 +1,26 @@
+Praktikum «KI + Machine Learning» 80 - 100%
+Kanton Zürich
+Zürich
+
+Das Statistische Amt treibt die digitale Transformation des Kantons Zürich voran. Für unser Team «Data» suchen wir ab sofort oder nach Vereinbarung eine Praktikantin oder einen Praktikanten für ein 6-monatiges Praktikum mit Option auf Verlängerung auf ein Jahr (80–100 %).
+
+Das machst du bei uns
+- Du entwickelst KI-Pilotprojekte, zum Beispiel mit Natural Language Processing, generativer KI, Large Language Models, KI-Agenten oder semantischer Suche
+- Du analysierst Herausforderungen der Verwaltung und prüfst, wo KI wirklich hilft
+- Du begleitest KI-Vorhaben von der Bedarfsanalyse bis zur Umsetzung
+- Du arbeitest in einem interdisziplinären Team mit Fachleuten aus Statistik, Informatik und Verwaltung
+
+Das bringst du mit
+- Du studierst oder hast ein abgeschlossenes Studium in Data Science, Informatik, Statistik oder einem verwandten Fach
+- Du hast sehr gute Python-Kenntnisse und fundierte Erfahrung mit Machine-Learning-Frameworks
+- Du hast bereits eigene ML-Projekte umgesetzt, vor allem in NLP und generativer KI
+- Dich interessieren Fragen wie: Ist KI hier überhaupt sinnvoll? Was brauchen die Nutzenden wirklich? Welche Daten dürfen wir wie verwenden? Wie prüfen wir, ob das Problem wirklich gelöst ist?
+
+Das bieten wir dir
+- Praxisnahe Arbeit mit modernen Werkzeugen in einem kollegialen Team
+- Einen zentralen Arbeitsort im Herzen von Zürich und die Möglichkeit für Homeoffice
+- Raum für deine persönliche Entwicklung und eine sinnstiftende Aufgabe
+
+Klingt spannend?
+
+Bewirb dich online mit einem Motivationsschreiben bis zum 19. April 2026. Gerne kannst du uns auch Referenzprojekte über GitHub zeigen.

@@ -1,0 +1,31 @@
+Climate Data Science Intern
+MSCI
+Zurich
+
+Your Team Responsibilities
+
+The MSCI Climate Risk Center brings together climate researchers, financial modellers and software engineers. We turn environmental challenges into financial metrics that help large investors make decisions. This 6-month internship lets you contribute to that work. The role can be based in either our Zurich or our Geneva office.
+
+Your Key Responsibilities
+- Develop methods, models, metrics and interactive tools that assess climate risk in investment portfolios
+- Contribute to software and data science projects on climate risk, including data analysis, statistical modelling and software development
+- Work in a cross-functional team of researchers, analysts, technologists and client-facing colleagues
+- Anticipate challenges and adapt quickly to change
+- Write, maintain and validate model documentation
+
+Your skills and experience that will help you excel
+- Experience in data manipulation and software development, particularly with Python, Pandas and NumPy
+- A background in machine learning and artificial intelligence
+- A demonstrated interest in climate science, environmental modelling and sustainability
+- Excellent written and verbal communication skills
+- You are self-motivated, proactive and think logically
+
+What we offer you
+- Transparent compensation and benefits tailored to your location
+- Flexible working arrangements and a global onboarding programme
+- Learning platforms and multi-directional career paths
+- Employee resource groups and a welcoming office in the Zurich-West district
+
+Recruitment process
+
+Apply online with your CV. After a conversation with our recruiter you meet the team, and then we make our decision.

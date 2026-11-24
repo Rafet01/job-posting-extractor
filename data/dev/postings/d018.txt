@@ -1,0 +1,32 @@
+Stagiaire Data Analyst
+Ecorobotix SA
+Yverdon-les-Bains
+
+Taux d'activité : 100 %
+
+Rejoins une équipe de passionnés !
+
+Ecorobotix développe des robots agricoles basés sur l'intelligence artificielle. Grâce à une pulvérisation ultra-précise et à des logiciels embarqués, nos solutions réduisent fortement l'usage de produits chimiques. Notre équipe Data Operations Platform cherche un ou une stagiaire pour l'aider à concevoir la technologie agricole de demain.
+
+Profil recherché :
+- Tu es étudiant·e ou récemment diplômé·e d'un Master en Computer Science ou Data Science
+- Tu as de bonnes compétences en programmation Python
+- Tu es autonome en analyse de données et d'images
+- Tu t'adaptes facilement à un environnement dynamique et aimes les défis technologiques
+- Esprit d'équipe, créativité et autonomie font partie de tes atouts
+- Technologies utilisées dans l'équipe : Python, SQL, Linux, SIG
+- En bonus : Airflow et/ou Django
+
+Ce que tu feras chez nous :
+- Repérer dans notre base de données centrale les missions clients qui se chevauchent, à l'aide des données GPS
+- Définir les meilleurs KPI d'efficacité des missions en fonction de la densité des cultures et des mauvaises herbes
+- Créer un outil de visualisation qui superpose les missions et les images des champs
+- Intégrer l'algorithme d'efficacité dans le pipeline de données
+- Mettre l'outil de visualisation à disposition dans le portail clients
+
+Pourquoi nous rejoindre ?
+- Un stage rémunéré selon ton niveau d'études
+- Des projets concrets avec un vrai impact environnemental
+- Une équipe multiculturelle, des événements d'équipe chaque mois et des événements d'entreprise chaque trimestre
+
+Date de début : dès que possible

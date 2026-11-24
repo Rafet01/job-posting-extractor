@@ -1,0 +1,23 @@
+Praktikantin Data Science (w/m)
+IWB Industrielle Werke Basel
+Basel
+
+Pensum: 100 %
+
+IWB produziert Strom und Wärme und versorgt die Region Basel mit Wasser, Internet und Mobilitätslösungen. Als führende Anbieterin erneuerbarer Energie in der Schweiz suchen wir Verstärkung für unser Data-Team im Vertrieb.
+
+Freue dich auf spannende Aufgaben:
+- Du hilfst mit, den Vertriebs-Data-Lake zu betreuen und weiterzuentwickeln
+- Du unterstützt uns bei der Sicherung der Datenqualität im Vertrieb
+- Du analysierst und bereitest strukturierte und unstrukturierte Daten auf, etwa aus CRM- und Kundensystemen
+- Du hilfst mit, Datenpipelines und Monitoring-Systeme zu betreiben und zu verbessern
+- Du erstellst wiederkehrende Analysen und Reports, um datengetriebene Prozesse zu optimieren
+
+Damit machst du uns noch besser:
+- Du befindest dich in der Endphase deines Studiums in Data Science, Statistik, Naturwissenschaften oder Wirtschaftsinformatik oder hast dein Studium in den letzten 12 Monaten abgeschlossen
+- Gute Kenntnisse in Statistik, Data Mining, Machine Learning, Python und SQL
+- Interesse an Themen der Energiewirtschaft
+- Kenntnisse im Umgang mit modernen Data-Science-Tools und -Plattformen
+- Analytisches Denken, Genauigkeit und Eigeninitiative
+
+Wir freuen uns auf deine Bewerbung und auf spannende Projekte in einem kollegialen Umfeld.

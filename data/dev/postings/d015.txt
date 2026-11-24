@@ -1,0 +1,37 @@
+Hochschulpraktikum Risk & Research
+ewz
+Zürich Oerlikon
+
+Pensum: 80–100 %
+
+Seit über 130 Jahren versorgt ewz die Region mit Energie. Heute stehen nachhaltige Energieproduktion, smarte Energielösungen und Kommunikationsnetze im Zentrum unserer Arbeit.
+
+Dafür setzt du deine Energie ein
+- Du gestaltest und baust interaktive Power-BI-Reports in einer Cloud-Umgebung
+- Du bindest Daten aus Datenbanken, APIs und News-Feeds an und bereitest sie auf
+- Du sicherst die Datenqualität und optimierst die Reporting-Logik
+- Du analysierst Markt-, Energie- und Wirtschaftsnachrichten mit NLP- und Machine-Learning-Methoden
+- Du bereitest Analysen zu Risiko- und Research-Fragen im Energiesektor auf
+
+Das bringst du mit
+- Du bist in einem laufenden oder hast ein abgeschlossenes Bachelor- oder Masterstudium in Data Science, Energy Science, Ingenieur- oder Naturwissenschaften
+- Ausgeprägtes analytisches Denken und Freude an Daten, Kennzahlen und komplexen Zusammenhängen
+- Erfahrung mit Python und solide Kenntnisse in ML- oder NLP-Technologien; Kenntnisse in SQL, Power BI oder ähnlichen Tools sind von Vorteil
+- Interesse an Energie-, Markt- und Wirtschaftsthemen
+- Eine selbstständige und strukturierte Arbeitsweise und eine schnelle Auffassungsgabe
+- Sehr gute Deutschkenntnisse in Wort und Schrift
+
+Dein Arbeitsort
+
+Tramstrasse 35, 8050 Zürich
+
+Das hast du dir verdient
+- Flexible Arbeitsmodelle und bis zu zwei zusätzliche Ferienwochen
+- Teilzeit auf allen Stufen, Jobsharing und unbezahlter Urlaub
+- 60 % der Pensionskassenbeiträge übernimmt ewz
+- Mobilitätsbeitrag, Lunch-Checks und Vergünstigungen
+- Weiterbildung und eine sinnhafte Arbeit
+
+So lernen wir uns kennen
+
+Nach deiner Bewerbung folgt ein persönliches Gespräch, danach entscheiden wir. Personaldienstleister berücksichtigen wir für diese Stelle nicht.

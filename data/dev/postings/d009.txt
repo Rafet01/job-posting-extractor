@@ -1,0 +1,31 @@
+Data Analytics Internship – Quality & CI 80 - 100% (f/m/d)
+Hitachi Energy AG
+Zurich
+
+The opportunity
+
+Our Quality and Continuous Improvement team is looking for an intern to strengthen its data analytics with Microsoft data tools. You will build data models and KPI dashboards and turn time-series and operational data into insights. You will also help improve our internal tools, documentation and training material, including training content created with AI. The internship lasts 6 months.
+
+How you'll make an impact
+- Build and maintain Power BI data models and DAX measures for our KPIs and design clear dashboards
+- Explore data in Power BI or Excel and, where useful, in Azure notebooks, and define metrics
+- Set up simple forecasting and anomaly detection baselines, compare methods and document the results
+- Work with data engineers on data structure, data quality and refresh schedules, including row-level security and incremental refresh
+- Keep PBIX files, SQL queries and notebooks reproducible and documented (metric definitions, lineage, change logs)
+- Help update the Quality & CI SharePoint site
+- Maintain the training catalogue and help with reporting on development activities
+- Create training content with AI tools and process the feedback
+
+Your background
+- Enrolled in a Bachelor's or Master's degree in data science, statistics, applied mathematics, computer science, industrial or electrical engineering or a related field
+- Strong Power BI skills, including DAX and dashboard design
+- Power Query and SQL for data preparation
+- Advanced Excel, including PivotTables
+- Knowledge of statistics and basic machine learning concepts
+- Clear communication with non-technical audiences and a structured, reproducible way of working
+
+More about us
+
+We offer flexible working conditions, mentoring and an inclusive environment that supports your personal and professional growth.
+
+Please apply with a cover letter, your transcript of records and your CV. Applicants from outside the EU/EFTA need an official university certificate confirming that the internship is mandatory for their studies.

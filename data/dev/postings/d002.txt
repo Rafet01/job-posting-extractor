@@ -1,0 +1,37 @@
+Machine Learning Intern 2027 (Zurich)
+Pinterest
+Zurich
+
+About Pinterest:
+
+Pinterest is a visual discovery platform where people find ideas and plan what to do next. As a machine learning intern, you will use ML and AI to solve real product and engineering problems together with engineers, product managers and data scientists, and help prototype and improve ML-powered features.
+
+What you'll do:
+- Own a well-scoped ML project from defining the problem to running experiments, implementing the solution and presenting the results, with support from your mentor.
+- Contribute to applied ML and AI research that shapes the Pinterest product.
+- Collect and analyse data to build data-driven models.
+- Write clean, maintainable code with documentation and tests.
+- Apply techniques such as NLP or graph-based methods to modelling and ranking problems in discovery, ads and search.
+- Break technical problems down, propose an approach and implement it.
+- Deliver milestones, share your progress and ask for help when you need it.
+- Use AI tools to speed up analysis and iteration, while checking their output carefully.
+
+What we are looking for:
+- You are working towards a Master's or PhD degree in Computer Science, Machine Learning, NLP, Statistics, Information Sciences or a related field.
+- Experience with machine learning in areas such as ranking, computer vision, NLP, recommendations, embeddings or information retrieval.
+- Experience with big data technologies (e.g. Hadoop or Spark) and scalable real-time stream processing.
+- Proficiency in at least one of the following: Java, C++, Python, TensorFlow, PyTorch or MLFlow.
+- Experience with research and with solving analytical problems.
+- You communicate well, work well in a team and find solutions to open-ended problems.
+
+In-Office Requirement:
+
+This internship is onsite in our Zurich office. The programme runs full-time during normal business hours from Monday to Friday, and we expect you in the office for in-person collaboration two to three weekdays per week. You need to live within commuting distance of Zurich.
+
+Relocation Statement:
+
+This position may be eligible for relocation assistance.
+
+Our Commitment to Inclusion:
+
+Pinterest is an equal opportunity employer.

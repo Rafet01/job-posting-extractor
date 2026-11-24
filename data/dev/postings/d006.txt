@@ -1,0 +1,30 @@
+Stage Intelligence Artificielle
+Seculabs
+Lausanne
+
+Taux d'activité : 100 %
+
+Pour renforcer son unité AI Swiss Experts Labs, Seculabs recherche un ou une stagiaire pour une durée de 3 à 6 mois, dès que possible. Nos clients vont des PME aux grandes multinationales, dans le secteur privé comme dans le secteur public.
+
+Votre mission :
+- Participer aux tests et à la validation de nos produits basés sur l'intelligence artificielle
+- Analyser les performances des modèles et identifier des pistes d'amélioration
+- Définir des cas de test représentatifs et contribuer à leur automatisation
+- Rédiger des rapports clairs sur les résultats des tests et vos recommandations
+- Assurer une veille technologique sur l'IA, les outils de machine learning et les bonnes pratiques
+- Collaborer avec l'équipe R&D pour affiner les modèles et améliorer la qualité des livrables
+
+Profil recherché :
+- Formation en cours (Bachelor ou Master) en école d'ingénieur, université ou équivalent, en informatique, mathématiques appliquées, data science ou intelligence artificielle
+- Une première expérience en IA, machine learning ou data science (stage, projet académique ou personnel) est un plus
+- Connaissances de base en Python et dans des bibliothèques de data science ou d'IA, par exemple Pandas, scikit-learn, TensorFlow ou PyTorch
+- Bon niveau de français, à l'oral comme à l'écrit ; la maîtrise de l'anglais technique est un atout
+- Autonomie, rigueur, esprit d'équipe et envie d'apprendre
+- Résidence en Suisse obligatoire pendant toute la durée du stage
+- Casier judiciaire vierge
+
+Ce que nous offrons :
+- Un stage encadré avec un plan de développement des compétences personnalisé
+- Des projets concrets et innovants en intelligence artificielle
+- Une équipe jeune, dynamique et passionnée
+- Une rémunération de CHF 1'800 à 2'200 par mois
