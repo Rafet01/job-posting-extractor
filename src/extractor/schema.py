@@ -16,7 +16,13 @@ class JobPosting(BaseModel):
 
     company: str = Field(description="Name of the hiring company.")
     role_title: str = Field(description="Job title as written in the posting.")
-    location: str = Field(description="City of the workplace, e.g. 'Zürich'.")
+    locations: list[str] = Field(
+        default_factory=list,
+        description=(
+            "Every city or place where this job can be based, e.g. ['Basel', 'Zurich']. "
+            "Empty if none is given."
+        ),
+    )
     workload_min: int | None = Field(
         default=None,
         ge=10,

@@ -15,11 +15,12 @@ Read qualifiers with the phrase they modify. In “Python required, R preferred�
 Use UTF-8, comma-separated columns and one row per posting. Preserve the leading zeros in `id`. Quote any cell containing a comma or a double quote according to standard CSV rules. Use the following header.
 
 ```csv
-id,language,company,role_title,locations,workload_min,workload_max,duration_months,start,german_level,english_required,degree_level,is_internship,required_skills
+id,language,company,role_title,locations,workload_min,workload_max,duration_months,start,german_level,english_required,degree_level,is_internship,required_skills,notes
 ```
 
 - `id` is the three-digit posting filename without the extension, e.g. `001`.
 - `language` is the main language of the posting body, one of `en`, `de` or `fr`. It is dataset metadata.
+- `notes` is optional annotator metadata for ambiguity or review. Leave it empty when no note is needed. Quote a note containing a comma, e.g. `"German or French required, check"`.
 - Write booleans as `true` or `false`. Use the field-specific defaults below for missing information. An empty list is an empty CSV cell.
 - Use `;` between locations or separate skill requirements. Use `|` between skills that satisfy the same requirement. Keep spaces inside names such as `power bi` and omit spaces around separators.
 
@@ -139,8 +140,8 @@ Add a row when a new spelling refers to an existing canonical skill.
 These complete rows follow the CSV header above. In the first row, the skills cell literally contains `python;aws|azure|gcp`.
 
 ```csv
-001,en,Deloitte,AI & Analytics Consulting Manager,Basel;Zurich;Geneva,80,100,,,plus,true,unknown,false,python;aws|azure|gcp
-003,de,Losinger Marazzi,Data & AI Intern,Lausanne,,,6,,plus,false,bachelor_ok,true,sql;power bi;python;pandas
+001,en,Deloitte,AI & Analytics Consulting Manager,Basel;Zurich;Geneva,80,100,,,plus,true,unknown,false,python;aws|azure|gcp,
+003,de,Losinger Marazzi,Data & AI Intern,Lausanne,,,6,,plus,false,bachelor_ok,true,sql;power bi;python;pandas,
 ```
 
 **001 · Deloitte.** The header lists three cities, and the body repeats them. The role requires English and prefers German and/or French. An engineering or mathematics background and six years of experience establish no particular degree. Python and experience with one or more of the three named cloud providers are mandatory. R, the listed workbench tools and the visualisation tools are preferences.

@@ -10,7 +10,7 @@ from extractor.schema import JobPosting
 data = {
     "company": "D ONE",
     "role_title": "Intern LLM-Based Information Extraction",
-    "location": "Zürich",
+    "locations": ["Zürich"],
     "workload_min": 80,
     "workload_max": 100,
     "duration_months": 6,

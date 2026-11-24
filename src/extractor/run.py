@@ -8,6 +8,8 @@ import argparse
 import time
 from pathlib import Path
 
+from pydantic import ValidationError
+
 from extractor.llm import ExtractionError, extract_posting, get_client, get_default_model
 from extractor.schema import JobPosting
 
@@ -23,10 +25,11 @@ def cache_path(model: str, prompt_version: str, posting_id: str) -> Path:
 
 
 def load_cached(path: Path) -> JobPosting | None:
-    """Return the cached result, or None if there is none."""
-    if not path.exists():
+    """Return a cached result if it matches the current schema."""
+    try:
+        return JobPosting.model_validate_json(path.read_text(encoding="utf-8"))
+    except (FileNotFoundError, ValidationError):
         return None
-    return JobPosting.model_validate_json(path.read_text(encoding="utf-8"))
 
 
 def save_cached(path: Path, posting: JobPosting) -> None:
@@ -36,7 +39,7 @@ def save_cached(path: Path, posting: JobPosting) -> None:
 
 
 def run(model: str, prompt_version: str, force: bool = False) -> None:
-    """Extract every posting in POSTINGS_DIR, skipping cached ones unless force is set."""
+    """Extract postings that lack a valid cached result, or all postings if forced."""
     client = get_client()
     files = sorted(POSTINGS_DIR.glob("*.txt"))
     counts = {"cached": 0, "extracted": 0, "failed": 0, "skipped": 0}
@@ -47,7 +50,7 @@ def run(model: str, prompt_version: str, force: bool = False) -> None:
         posting_id = file.stem  # '001.txt' -> '001'
         path = cache_path(model, prompt_version, posting_id)
 
-        if not force and path.exists():
+        if not force and load_cached(path) is not None:
             counts["cached"] += 1
             continue
 

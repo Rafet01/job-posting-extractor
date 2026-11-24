@@ -1,0 +1,26 @@
+id,language,company,role_title,locations,workload_min,workload_max,duration_months,start,german_level,english_required,degree_level,is_internship,required_skills,notes
+001,en,Deloitte,AI & Analytics Consulting Manager,Basel;Zurich;Geneva,80,100,,,plus,true,unknown,false,python;aws|azure|gcp,
+002,en,NVIDIA,GPU Software Engineering Intern,Poland,,,,,none,false,bachelor_ok,true,c|c++;python;avx|neon|openmp|mpi|cuda|opencl,C/C++ interpreted as alternatives alongside Python.
+003,de,Losinger Marazzi,Data & AI Intern,Lausanne,,,6,,plus,false,bachelor_ok,true,sql;power bi;python;pandas,
+004,en,SIX,Project Portfolio Controlling Intern,,,,6,,required,true,bachelor_ok,true,excel,
+005,en,Abionic,Internship – Clinical Research & Data Management (3–6 months),Epalinges,,,3,asap,none,true,bachelor_ok,true,excel,
+006,en,CERN,"Short Term Internship 2027 - Data Science, AI & Analytics",Geneva,,,1,to be discussed,none,false,bachelor_ok,true,,English or French accepted. Hours given without a percentage.
+007,en,Apple,Internship - Reasoning and agentic capabilities of LLMs,Lausanne,,,,,none,false,unknown,true,,Students is a page category. PhD preferred and PyTorch given as an example.
+008,en,HELP Media,Internship AI & Process Automation (100%),Zürich,100,100,12,,none,false,bachelor_ok,true,,The employer describes a 12-month internship despite the permanent-position tag.
+009,de,Universitätsspital Zürich,Hochschulpraktikant:in Process and Data Analytics 80-100%,Zürich,80,100,12,1.2.27 oder nach Vereinbarung,required,true,bachelor_ok,true,,
+010,en,Apple,Internship - AIML Research,Zurich,,,,,none,false,unknown,true,,Review degree_level: MSc and PhD students both qualify.
+011,en,Swissquote Bank,MLOps Engineer Intern,Gland,,,,,none,true,bachelor_ok,true,python,Full-time with no percentage. Willingness to learn deployment tools is sufficient.
+012,de,Kanton St. Gallen,Praktikant/in Data Science und Automatisierung,St.Gallen,100,100,,1. Januar 2027 oder nach Vereinbarung,none,false,unknown,true,r;git,Review degree_level: current master's students and master's graduates both qualify.
+013,fr,Aéroport International de Genève,Stagiaire Data Science & Énergie,Genève,100,100,6,février 2027,none,false,master_only,true,python;excel;power bi,Master-level stage conventionné. February through July spans six calendar months.
+014,en,Swiss International Air Lines,"Internship in Customer Data Analytics & AI (limited to 6-12 months, 50-100%)",Zürich/Kloten,50,100,6,"January 01, 2027",none,false,graduate_only,true,sql;python,Employer title gives 50-100% despite platform metadata. Requirements specify a degree although the pay scale also mentions students. English is the application language.
+015,de,AXA,Werkstudent:in Date Driven WeCare,Winterthur,50,80,,asap,none,false,bachelor_ok,false,sql;python,Ends on 31.12.2026 with no fixed start date.
+017,en,ETH Zurich,Machine Learning Engineer,Zurich,100,100,,January 1st,plus,true,graduate_only,false,,
+018,fr,Assura,Stagiaire en analyse de données IT - Stage de 6 à 12 mois - 100%,Lausanne,100,100,6,1er février 2027,none,false,bachelor_ok,true,python;sql,
+019,fr,Assura,Stagiaire en Sciences des données – Stage de 6 à 12 mois – 100%,Le Mont-sur-Lausanne,100,100,6,1er février 2027,plus,false,master_only,true,,Willingness to learn Python is sufficient.
+020,de,santéservices,Datenanalyst:in 80-100% | Solothurn oder Zürich,Solothurn;Zürich,80,100,,asap,required,false,graduate_only,false,,"Both German and French required at different levels. R, Python and Stata given as examples."
+021,en,Swiss Re,Actuarial Data Analyst - Graduate,Zurich,,,18,1 September 2027,none,true,graduate_only,false,,"Python, R, SQL or similar languages accepted. The list is open-ended."
+022,de,Migros-Genossenschafts-Bund,Data Scientist,Zürich,60,100,,,required,true,graduate_only,false,sql;python,
+023,en,Tufa Labs,"AI Research Engineer, Reinforcement Learning & Large-Scale Model Training",Zürich,100,100,,1 March 2027 or by agreement,none,true,unknown,false,,Five years of equivalent experience can substitute for a degree.
+024,de,Bundesamt für Informatik und Telekommunikation BIT,Hochschulpraktikant/-in (1393),Zollikofen,80,100,,,none,false,graduate_only,true,excel,Two official languages required without naming either.
+025,en,UBS,"2027 Internship – Marketing, Design and Digital Sales - Zurich",Zürich,,,6,1 February 2027,plus,false,bachelor_ok,true,,The programme welcomes students with four completed semesters and mentions graduation within the last 12 months.
+026,de,Stadt Bern,Praktikant*in Statistik,Bern,50,100,6,1. Januar 2027,required,false,unknown,true,r;excel,
