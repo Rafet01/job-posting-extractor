@@ -14,6 +14,7 @@ __pycache__/
 # LLM cache (regenerable)
 outputs/cache/*
 !outputs/cache/.gitkeep
+outputs/dev/cache/
 
 # Editor / OS
 .vscode/

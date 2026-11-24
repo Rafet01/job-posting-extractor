@@ -2,6 +2,7 @@
 
 Usage:
     python -m extractor.run --model llama3.1 --prompt v1
+    python -m extractor.run --model llama3.1 --prompt v1 --split dev
 """
 
 import argparse
@@ -12,7 +13,7 @@ from pydantic import ValidationError
 
 from extractor.llm import ExtractionError, extract_posting, get_client, get_default_model
 from extractor.schema import JobPosting
-from extractor.splits import TEST, Split
+from extractor.splits import SPLITS, TEST, Split
 
 
 def cache_path(model: str, prompt_version: str, posting_id: str, split: Split = TEST) -> Path:
@@ -42,7 +43,7 @@ def run(model: str, prompt_version: str, force: bool = False, split: Split = TES
     files = sorted(split.postings_dir.glob("*.txt"))
     counts = {"cached": 0, "extracted": 0, "failed": 0, "skipped": 0}
 
-    print(f"{len(files)} postings, model={model}, prompt={prompt_version}")
+    print(f"{len(files)} {split.name} postings, model={model}, prompt={prompt_version}")
 
     for file in files:
         posting_id = file.stem  # '001.txt' -> '001'
@@ -78,9 +79,11 @@ def main() -> None:
     parser.add_argument("--model", default=None, help="Model name (default: LLM_MODEL in .env)")
     parser.add_argument("--prompt", default="v1", help="Prompt version (default: v1)")
     parser.add_argument("--force", action="store_true", help="Ignore the cache and extract again")
+    parser.add_argument("--split", choices=SPLITS, default="test",
+                        help="test: the published 26 postings (default). dev: postings for prompt work")
     args = parser.parse_args()
 
-    run(args.model or get_default_model(), args.prompt, args.force)
+    run(args.model or get_default_model(), args.prompt, args.force, SPLITS[args.split])
 
 
 if __name__ == "__main__":

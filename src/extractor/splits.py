@@ -33,4 +33,7 @@ class Split:
 
 
 TEST = Split("test", data_dir=Path("data"), output_dir=Path("outputs"), id_pattern=r"[0-9]{3}")
-SPLITS = {split.name: split for split in (TEST,)}
+# Ids start with 'd' so a dev posting can never share an id with a test posting,
+# and every row in a results file shows which set it came from.
+DEV = Split("dev", data_dir=Path("data/dev"), output_dir=Path("outputs/dev"), id_pattern=r"d[0-9]{3}")
+SPLITS = {split.name: split for split in (TEST, DEV)}

@@ -1,4 +1,4 @@
-"""Evaluate a cached run: python -m extractor.evaluate --model llama3.1 --prompt v1."""
+"""Evaluate a cached run: python -m extractor.evaluate --model llama3.1 --prompt v1 [--split dev]."""
 
 import argparse
 import json
@@ -11,7 +11,7 @@ from extractor.metrics import classification_report, exact_match, location_prf, 
 from extractor.normalize import normalize_company, normalize_start
 from extractor.run import cache_path, load_cached
 from extractor.schema import JobPosting
-from extractor.splits import TEST, Split
+from extractor.splits import SPLITS, TEST, Split
 
 # Bump when a scoring rule changes, then re-evaluate every run. See docs/experiments.md.
 # 1: first version. 2: gender markers in titles and guideline start wordings normalised.
@@ -117,10 +117,12 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--model", required=True)
     parser.add_argument("--prompt", default="v1")
+    parser.add_argument("--split", choices=SPLITS, default="test",
+                        help="test: the published 26 postings (default). dev: postings for prompt work")
     parser.add_argument("--overwrite", action="store_true",
                         help="Replace result CSVs that already exist, e.g. after a metric change")
     args = parser.parse_args()
-    split = TEST
+    split = SPLITS[args.split]
     path = split.labels_path
     labels = load_labels(path, split.id_pattern)
     metadata = pd.read_csv(path, usecols=["id", "language"], dtype=str, keep_default_na=False)
@@ -131,11 +133,11 @@ def main() -> None:
     if all(prediction is None for prediction in predictions.values()):
         # Most likely a fresh clone: the cache is not in git. Scoring it would publish all zeros.
         run_dir = cache_path(args.model, args.prompt, "001", split).parent
-        raise SystemExit(f"No valid cached predictions in {run_dir}. Nothing was written. "
-                         f"Extract first: python -m extractor.run --model {args.model} --prompt {args.prompt}")
+        raise SystemExit(f"No valid cached predictions in {run_dir}. Nothing was written. Extract first: "
+                         f"python -m extractor.run --model {args.model} --prompt {args.prompt} --split {split.name}")
     details = detail_rows(labels, predictions, languages)
     summary = summarize(details)
-    print(f"Model: {args.model}   Prompt: {args.prompt}   Metric version: {METRIC_VERSION}")
+    print(f"Split: {split.name}   Model: {args.model}   Prompt: {args.prompt}   Metric version: {METRIC_VERSION}")
     show_report(summary, details)
 
     # JSON inside CSV preserves the difference between null, [], false and strings.
