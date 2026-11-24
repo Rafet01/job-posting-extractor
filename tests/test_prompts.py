@@ -2,11 +2,11 @@
 
 import hashlib
 import json
-import re
 from pathlib import Path
 
 import pytest
 
+from extractor.overlap import word_ngrams
 from extractor.prompts import PROMPTS, build_messages, schema_for, without_descriptions
 
 POSTINGS_DIR = Path(__file__).resolve().parents[1] / "data" / "postings"
@@ -56,17 +56,12 @@ def test_descriptions_are_removed_at_every_depth() -> None:
     assert without_descriptions(schema) == {"anyOf": [{"type": "null"}], "title": "T"}
 
 
-def word_ngrams(text: str, n: int) -> set[tuple[str, ...]]:
-    """All sequences of n consecutive lowercase words."""
-    words = re.findall(r"\w+", text.lower())
-    return {tuple(words[i:i + n]) for i in range(len(words) - n + 1)}
-
-
 @pytest.mark.parametrize("version", [version for version in PROMPTS if version != "v1"])
 def test_prompt_shares_no_text_with_test_postings(version: str) -> None:
     """Instructions written for a version share no five-word sequence with a test posting.
 
     Shorter overlaps are allowed: they are generic phrases such as 'as soon as possible'.
+    Text from the dev postings (data/dev) is allowed on purpose: that set exists to develop prompts.
     """
     prompt = word_ngrams(build_messages("", version)[0]["content"], 5)
     postings = sorted(POSTINGS_DIR.glob("*.txt"))
