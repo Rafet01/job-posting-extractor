@@ -1,1 +1,27 @@
 id,language,company,role_title,locations,workload_min,workload_max,duration_months,start,german_level,english_required,degree_level,is_internship,required_skills,notes
+d001,en,UBS,2026 Off-cycle Internship - Data Scientist Group Internal Consulting,Zurich,,,,1 September 2026,none,false,bachelor_ok,true,,Python and its libraries appear only in the tasks.
+d002,en,Pinterest,Machine Learning Intern 2027 (Zurich),Zurich,,,,,none,false,master_only,true,java|c++|python|tensorflow|pytorch|mlflow,Hadoop and Spark are examples (e.g.). Full-time without a percentage.
+d003,en,comparis.ch,Machine Learning / AI Internship,Zürich,80,100,6,,none,true,bachelor_ok,true,,"Python, Scala and Java are examples (like). Portugal, Barcelona and the Alps are remote-work examples, not workplaces."
+d004,en,Capgemini Invent,Intern Data Science / Management Consulting,Lausanne;Geneva;Basel;Zurich,100,100,6,,none,false,unknown,true,,Only a field of education is required. 6+ months gives the lower bound.
+d005,de,Universitätsspital Zürich,Hochschulpraktikant:in - Health Data Analyst 80-100 %,Zürich,80,100,,15. Januar 2026,required,true,graduate_only,true,sql;python;git,Fixed-term without a length. BI tools are examples; Git basics are required.
+d006,fr,Seculabs,Stage Intelligence Artificielle,Lausanne,100,100,3,asap,none,false,bachelor_ok,true,python,Libraries are examples (par exemple). Technical English is un atout.
+d007,fr,F3DL,Ingénieur IA & Data Science,Lausanne;Genève,50,100,,janvier 2026,none,false,graduate_only,false,,"Header gives Lausanne, body says the post is in Geneva. Check."
+d008,en,Zürich Versicherungs-Gesellschaft,Working Student Data Scientist (40-60%) 12 months,Zürich,40,60,12,,none,true,master_only,false,python;pandas;scikit-learn,"Working student, not an internship. ARIMA and ETS are methods, not tools."
+d009,en,Hitachi Energy,Data Analytics Internship – Quality & CI 80 - 100%,Zurich,80,100,6,,none,false,bachelor_ok,true,power bi;dax;power query;sql;excel,DAX and Power Query counted as tools. Check.
+d010,en,Mettler Toledo,Intern AI in Software Development Center,Nänikon,100,100,3,asap,plus,true,bachelor_ok,true,,Students or recent graduates. No named tool is required.
+d011,en,Swiss Re,Intern Data Scientist (Hybrid; 80-100%),Adliswil,80,100,4,spring 2026,none,true,graduate_only,true,python,"Gender marker removed from a combined bracket. TypeScript, SQL and cloud platforms are nice to haves."
+d012,en,MSCI,Climate Data Science Intern,Zurich;Geneva,,,6,,none,false,unknown,true,python;pandas;numpy,
+d013,en,Wyss Zurich Translational Center,Research Internship – Data Analyst 80 - 100 %,Zürich,80,100,,2nd of May,none,false,bachelor_ok,true,python;pytorch,R appears only in the tasks. Linux is a plus.
+d014,de,Kanton Zürich,Praktikum «KI + Machine Learning» 80 - 100%,Zürich,80,100,6,asap,none,false,bachelor_ok,true,python,ML frameworks are not named.
+d015,de,ewz,Hochschulpraktikum Risk & Research,Zürich Oerlikon,80,100,,,required,false,bachelor_ok,true,python,SQL and Power BI are von Vorteil.
+d016,de,Schweizer Radio und Fernsehen,Praktikant:in SRF Data,Zürich,80,100,6,1. Dezember 2025,none,false,unknown,true,python|r|javascript,
+d017,fr,Hôpitaux Universitaires de Genève,Stage de Data Science - Intelligence artificielle appliquée aux données hospitalières - 100%,Genève,100,100,6,,none,false,master_only,true,python|r,Start à convenir. École d'ingénieur could also mean bachelor level. Check.
+d018,fr,Ecorobotix,Stagiaire Data Analyst,Yverdon-les-Bains,100,100,,asap,none,false,master_only,true,python,"SQL, Linux and GIS describe the team's stack. Airflow and Django are a bonus."
+d019,fr,Office fédéral de la statistique,Stagiaire universitaire - Analyse de données,Neuchâtel,100,100,12,,plus,false,graduate_only,true,,"Any official language accepted, German not named. R and Python are examples."
+d020,de,Schweizerische Exportrisikoversicherung SERV,Data Analyst (80 - 100%),Zürich,80,100,,,none,false,graduate_only,false,sql;sql server,Gender marker removed from a combined bracket. Python or R von Vorteil.
+d021,de,Bundesamt für Sozialversicherungen BSV,Hochschulpraktikant/in im Bereich Datengrundlagen und Analysen,Bern,80,100,12,,plus,false,graduate_only,true,,Any official language accepted. R and SAS are given with 'oder ähnliche'.
+d022,de,Galenica,Praktikum Data & Analytics,Bern,60,100,6,,plus,true,graduate_only,true,,German and/or French basics. Tools are examples (wie ... oder ähnliche). Berufseinstieg without a degree? Check.
+d023,de,IWB Industrielle Werke Basel,Praktikantin Data Science,Basel,100,100,,,none,false,bachelor_ok,true,python;sql,"Final phase of studies, level not given."
+d024,en,Unit8,"Young Graduate in Data and Software Engineering (Zurich, Switzerland)",Zürich,,,6,1st of February,required,true,bachelor_ok,false,git;docker;kubernetes,"Paid graduate placement, not called an internship. At least 32 hours without a percentage."
+d025,en,Julius Baer,University Graduate – Junior Data Scientist (Flex-Track) 100%,Zürich,100,100,18,1 October 2025,none,true,graduate_only,false,r|python;sql,Graduate programme.
+d026,en,Swiss Re,Junior Financial Data Analyst Graduate,Zurich,,,18,1 September 2026,none,true,graduate_only,false,r|python,"Intro accepts Bachelor, profile asks for a Master. Other team sites are not workplaces."
