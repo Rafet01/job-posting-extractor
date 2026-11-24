@@ -1,0 +1,51 @@
+AI Research Engineer, Reinforcement Learning & Large-Scale Model Training
+Tufa Labs AG
+Zürich
+
+17 November 2026
+100%
+Permanent position
+English (Fluent)
+Nüschelerstrasse 30, 8001 Zürich
+
+About the job
+
+Full-time (100%), permanent
+Location: Zurich, Switzerland
+Employer: Tufa Labs AG
+Start Date: 1 March 2027 or by agreement
+
+About Tufa Labs
+Tufa Labs is building frontier AI systems with a focus on abstract reasoning, scalable model training, and reinforcement learning. We work on problems at the intersection of foundation models, reasoning benchmarks, distributed systems, and scientific experimentation. Our goal is to develop methods that improve the reasoning capabilities of AI systems while building the infrastructure required to train and evaluate them at scale.
+
+We are looking for an AI Research Engineer who enjoys moving fluidly between research and systems engineering: designing experiments, training models, analysing results, and building the tooling that makes large-scale research possible.
+
+The Role
+You will contribute directly to our research on abstract reasoning benchmarks such as ARC-AGI and related environments, develop pre-training and reinforcement learning approaches for large language models, and improve the infrastructure used to train, evaluate, and deploy those models across GPU clusters. This role combines hands-on research with practical engineering. A typical week may involve implementing a new reinforcement learning method, running large-scale experiments, designing evaluation suites for reasoning tasks, profiling distributed training bottlenecks, or extending internal tooling used by researchers across the company.
+
+Responsibilities
+Conduct research on abstract reasoning and generalisation in AI systems, including work related to ARC-AGI and successor benchmarks.
+Design, implement, and evaluate novel training methods for large language models.
+Develop reinforcement learning pipelines for post-training and alignment.
+Run large-scale pre-training, fine-tuning, and evaluation experiments.
+Build and maintain infrastructure for distributed training on GPU clusters.
+Improve reliability, monitoring, scheduling, and observability of research workloads.
+Collaborate with researchers and engineers to convert ideas into reproducible research systems.
+Essential Qualifications
+Degree in computer science or at least 5 years of equivalent professional experience in Machine Learning or a related field.
+Experience training, fine-tuning, or evaluating large language models.
+Practical experience with reinforcement learning, imitation learning, or related optimization methods.
+Experience working with distributed systems and multi-GPU training environments.
+Ability to independently design and execute research experiments.
+Desirable Qualifications
+Experience operating GPU clusters and associated infrastructure.
+Contributions to machine learning research, open-source projects, or competitive benchmark efforts.
+Strong interest in reasoning, abstraction, program synthesis, planning, or AGI evaluation.
+What We Offer
+Permanent full-time position.
+Opportunity to work on frontier research problems in reasoning and model training.
+High degree of autonomy and ownership.
+Access to substantial compute resources and research infrastructure.
+Small, technically ambitious team with rapid decision-making and minimal bureaucracy.
+Opportunity to help shape the future direction of the company’s research agenda.
+To apply, please send your CV and a short description of relevant work.

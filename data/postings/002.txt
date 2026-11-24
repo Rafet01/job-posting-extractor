@@ -1,3 +1,7 @@
+GPU Software Engineering Intern
+NVIDIA
+Poland
+
 About the job
 Around the world, leading commercial and academic organizations are using GPU to redefine AI, scientific and engineering simulations, and data analytics. Did you know that the GPU accelerated libraries developed by NVIDIA are used in such industries such as healthcare, VR, autonomous vehicles, social media, and e-commerce? If the idea of contributing to these excite you, come join our team and help us build accelerated software libraries which are used by the entire world.
 

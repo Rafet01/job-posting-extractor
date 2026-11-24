@@ -1,0 +1,46 @@
+Data Scientist (w/m/d)
+Migros-Genossenschafts-Bund
+Zürich
+
+10 November 2026
+60 – 100%
+Festanstellung
+Limmatstrasse 152, 8005 Zürich
+
+Über den Job
+Im Analytics Team der Migros entwickeln wir mit Statistik, ML und Optimierungsmethoden Lösungen für Standort-, Flächen- und Sortimentsentscheidungen im Supermarktgeschäft. Gemeinsam mit dem Business begleiten wir unsere Projekte von der ersten Idee bis zum produktiven Einsatz. Du möchtest mit deiner Arbeit einen Mehrwert für die Migros schaffen? Dann bist du bei uns richtig!
+
+Was du bewegst
+Du übersetzt strategische Business-Fragestellungen in wirkungsvolle Analytics Use-Cases und begleitest interne Kund*innen partnerschaftlich bei der Entwicklung datengetriebener Lösungen mit echtem Mehrwert
+Du verantwortest und steuerst Analytics Use-Cases entlang des gesamten Lebenszyklus - von der Konzeption und Analyse bis zur produktiven Umsetzung und dem effizienten Betrieb in enger Zusammenarbeit mit Data Engineers
+Du setzt klassische statistische Methoden, Machine Learning und Agentic AI gezielt ein und entwickelst wirkungsvolle Lösungen auf unserem modernen Tech-Stack: GCP (BigQuery, Gemini Enterprise Agent Plattform), dbt, Python, NiceGUI, Vue.js
+Du analysierst Daten, leitest entscheidungsrelevante Erkenntnisse ab und schaffst so die Grundlage für fundierte Entscheidungen
+Du bereitest Erkenntnisse, Empfehlungen und Lösungskonzepte adressatengerecht für technische wie nicht-technische Stakeholder auf und kommunizierst diese überzeugend
+Was du mitbringst
+Bildung: Abgeschlossenes Studium (Uni/ETH, FH, HF)
+Fachrichtung: in einem quantitativen Fachgebiet wie Naturwissenschaften, Mathematik, Informatik oder einem ähnlichen Bereich
+Berufserfahrung: Mindestens Drei Jahre praktische Erfahrung in der eigenständigen Durchführung von Data-Science-Projekten im Business-Kontext
+Freude daran, Verantwortung für Lösungen zu übernehmen und sie gemeinsam im Team fachlich, technisch und betrieblich weiterzuentwickeln
+Nachweisbare Erfahrung in der Anwendung von statistischen Methoden, Machine Learning und analytischen Verfahren zur Lösung konkreter Business-Fragestellungen
+Fundierte Kenntnisse in der Datenanalyse und Entwicklung datengetriebener Lösungen mit SQL und Python, Erfahrung im Umgang mit grossen Datenmengen auf modernen Cloud-Plattformen wie GCP
+Praktische Erfahrung mit MLOps, CI/CD und der produktiven Umsetzung von ML-Lösungen
+Fähigkeit, strategische und operative Anforderungen rasch zu erfassen, in wirkungsvolle Analytics Use-Cases zu übersetzen und pragmatische, zielgerichtete Lösungen auch bei unklaren Anforderungen zu entwickeln
+Erfahrungen in der Anwendung und Entwicklung von (agentic) AI-Lösungen
+Erfahrung in der technischen/inhaltlichen Leitung von Projektteams
+Erfahrungen im Retail-Umfeld
+Deutsch (C1)
+Englisch (A2)
+Was wir dir bieten
+Mobil-flexibles Arbeitsmodell: Zeitliche und räumliche Flexibilität bei der Erfüllung der Funktion (als Orientierung 40% Home Office)
+Zentraler Arbeitsort: Zentraler Arbeitsort in der Stadt Zürich (Limmatplatz oder Nähe Hardbrücke)
+Faire Löhne: Funktionsorientierte und marktgerechte Entlöhnung - "We pay fair" zertifiziert
+Berufliche Vorsorge: Überdurchschnittliche Leistungen und drei verschiedene Sparpläne passend zur individuellen Lebenssituation
+Gestaltungs- und Entscheidungsspielraum: Möglichkeit das Aufgabenfeld selbstständig mitzugestalten und weiterzuentwickeln
+Migros Bank: Kostenlose Kontoführung und Vorzugszinsen auf dem Privat- und Anlegekonto
+Rekrutierungsprozess
+Bewerbungsunterlagen einreichen
+Vorselektion der Bewerbungen
+Gespräch mit HR & Fachabteilung
+Fachgespräch mit Case-Präsentation
+Kennenlernen Team
+Angebot & Vertragsausstellung (Digital)

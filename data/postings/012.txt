@@ -1,0 +1,29 @@
+Praktikant/in Data Science und Automatisierung (m/w/d)
+Kanton St. Gallen
+St.Gallen
+
+13 November 2026
+100%
+Praktikum
+
+Über den Job
+Als der fünftgrösste Kanton der Schweiz mit rund 6000 Mitarbeitenden setzen wir uns bei der Kantonsverwaltung für das Gemeinwohl der Gesellschaft ein. Mit einer beeindruckenden Vielfalt an Leistungen betrifft unsere Arbeit alle Bereiche des Lebens, sei es Bildung, Wirtschaft, Recht, Sicherheit, Natur, Gesundheit, Bau, Kultur und Finanzen. Mit unserer sinnstiftenden Arbeit hinterlassen wir täglich einen kleinen Fussabdruck, da diese für über eine halbe Million Menschen relevant ist.
+
+Zur Unterstützung unseres Teams im Bereich Workflow-Management und Automatisierung bieten wir ab dem 1. Januar 2027 oder nach Vereinbarung ein befristetes Praktikum an.
+Praktikant/in Data Science und Automatisierung (m/w/d)
+Automatisierung von Prozessen in der Datenerhebung, zum Beispiel Entgegennahme, Prüfung und Rückmeldung von Datenlieferungen
+Aufbau und Dokumentation reproduzierbarer Pipelines, von der Datenlieferung über die Plausibilisierung bis zum fertigen Output
+Statistische Evaluation der für Planungsprozesse erforderlichen Datenqualität
+Überführung bestehender Skripte in wiederverwendbare, getestete Funktionen
+Einblick in die Arbeit einer kantonalen Statistikstelle und ihre Schnittstellen zu Bund, Verwaltung und Datenlieferenden
+Mitarbeit an einem abgegrenzten Teilprojekt von der Idee bis zum Einsatz
+Laufendes oder abgeschlossenes Studium (Master) mit quantitativem Schwerpunkt
+Gute Kenntnisse in R, insbesondere im Schreiben von Funktionen und im funktionalen Programmieren
+Erfahrung mit Git; Grundkenntnisse in Pipeline- und Scheduling-Tools (z. B. targets, GitHub Actions, cron) erwünscht
+Erste Erfahrungen mit KI-gestützten Coding-Tools (z. B. GitHub Copilot, Claude Code) von Vorteil
+Sorgfältige, strukturierte Arbeitsweise und Sensibilität für Datenqualität und Datenschutz
+Hohe Selbständigkeit und Eigenverantwortung
+Mitarbeit in einem offenen und kompetenten Team
+Flexible Arbeitszeitmodelle, gleitende Arbeitszeiten sowie Möglichkeit von Homeoffice
+Spannender Einblick in das Amt für Daten und Statistik
+Moderne IT-Infrastruktur (Posit Team, Postgres-DWH, Gitea usw.)

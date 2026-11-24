@@ -1,0 +1,27 @@
+Internship - AIML Research
+Apple
+Zurich
+
+Students
+
+Summary
+Posted:
+Nov 11, 2026
+Weekly Hours:
+40
+Role Number:
+200694305-4170
+Within Apple’s Artificial Intelligence and Machine Learning organization (AIML) you can take part in the ongoing revolution that machine learning plays in daily life. Apple’s fully-integrated hardware and software provides unique opportunities to deliver amazing experiences, all while prioritizing user privacy. Come collaborate with some of the best in the business, and help build the world's most innovative products and experiences. We are offering exciting internship opportunities to explore new methods; apply machine learning to solve ambitious problems; advance state-of-the art technology by researching and publishing; challenge existing metrics or protocols; and develop new insightful theories that will impact the way we understand machine learning and the experiences it can enable.
+Description
+You will receive technical mentorship and guidance that allows you to learn new things every day, gain practical skills, build real-world experience, develop a greater understanding of our industry, and form valuable connections. You will join an extraordinary team, including world-class software engineers and leading machine learning researchers who are all passionate about advancing reasoning capabilities and efficiency in AI. We focus on key areas of Machine Learning Reasoning and Efficiency, including, but not limited to, large language models, reinforcement learning, test-time compute scaling, model compression, and efficient architectures, as well as related areas such as on-device deployment, privacy, and fairness. If you think your expertise can be useful to Apple, it probably is! Interns collaborate with researchers, engineers, and program/project managers to tackle innovative challenges. Together, you and your team will partner to design and implement an innovative solution for a meaningful problem in reasoning and efficient Machine Learning. At the end of your internship, you will have the opportunity to meet and present your work to AIML leadership. Where appropriate, you will have the opportunity to submit your work for publication at a suitable conference.
+Minimum Qualifications
+Working toward an MSc/PhD degree in computer science, engineering, data science, applied mathematics, or equivalent. PhD degree paths are preferred
+Strong mathematical skills in linear algebra and statistics.
+Research experience in Machine Learning and a demonstrable record of publishing academic research in peer-reviewed venues in relevant conferences (NeurIPS, CVPR, ACL, ICLR, EMNLP, etc.)
+Ability to work in a collaborative environment.
+Preferred Qualifications
+Experience training large scale models is a plus
+Hands-on experience with PyTorch/Jax. Familiarity with CUDA is a plus.
+At Apple, we're not all the same. And that's our greatest strength. We draw on the differences in who we are, what we've experienced, and how we think. Because to create products that serve everyone, we believe in including everyone. Therefore, we are committed to treating all applicants fairly and equally. We will work with applicants to make any reasonable accommodations.
+
+At Apple, we believe accessibility is a fundamental human right. You’ll find that idea reflected in everything here — in our culture, our benefits and our digital tools. By welcoming as many perspectives as possible, we help you build a career where you feel like you belong.

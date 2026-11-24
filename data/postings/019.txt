@@ -1,0 +1,56 @@
+Stagiaire en Sciences des données – Stage de 6 à 12 mois – 100%
+Assura SA
+Le Mont-sur-Lausanne
+
+18 November 2026
+100%
+Praktikum
+Französisch (Muttersprache)
+En Budron A1, 1052 Le Mont-sur-Lausanne
+
+Über den Job
+
+
+Rejoindre Assura, c’est évoluer dans un environnement collaboratif et dynamique où chacun joue un rôle essentiel et contribue à une mission qui fait sens. Chaque jour, nous mettons notre énergie et notre expertise au service de nos clients, pour les accompagner dans leurs décisions de santé. Envie de nous rejoindre ? Alors, nice to meet you !
+
+ 
+
+Stagiaire en Sciences des données – de 6 à 12 mois – 100%
+Le Mont-sur-Lausanne
+
+ 
+
+En tant que stagiaire, tu développeras des méthodes et des outils permettant d’identifier des anomalies dans les données de facturation. Ce stage s’adresse à une personne en formation souhaitant acquérir une expérience pratique en science des données appliquée à l’assurance maladie.
+
+Ce que tu fais au quotidien
+
+Tu analyses les besoins métiers et les objectifs de détection recherchés afin de définir le périmètre d’étude et les indicateurs pertinents. Tu développes un pipeline de traitement des données permettant de collecter, nettoyer, transformer et préparer les données nécessaires aux analyses.
+
+Tu conçois et implémentes une ou plusieurs méthodes statistiques de détection d’anomalies adaptées au contexte métier. Tu construis également les tables analytiques nécessaires aux différents niveaux de granularité et définis un modèle de données en étoile permettant de structurer l’information pour l’analyse et la visualisation.
+
+Tu développes un tableau de bord facilitant l’identification, le suivi et l’analyse des anomalies détectées. Tu valides la pertinence des résultats obtenus avec les équipes métiers, puis tu présentes l’outil développé ainsi que les enseignements tirés de l’analyse afin de favoriser son appropriation et son utilisation opérationnelle.
+
+
+Ce que tu apportes à l’équipe
+
+Étudiante ou étudiant en fin de Master dans une filière scientifique, tu disposes d’un intérêt marqué pour la science des données et d’une solide capacité d’analyse. Tu es à l’aise avec les problématiques quantitatives et tu sais mobiliser tes connaissances pour comprendre des enjeux complexes et les traduire en solutions concrètes.
+
+Tu possèdes de bonnes connaissances en probabilités et en statistiques de base, notamment en statistiques descriptives, variables aléatoires, distributions, tests d’hypothèses et régression. Tu maîtrises la programmation Python ou tu es fortement motivé·e à développer cette compétence dans le cadre de projets concrets liés à l’analyse et à la valorisation des données.
+
+Grâce à ton sens de l’écoute, à ta curiosité et à ton esprit collaboratif, tu interagis efficacement avec différents interlocuteurs tout en étant capable de travailler de manière autonome. Disposer de connaissances en allemand constitue un atout supplémentaire.
+
+ 
+
+Tes avantages
+
+40 heures hebdomadaires pour un 100%
+
+Horaires de travail flexibles
+
+Environnement de travail collaboratif, égalitaire et respectueux de tous
+
+Formation interne métier
+
+ 
+
+Date d’entrée : 1er février 2027

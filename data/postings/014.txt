@@ -1,0 +1,73 @@
+Internship in Customer Data Analytics & AI (limited to 6-12 months, 50-100%, all genders)
+Swiss International Air Lines AG
+Zürich/Kloten
+
+19 November 2026
+10 – 100%
+Permanent position
+
+About the job
+Internship in Customer Data Analytics & AI (limited to 6-12 months, 50-100%, all genders)
+
+Location: Zürich/Kloten
+Employment level: University internship
+Function: Other
+Working time: Full-time or part-time
+Salary: CHF 2,500.- gross per month for Bachelor and Advanced Federal Diploma of Higher Education students or graduates / CHF 3,000.- gross per month for Master students or graduates
+Publishing date: 11-18-2026
+Application deadline: 12-02-2026
+You love data, you are curious about AI, and you want to see your analysis go live? This internship puts you at the heart of customer data for the airlines of the Lufthansa Group. You will turn real customer behaviour into audiences for marketing campaigns and help us build AI agents that make our data work faster.
+
+Starting date: January 01, 2027
+
+Please apply in English.
+
+Tasks
+
+As an intern, you will work closely with data engineers, audience engineers, data analysts and marketing teams. Your job is to turn transactional, web, and app behaviour into customer insights and audiences that marketing teams use in their campaigns.
+
+Analyse transactional, web, and app behaviour data in a customer data platform, using SQL and Python
+Turn web behaviour into customer attributes and audiences for campaigns across Lufthansa, SWISS, Austrian Airlines and Brussels Airlines, and validate each audience against the data before it goes live
+Measure how audiences perform in campaigns and present your findings to the team
+Build and test AI agents that answer data questions and check data quality
+Use AI coding assistants for SQL and Python, and check their output against the data
+Work with consent-based customer data and learn how privacy rules shape every audience
+Run your own data project with real customer data and support from the team
+Behind the scenes
+
+Requirements
+
+All you need is a passion for data analysis and a curiosity about AI. Marketing knowledge is a plus.
+
+Bachelor's or Master's degree in computer / data science, engineering, mathematics or a related field
+Good SQL skills: joins, aggregations and window functions on large datasets
+Python for data analysis
+Experience with web analytics tools and event tracking (e.g.Google Analytics or similar)
+Hands-on experience with AI assistants or LLM tools, and a critical eye for their output
+Analytical, conceptual and creative in problem-solving
+Familiarity with tag management systems (e.g. Adobe Launch or similar)
+Knowledge of machine learning, such as classification, clustering or propensity models
+Comfortable with cloud data platforms and business intelligence tools
+Knowledge of digital marketing or customer segmentation
+
+Benefits
+
+Subsidized parking or public transport
+
+Company health management
+
+25 days of annual vacation
+
+Flight benefits
+
+Employee and networking events
+
+Remote working (e.g. from home)
+
+Flexible workhours and part-time working models
+
+Discounts
+
+Diversity programmes
+
+Subsidized parking or public transport, Company health management, 25 days of annual vacation, Flight benefits, Employee and networking events, Remote working (e.g. from home), Flexible workhours and part-time working models, Discounts, Diversity programmes

@@ -1,0 +1,42 @@
+MLOps Engineer Intern
+Swissquote Bank
+Gland
+
+Chem. de la Crétaux 33, 1196 Gland, Switzerland
+Full-time
+Managerial role: No
+Company Description
+At Swissquote, we’re all in.
+All in to shake things up. All in to build the bank people actually want to use. All in to make finance less boring — and a lot more powerful.
+
+We’re Switzerland’s leading digital bank — 1,500+ people across Europe, the Middle East and Asia, building real financial solutions for over a million clients worldwide. From trading and investing to everyday banking, we cover the full picture. We move fast, but we build things we’re genuinely proud of. Have a look behind the scenes by checking Humans of Swissquote on Instagram.
+
+Growing fast creates room. Room to try things, own things, and grow at a pace most places can’t offer. Whether you like the spotlight or prefer to just put your head down and do great work, there’s space for both here.
+
+We’ve ditched the dress code — but never the chance to celebrate. Big win or small, we make it count. The kind of place where the atmosphere takes care of itself.
+
+As an equal opportunity employer, we welcome candidates from all backgrounds, experiences and perspectives to join our team and contribute to our shared success.
+
+Feeling it? It’s a good start. Apply.
+
+Job Description
+The AI Research & Solutions department at Swissquote is looking for an MLOps Intern to help bring AI applications from experimentation to reliable, scalable production.
+
+You will gain hands-on experience across the AI lifecycle, with a strong focus on the infrastructure and tooling behind LLM applications and AI agents, alongside traditional machine learning models.
+
+During your internship, you will:
+
+Improve monitoring and evaluation: Help automate the evaluation and monitoring of deployed AI applications. Develop observability for LLM responses, agent workflows and tool interactions, tracking quality, reliability, latency and cost.
+Build deployment tooling: Contribute to our internal MLflow-based platform, helping engineers version, package and deploy models and agents on our infrastructure.
+Automate pipelines: Build and improve reproducible data, training and evaluation pipelines using Argo Workflows, and contribute to automated testing and deployment.
+Support AI governance: Help develop internal tools for tracking deployed AI applications, improving traceability and supporting company governance and compliance requirements.
+Qualifications
+Ongoing studies in Computer Science, Data Science, Engineering or a related field.
+Good Python skills and an interest in writing maintainable software.
+Familiarity with—or a strong motivation to learn—CI/CD, GitHub Actions, Docker and Kubernetes.
+Curiosity about LLMs and AI agents, particularly how they are deployed, evaluated and monitored in production.
+An organized, proactive approach, a willingness to learn and the ability to collaborate effectively in English.
+Experience with frontend development is a plus, as you may also contribute to interfaces for internal tools.
+
+Additional Information
+"Please note that Swissquote never requests sensitive personal information or payment of any kind during the recruitment process. Any such request is fraudulent.”

@@ -1,0 +1,74 @@
+Actuarial Data Analyst - Graduate
+Swiss Re
+Zurich
+
+Graduate Programme
+Location: Zurich, Zurich, CH
+
+Start your journey towards a rewarding career!
+
+We’re looking for curious, motivated graduates with strong people skills who want to grow, learn, and make a difference. If you hold a Bachelor’s, Master’s, or PhD and have up to three years of professional experience, apply for our 18-month Graduate Programme starting on 1 September 2027.
+
+You’ll gain hands-on experience in the fast-paced world of reinsurance, rotate into different local teams, and receive tailored training to build your expertise. This is your opportunity to shape your career, help protect societies from the world’s most threatening hazards, and contribute to making the world more resilient.
+
+By the end of the programme, you’ll have built the skills, foundations and network to pursue a wide range of career opportunities within Swiss Re.
+
+About the Role
+
+
+As an Actuarial Data Analyst Graduate, you will work on data and analytics activities supporting Non-Life Actuarial Reserving and our stakeholders. This includes developing and maintaining dashboards, reports, and other data solutions for reserving analysis, financial planning, and management reporting. You will work closely with reserving actuaries and colleagues across Finance and the Business Units to deliver effective solutions that meet their needs.
+
+Key responsibilities include:
+
+Collaborating with reserving actuaries and other users to understand their requirements and translate them into technical solutions
+Writing code to transform and analyse data using Python, R, or SQL
+Creating dashboards and reports using Microsoft Power BI or Palantir Foundry
+Contributing to data quality, governance, and control activities
+Contributing to transformation projects that shape our future systems and processes
+
+About the Team
+
+
+You will be part of the Non-Life Actuarial Reserving Data & Analytics team, a global team with members based in Switzerland, India, and the UK. We work closely together to develop data solutions that support high-quality reserving analysis and reporting while making our processes more efficient.
+
+Our team combines knowledge of data and technology with an understanding of actuarial reserving and works closely with actuaries and other teams across the organisation. We value collaboration, knowledge sharing, and continuous learning, providing an environment where you can develop your technical skills while building your knowledge of actuarial reserving and the reinsurance business.
+
+About You
+
+
+You are curious, analytical, and eager to learn. You take ownership of your work, pay attention to detail, and proactively look for opportunities to improve. You are organised and able to prioritise your work effectively, while communicating clearly and collaborating with colleagues from different backgrounds and areas of expertise.
+
+Essential Criteria:
+
+University degree (Bachelor’s, Master’s, or PhD) in a quantitative subject with up to 3 years of professional experience
+Good programming skills and experience working with data using Python, R, SQL, or similar languages
+Experience analysing and visualising data
+Strong analytical and problem-solving skills
+Strong written and spoken English and the ability to communicate and collaborate effectively
+Nice to Have:
+
+Previous experience in insurance or financial services
+Knowledge of actuarial methods
+Experience with Microsoft Power BI or other data visualisation tools
+Experience with cloud-based data and analytics platforms such as Palantir Foundry, Databricks, or Microsoft Azure
+The base salary range for this position will be shared with you during the interview process.
+
+Please note: The application process will remain open until 21 December 2026. We greatly appreciate every application and carefully review each one. As a result, the selection process may take some time, but please rest assured that your application is being given thorough consideration. We aim to provide an update on your application by 15 January 2027 at the latest.
+
+
+Candidates selected for the final stage will be invited to our Assessment Centre either on 17, 18 or 19 February 2027, preceded by an informal networking dinner with Swiss Re representatives on the evening before. Please ensure you are available for both events.
+
+
+To learn more about the programme and the recruitment process, visit our website: Graduate Programme | Swiss Re
+
+About Swiss Re
+
+Swiss Re is one of the world’s leading providers of reinsurance, insurance and other forms of insurance-based risk transfer, working to make the world more resilient. We anticipate and manage a wide variety of risks, from natural catastrophes and climate change to cybercrime. Combining experience with creative thinking and cutting-edge expertise, we create new opportunities and solutions for our clients. This is possible thanks to the collaboration of more than 15,000 employees across the world.
+
+Our success depends on our ability to build an inclusive culture encouraging fresh perspectives and innovative thinking. We embrace a workplace where everyone has equal opportunities to thrive and develop professionally regardless of their age, gender, race, ethnicity, gender identity and/or expression, sexual orientation, physical or mental ability, skillset, thought or other characteristics. In our inclusive and flexible environment everyone can bring their authentic selves to work and their passion for sustainability.
+
+If you are an experienced professional returning to the workforce after a career break, we encourage you to apply for open positions that match your skills and experience.
+
+We may use AI-powered tools to support the review and evaluation of applications for this position. These tools provide additional insights to our recruitment teams, but all hiring decisions are carefully reviewed and made by people. To learn more about how we use AI in recruitment and how we handle your personal data, please review our Data Privacy Statement before applying.
+
+Reference Code: 139805

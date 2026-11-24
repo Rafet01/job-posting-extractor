@@ -1,0 +1,28 @@
+Internship - Reasoning and agentic capabilities of LLMs
+Apple
+Lausanne
+
+Students
+
+Summary
+Posted:
+Nov 06, 2026
+Weekly Hours:
+40
+Role Number:
+200693685-5636
+Play a part in building the next generation of artificial intelligence and machine learning technology. We're looking for a passionate researchers to work on ambitious curiosity-driven long-term research projects that will impact the future of Apple AI and our products. In this role, you'll have the opportunity to work on innovative foundational research in machine learning focusing on the reasoning capabilities of LLMs and agentic systems. As a member of the team, you will be inspired by a diversity of challenging problems, collaborate with world-class machine learning engineers and researchers to impact the future of Apple products, and publish some of your results in high-quality scientific venues.
+Description
+You have a strong research background in machine learning or related fields and have some expertise with modern ML training methods. You will propose your own research plan to advance our understanding of machine learning and execute it through implementation and experimentation, in collaboration with your colleagues. The topic of research will be focused on understanding and improving the reasoning capabilities of LLMs and agentic systems. You will have the opportunity to collaborate with broader teams across Apple.
+Minimum Qualifications
+Demonstrated expertise in machine learning research.
+Hands-on experience working with deep learning toolkits such as PyTorch, as well as exposure to more recent RL methodologies and agentic tools.
+Ability to formulate a research problem, design, experiment, implement and communicate solutions.
+Ability to work in a diverse collaborative environment.
+Preferred Qualifications
+Publication record in relevant conferences (e.g., NeurIPS, ICML, ICLR, AAAI, CVPR, ICCV, ECCV, ACL, EMNLP, etc).
+PhD or equivalent practical experience, in computer science, or related technical field.
+A passion for one of the following areas: reasoning, post-training, context management, agentic systems.
+At Apple, we're not all the same. And that's our greatest strength. We draw on the differences in who we are, what we've experienced, and how we think. Because to create products that serve everyone, we believe in including everyone. Therefore, we are committed to treating all applicants fairly and equally. We will work with applicants to make any reasonable accommodations.
+
+At Apple, we believe accessibility is a fundamental human right. You’ll find that idea reflected in everything here — in our culture, our benefits and our digital tools. By welcoming as many perspectives as possible, we help you build a career where you feel like you belong.

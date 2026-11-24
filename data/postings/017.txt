@@ -1,0 +1,68 @@
+Machine Learning Engineer
+ETH Zurich
+Zurich
+
+100%, Zurich, fixed-term
+
+The Swiss Data Science Center (SDSC) is a national research infrastructure in data science and artificial intelligence (AI) within the ETH domain, with EPFL and ETH Zurich as founding partners. Its mandate is to support academic labs, hospitals, industry and public sector stakeholders, including cantonal and federal administrations, through their entire data science journey, from the collection and management of data to machine learning, AI, and industrialization. With a large multidisciplinary team of professionals across three locations (Lausanne, Zurich, Villigen), the SDSC provides expertise and services across domains such as health and biomedical sciences, energy and sustainability, climate and environment, and large-scale scientific infrastructure.
+
+Project background
+
+You will provide machine learning engineering expertise in the context of several SDSC partnerships in the German speaking part of Switzerland. In this role, you will meet partners (companies, public sector entities, NGOs) to understand their needs and help them define a high-impact project with the SDSC. Together with the SDSC data scientists, you will be responsible for the societal and/or industrial impact of your projects thanks to your machine learning engineering expertise.
+
+Preferred startdate: January 1st
+
+Job description
+
+- Elaborate solutions that convert data science prototypes into impact in the context of an industry / public sector / NGO collaboration, with particular focus on the engineering side and in view of meeting production requirements
+- Create original solutions with business partners, from solution design to industrialization
+- Share expertise in machine learning engineering (and related fields) with fellow data scientists/ machine learning engineers
+- Presenting to a non-technical audience will also be part of your activities.
+
+Profile
+
+- Master degree in Computer Science, Mathematics or similar field
+- Good knowledge of machine learning concepts
+- Demonstrated expertise in machine learning engineering, particularly in an industrial context
+- Ability to present to various audiences
+- Open to collaborative work and team spirit
+- Highly appreciated: experience as a full-stack engineer, experience as a (data) architect, experience deploying LLM-based solutions in industrial contexts
+- Proficiency in English; knowledge of German highly appreciated
+
+Workplace
+
+Workplace - Wasserwerkstrasse 10 8006 Zurich
+
+We offer
+
+Do you see yourself helping Switzerland become more data-driven? Are you passionate about data science and have experience in machine learning? Are you keen to share what you know and get exposed to several projects in various domains? Are you eager to be part of a diverse and adaptable team with equal growth opportunities of its members at its core? If your answer to these questions is 'yes', you should consider joining us. Together, we can help move the Swiss landscape to the next level of data science.
+
+During your time at the Swiss Data Science Center, you will benefit from the following opportunities:
+
+- Develop your soft skills and meet with key stakeholders in several industries
+- Interact with and learn from fellow data scientists
+- Discover new data science applications in various industries
+- Exchange on advanced machine learning topics with our academic experts
+
+We actively promote a healthy work-life balance in the workplace. We are looking for candidates willing to contribute to an inclusive environment and eager to continuously learn.
+
+Working, teaching and research at ETH Zurich
+
+We value diversity and sustainability
+
+In line with our values, ETH Zurich encourages an inclusive culture. We promote equality of opportunity, value diversity and nurture a working and learning environment in which the rights and dignity of all our staff and students are respected. Visit our Equal Opportunities and Diversity website to find out how we ensure a fair and open environment that allows everyone to grow and flourish. Sustainability is a core value for us – we are consistently working towards a climate-neutral future.
+
+Curious? So are we.
+
+We look forward to receiving your online application with the following documents:
+
+- Motivation letter
+- CV
+- Diploma('s)
+- Etc.
+
+Further information about the Swiss Data Science Center can be found on our Website.
+
+Please note that we exclusively accept applications submitted through our online application portal. Applications via email or postal services will not be considered.
+
+We would like to point out that the pre-selection is carried out by the responsible recruiters and not by artificial intelligence.

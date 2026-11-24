@@ -1,0 +1,42 @@
+Internship: AI-Powered Technology Radar
+Elca informatique SA
+Zurich
+
+02 October 2026
+100%
+
+About the job
+We are ELCA, one of the largest Swiss IT tribe with over 2,300 experts. We are multicultural with offices in Switzerland, Spain, France, Vietnam and Mauritius. Since 1968, our team of engineers, business analysts, software architects, designers and consultants provide tailor-made and standardized solutions to support the digital transformation of major public administrations and private companies in Switzerland. Our activity spans across multiples fields of leading-edge technologies such as AI, Machine & Deep learning, BI/BD, RPA, Blockchain, IoT and CyberSecurity.
+
+In this 6-month internship starting in Spring 2027, you'll build an AI-powered, real-time Technology Radar of our technology landscape.
+
+Your tasks
+
+Collect and analyze technology stack data from active projects in real time.
+Use AI to classify and tag the technologies detected across projects automatically.
+Benchmark our technology choices against mature and emerging market trends with AI.
+Develop a dynamic Technology Radar visualization that shows our current technology landscape at a glance.
+Support strategic decisions by highlighting opportunities for innovation and gaps between technology investments and business goals.
+Help detect vulnerabilities early and encourage regular minor upgrades, so large technology gaps and long-term risks don't build up.
+Work with Azure, DevOps and CI/CD pipelines to keep the radar connected to live project data.
+
+What we offer
+
+A dynamic, collaborative workplace with a highly motivated, multicultural team working across international sites
+Monthly AI meetups with our expert AI team, where you can ask questions and move your topic forward
+The chance to make a difference in people's lives by building innovative solutions
+Internal coding events such as Hackathons and Brownbag sessions, plus our technical blog
+Monthly After-Works organized at each location
+
+About your profile
+
+Bachelor's or Master's degree in Computer Science or a related discipline (EPFL, ETH or another university)
+You have programming experience in .NET, JavaScript and Python, and you're comfortable working with databases. Additionally, you have strong analytical skills
+You have worked with Azure, DevOps and CI/CD pipelines
+You enjoy turning data into clear visualizations and like following technology trends
+Familiarity with AI/LLM-based classification is a plus
+You are fluent in written and spoken English, as well as German or French
+
+Application: Please attach your academic transcripts to your application. Applications without transcripts will not be reviewed.
+
+We believe in strong values and are convinced that diversity is the key to success. If you take on challenges with curiosity, motivation and drive, you've come to the right place! Let our motto inspire you: We make it work!

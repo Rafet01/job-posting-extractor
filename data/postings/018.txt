@@ -1,0 +1,59 @@
+Stagiaire en analyse de données IT - Stage de 6 à 12 mois - 100%
+Assura SA
+Lausanne
+
+06 November 2026
+100%
+Internship
+French (Native language)
+Chemin des Plaines 4, 1007 Lausanne
+
+About the job
+
+
+Rejoindre Assura, c’est évoluer dans un environnement collaboratif et dynamique où chacun joue un rôle essentiel et contribue à une mission qui fait sens. Chaque jour, nous mettons notre énergie et notre expertise au service de nos clients, pour les accompagner dans leurs décisions de santé
+
+Envie de nous rejoindre ? Alors, nice to meet you !
+
+ 
+
+Stagiaire en analyse de données IT - de 6 à 12 mois - 100%  
+ 
+
+En tant que stagiaire en Data & Intelligence Artificielle appliquées au Contact Center, tu concevras et prototyperas une solution capable de détecter automatiquement des signaux émergents, des anomalies ou des incidents potentiels à partir des conversations. Ce stage s’adresse à une personne en formation souhaitant acquérir une expérience pratique en analyse de données et intelligence artificielle.
+
+ 
+
+Ce que tu fais au quotidien
+
+Tu collectes, structures et prépares les données issues du Contact Center dans Microsoft Fabric afin de constituer un socle fiable pour l’analyse. Tu exploites les techniques de NLP et d’IA générative pour classifier automatiquement les motifs de contact et identifier les sujets émergents.
+
+Tu construis des baselines par sujet, période et canal afin de caractériser les comportements habituels. Tu développes ensuite des méthodes de détection d’anomalies permettant d’identifier les variations inhabituelles de volumes, l’émergence de nouveaux sujets et, lorsque les données sont disponibles, de les corréler avec des événements ou incidents IT.
+
+Tu conçois un mécanisme de scoring et d’alerte permettant de prioriser les signaux détectés et de limiter les faux positifs. Tu réalises également un prototype de monitoring mettant en évidence les tendances, anomalies et alertes, puis tu évalues sa performance sur des événements historiques afin de mesurer la pertinence, la précision et la rapidité de détection de la solution.
+
+ 
+
+Ce que tu apportes à l’équipe
+
+Étudiant·e à l’EPFL en Data Science, Computer Science, Communication Systems ou dans une formation équivalente, tu disposes de solides bases en programmation Python et SQL ainsi qu’en analyse de données. Tu t’intéresses aux architectures Data modernes, à l’intelligence artificielle appliquée et aux problématiques opérationnelles. Tu recherches un stage permettant de valider ton diplôme via l’obtention de crédits ECTS.
+
+Tu possèdes des connaissances en Machine Learning, en analyse de séries temporelles et/ou en détection d’anomalies. Tu es également à l’aise avec les concepts de NLP, d’embeddings, de clustering ou de modèles de langage (LLM), et tu sais expérimenter différentes approches, comparer leurs résultats et évaluer leurs performances à l’aide de métriques adaptées.
+
+Curieux·se et orienté·e résultats, tu souhaites acquérir une expérience pratique dans la conception d’un cas d’usage IA de bout en bout, depuis la préparation des données jusqu’à la génération d’alertes opérationnelles. Une expérience avec Microsoft Fabric, Spark/PySpark ou Azure constitue un atout, sans être indispensable.
+
+ 
+
+Tes avantages
+
+40 heures hebdomadaires pour un 100%
+Horaires de travail flexibles
+Environnement de travail collaboratif, égalitaire et respectueux de tous
+Formation interne métier
+ 
+
+Date d'entrée : 1er février 2027
+
+Taux d’activité : 100%
+
+Durée : de 6 à 12 mois
