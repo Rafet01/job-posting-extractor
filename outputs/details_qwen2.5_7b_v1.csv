@@ -1,0 +1,313 @@
+id,language,field,gold,pred,score,missing_prediction,title_similarity,model,prompt
+001,en,company,"""Deloitte""","""Deloitte""",1.0,False,,qwen2.5:7b,v1
+001,en,role_title,"""AI & Analytics Consulting Manager""","""AI & Analytics Consulting Manager""",1.0,False,1.0,qwen2.5:7b,v1
+001,en,locations,"[""Basel"", ""Zurich"", ""Geneva""]","[""Basel"", ""Zurich"", ""Geneva""]",1.0,False,,qwen2.5:7b,v1
+001,en,workload_min,80,80,1.0,False,,qwen2.5:7b,v1
+001,en,workload_max,100,100,1.0,False,,qwen2.5:7b,v1
+001,en,duration_months,null,null,1.0,False,,qwen2.5:7b,v1
+001,en,start,null,null,1.0,False,,qwen2.5:7b,v1
+001,en,german_level,"""plus""","""plus""",1.0,False,,qwen2.5:7b,v1
+001,en,english_required,true,true,1.0,False,,qwen2.5:7b,v1
+001,en,degree_level,"""unknown""","""unknown""",1.0,False,,qwen2.5:7b,v1
+001,en,is_internship,false,false,1.0,False,,qwen2.5:7b,v1
+001,en,required_skills,"[""python"", ""aws|azure|gcp""]","[""python"", ""aws"", ""azure"", ""gcp"", ""snowflake"", ""databricks"", ""dataiku"", ""powerbi"", ""tableau""]",0.6153846153846153,False,,qwen2.5:7b,v1
+002,en,company,"""NVIDIA""","""NVIDIA""",1.0,False,,qwen2.5:7b,v1
+002,en,role_title,"""GPU Software Engineering Intern""","""GPU Software Engineering Intern""",1.0,False,1.0,qwen2.5:7b,v1
+002,en,locations,"[""Poland""]","[""Poland""]",1.0,False,,qwen2.5:7b,v1
+002,en,workload_min,null,null,1.0,False,,qwen2.5:7b,v1
+002,en,workload_max,null,null,1.0,False,,qwen2.5:7b,v1
+002,en,duration_months,null,6,0.0,False,,qwen2.5:7b,v1
+002,en,start,null,"""asap""",0.0,False,,qwen2.5:7b,v1
+002,en,german_level,"""none""","""none""",1.0,False,,qwen2.5:7b,v1
+002,en,english_required,false,true,0.0,False,,qwen2.5:7b,v1
+002,en,degree_level,"""bachelor_ok""","""bachelor_ok""",1.0,False,,qwen2.5:7b,v1
+002,en,is_internship,true,true,1.0,False,,qwen2.5:7b,v1
+002,en,required_skills,"[""c|c++"", ""python"", ""avx|neon|openmp|mpi|cuda|opencl""]","[""c/c++"", ""python"", ""cuda"", ""opencl"", ""image coding"", ""data compression algorithms""]",0.5714285714285715,False,,qwen2.5:7b,v1
+003,de,company,"""Losinger Marazzi""","""Losinger Marazzi""",1.0,False,,qwen2.5:7b,v1
+003,de,role_title,"""Data & AI Intern""","""Data & AI Intern""",1.0,False,1.0,qwen2.5:7b,v1
+003,de,locations,"[""Lausanne""]",[],0.0,False,,qwen2.5:7b,v1
+003,de,workload_min,null,null,1.0,False,,qwen2.5:7b,v1
+003,de,workload_max,null,null,1.0,False,,qwen2.5:7b,v1
+003,de,duration_months,6,6,1.0,False,,qwen2.5:7b,v1
+003,de,start,null,null,1.0,False,,qwen2.5:7b,v1
+003,de,german_level,"""plus""","""plus""",1.0,False,,qwen2.5:7b,v1
+003,de,english_required,false,true,0.0,False,,qwen2.5:7b,v1
+003,de,degree_level,"""bachelor_ok""","""bachelor_ok""",1.0,False,,qwen2.5:7b,v1
+003,de,is_internship,true,true,1.0,False,,qwen2.5:7b,v1
+003,de,required_skills,"[""sql"", ""power bi"", ""python"", ""pandas""]","[""sql"", ""power bi"", ""python""]",0.8571428571428571,False,,qwen2.5:7b,v1
+004,en,company,"""SIX""","""SIX""",1.0,False,,qwen2.5:7b,v1
+004,en,role_title,"""Project Portfolio Controlling Intern""","""Project Portfolio Controlling Intern""",1.0,False,1.0,qwen2.5:7b,v1
+004,en,locations,[],[],1.0,False,,qwen2.5:7b,v1
+004,en,workload_min,null,null,1.0,False,,qwen2.5:7b,v1
+004,en,workload_max,null,null,1.0,False,,qwen2.5:7b,v1
+004,en,duration_months,6,6,1.0,False,,qwen2.5:7b,v1
+004,en,start,null,"""asap""",0.0,False,,qwen2.5:7b,v1
+004,en,german_level,"""required""","""required""",1.0,False,,qwen2.5:7b,v1
+004,en,english_required,true,true,1.0,False,,qwen2.5:7b,v1
+004,en,degree_level,"""bachelor_ok""","""bachelor_ok""",1.0,False,,qwen2.5:7b,v1
+004,en,is_internship,true,true,1.0,False,,qwen2.5:7b,v1
+004,en,required_skills,"[""excel""]","[""excel"", ""modeling""]",0.6666666666666666,False,,qwen2.5:7b,v1
+005,en,company,"""Abionic""","""Abionic""",1.0,False,,qwen2.5:7b,v1
+005,en,role_title,"""Internship – Clinical Research & Data Management (3–6 months)""","""Internship – Clinical Research & Data Management""",1.0,False,0.8807339449541285,qwen2.5:7b,v1
+005,en,locations,"[""Epalinges""]","[""Epalinges""]",1.0,False,,qwen2.5:7b,v1
+005,en,workload_min,null,null,1.0,False,,qwen2.5:7b,v1
+005,en,workload_max,null,null,1.0,False,,qwen2.5:7b,v1
+005,en,duration_months,3,6,0.0,False,,qwen2.5:7b,v1
+005,en,start,"""asap""","""As soon as possible""",0.0,False,,qwen2.5:7b,v1
+005,en,german_level,"""none""","""none""",1.0,False,,qwen2.5:7b,v1
+005,en,english_required,true,true,1.0,False,,qwen2.5:7b,v1
+005,en,degree_level,"""bachelor_ok""","""bachelor_ok""",1.0,False,,qwen2.5:7b,v1
+005,en,is_internship,true,true,1.0,False,,qwen2.5:7b,v1
+005,en,required_skills,"[""excel""]","[""excel""]",1.0,False,,qwen2.5:7b,v1
+006,en,company,"""CERN""","""CERN""",1.0,False,,qwen2.5:7b,v1
+006,en,role_title,"""Short Term Internship 2027 - Data Science, AI & Analytics""","""Data Science, AI & Analytics Intern""",0.0,False,0.6086956521739131,qwen2.5:7b,v1
+006,en,locations,"[""Geneva""]","[""Geneva""]",1.0,False,,qwen2.5:7b,v1
+006,en,workload_min,null,null,1.0,False,,qwen2.5:7b,v1
+006,en,workload_max,null,null,1.0,False,,qwen2.5:7b,v1
+006,en,duration_months,1,6,0.0,False,,qwen2.5:7b,v1
+006,en,start,null,"""to be discussed""",0.0,False,,qwen2.5:7b,v1
+006,en,german_level,"""none""","""none""",1.0,False,,qwen2.5:7b,v1
+006,en,english_required,false,true,0.0,False,,qwen2.5:7b,v1
+006,en,degree_level,"""bachelor_ok""","""bachelor_ok""",1.0,False,,qwen2.5:7b,v1
+006,en,is_internship,true,true,1.0,False,,qwen2.5:7b,v1
+006,en,required_skills,[],[],1.0,False,,qwen2.5:7b,v1
+007,en,company,"""Apple""","""Apple""",1.0,False,,qwen2.5:7b,v1
+007,en,role_title,"""Internship - Reasoning and agentic capabilities of LLMs""","""Research Intern""",0.0,False,0.17142857142857143,qwen2.5:7b,v1
+007,en,locations,"[""Lausanne""]","[""Lausanne""]",1.0,False,,qwen2.5:7b,v1
+007,en,workload_min,null,null,1.0,False,,qwen2.5:7b,v1
+007,en,workload_max,null,null,1.0,False,,qwen2.5:7b,v1
+007,en,duration_months,null,6,0.0,False,,qwen2.5:7b,v1
+007,en,start,null,"""asap""",0.0,False,,qwen2.5:7b,v1
+007,en,german_level,"""none""","""none""",1.0,False,,qwen2.5:7b,v1
+007,en,english_required,false,true,0.0,False,,qwen2.5:7b,v1
+007,en,degree_level,"""unknown""","""graduate_only""",0.0,False,,qwen2.5:7b,v1
+007,en,is_internship,true,true,1.0,False,,qwen2.5:7b,v1
+007,en,required_skills,[],"[""machine learning"", ""deep learning"", ""pytorch"", ""rl methodologies"", ""agentic tools""]",0.0,False,,qwen2.5:7b,v1
+008,en,company,"""HELP Media""","""HELP Media AG""",1.0,False,,qwen2.5:7b,v1
+008,en,role_title,"""Internship AI & Process Automation (100%)""","""AI & Process Automation Intern""",0.0,False,0.676056338028169,qwen2.5:7b,v1
+008,en,locations,"[""Zürich""]","[""Zürich""]",1.0,False,,qwen2.5:7b,v1
+008,en,workload_min,100,null,0.0,False,,qwen2.5:7b,v1
+008,en,workload_max,100,null,0.0,False,,qwen2.5:7b,v1
+008,en,duration_months,12,12,1.0,False,,qwen2.5:7b,v1
+008,en,start,null,"""18 November 2026""",0.0,False,,qwen2.5:7b,v1
+008,en,german_level,"""none""","""none""",1.0,False,,qwen2.5:7b,v1
+008,en,english_required,false,false,1.0,False,,qwen2.5:7b,v1
+008,en,degree_level,"""bachelor_ok""","""bachelor_ok""",1.0,False,,qwen2.5:7b,v1
+008,en,is_internship,true,true,1.0,False,,qwen2.5:7b,v1
+008,en,required_skills,[],"[""ai"", ""automation"", ""data_preparation"", ""testing""]",0.0,False,,qwen2.5:7b,v1
+009,de,company,"""Universitätsspital Zürich""","""Universitätsspital Zürich""",1.0,False,,qwen2.5:7b,v1
+009,de,role_title,"""Hochschulpraktikant:in Process and Data Analytics 80-100%""","""Hochschulpraktikant:in Process and Data Analytics""",1.0,False,0.9245283018867925,qwen2.5:7b,v1
+009,de,locations,"[""Zürich""]","[""Zürich""]",1.0,False,,qwen2.5:7b,v1
+009,de,workload_min,80,80,1.0,False,,qwen2.5:7b,v1
+009,de,workload_max,100,100,1.0,False,,qwen2.5:7b,v1
+009,de,duration_months,12,12,1.0,False,,qwen2.5:7b,v1
+009,de,start,"""1.2.27""","""per 1.2.27 oder nach Vereinbarung""",0.0,False,,qwen2.5:7b,v1
+009,de,german_level,"""required""","""required""",1.0,False,,qwen2.5:7b,v1
+009,de,english_required,true,true,1.0,False,,qwen2.5:7b,v1
+009,de,degree_level,"""bachelor_ok""","""bachelor_ok""",1.0,False,,qwen2.5:7b,v1
+009,de,is_internship,true,true,1.0,False,,qwen2.5:7b,v1
+009,de,required_skills,[],"[""power bi"", ""sap sac"", ""sql""]",0.0,False,,qwen2.5:7b,v1
+010,en,company,"""Apple""","""Apple""",1.0,False,,qwen2.5:7b,v1
+010,en,role_title,"""Internship - AIML Research""","""AIML Research Internship""",0.0,False,0.52,qwen2.5:7b,v1
+010,en,locations,"[""Zurich""]","[""Zurich""]",1.0,False,,qwen2.5:7b,v1
+010,en,workload_min,null,null,1.0,False,,qwen2.5:7b,v1
+010,en,workload_max,null,null,1.0,False,,qwen2.5:7b,v1
+010,en,duration_months,null,6,0.0,False,,qwen2.5:7b,v1
+010,en,start,null,"""asap""",0.0,False,,qwen2.5:7b,v1
+010,en,german_level,"""none""","""none""",1.0,False,,qwen2.5:7b,v1
+010,en,english_required,false,true,0.0,False,,qwen2.5:7b,v1
+010,en,degree_level,"""master_only""","""master_only""",1.0,False,,qwen2.5:7b,v1
+010,en,is_internship,true,true,1.0,False,,qwen2.5:7b,v1
+010,en,required_skills,[],"[""linear algebra"", ""statistics"", ""machine learning"", ""pytorch"", ""jax"", ""cuda""]",0.0,False,,qwen2.5:7b,v1
+011,en,company,"""Swissquote Bank""","""Swissquote Bank""",1.0,False,,qwen2.5:7b,v1
+011,en,role_title,"""MLOps Engineer Intern""","""MLOps Engineer Intern""",1.0,False,1.0,qwen2.5:7b,v1
+011,en,locations,"[""Gland""]",[],0.0,False,,qwen2.5:7b,v1
+011,en,workload_min,null,null,1.0,False,,qwen2.5:7b,v1
+011,en,workload_max,null,null,1.0,False,,qwen2.5:7b,v1
+011,en,duration_months,null,null,1.0,False,,qwen2.5:7b,v1
+011,en,start,null,null,1.0,False,,qwen2.5:7b,v1
+011,en,german_level,"""none""","""none""",1.0,False,,qwen2.5:7b,v1
+011,en,english_required,true,true,1.0,False,,qwen2.5:7b,v1
+011,en,degree_level,"""bachelor_ok""","""bachelor_ok""",1.0,False,,qwen2.5:7b,v1
+011,en,is_internship,true,true,1.0,False,,qwen2.5:7b,v1
+011,en,required_skills,"[""python""]","[""python""]",1.0,False,,qwen2.5:7b,v1
+012,de,company,"""Kanton St. Gallen""","""Kanton St. Gallen""",1.0,False,,qwen2.5:7b,v1
+012,de,role_title,"""Praktikant/in Data Science und Automatisierung""","""Praktikant/in Data Science und Automatisierung (m/w/d)""",1.0,False,0.92,qwen2.5:7b,v1
+012,de,locations,"[""St.Gallen""]",[],0.0,False,,qwen2.5:7b,v1
+012,de,workload_min,100,100,1.0,False,,qwen2.5:7b,v1
+012,de,workload_max,100,null,0.0,False,,qwen2.5:7b,v1
+012,de,duration_months,null,6,0.0,False,,qwen2.5:7b,v1
+012,de,start,"""1. Januar 2027""","""1. Januar 2027 oder nach Vereinbarung""",0.0,False,,qwen2.5:7b,v1
+012,de,german_level,"""none""","""required""",0.0,False,,qwen2.5:7b,v1
+012,de,english_required,false,false,1.0,False,,qwen2.5:7b,v1
+012,de,degree_level,"""master_only""","""master_only""",1.0,False,,qwen2.5:7b,v1
+012,de,is_internship,true,true,1.0,False,,qwen2.5:7b,v1
+012,de,required_skills,"[""r"", ""git""]","[""r"", ""git"", ""pipeline"", ""scheduling"", ""github actions"", ""cron"", ""github copilot"", ""claude code""]",0.4,False,,qwen2.5:7b,v1
+013,fr,company,"""Aéroport International de Genève""","""Genève Aéroport""",0.0,False,,qwen2.5:7b,v1
+013,fr,role_title,"""Stagiaire Data Science & Énergie""","""Stagiaire Data Science & Énergie""",1.0,False,1.0,qwen2.5:7b,v1
+013,fr,locations,"[""Genève""]","[""Genève""]",1.0,False,,qwen2.5:7b,v1
+013,fr,workload_min,100,100,1.0,False,,qwen2.5:7b,v1
+013,fr,workload_max,100,100,1.0,False,,qwen2.5:7b,v1
+013,fr,duration_months,6,5,0.0,False,,qwen2.5:7b,v1
+013,fr,start,"""février 2027""","""février à juillet 2027""",0.0,False,,qwen2.5:7b,v1
+013,fr,german_level,"""none""","""none""",1.0,False,,qwen2.5:7b,v1
+013,fr,english_required,false,false,1.0,False,,qwen2.5:7b,v1
+013,fr,degree_level,"""master_only""","""master_only""",1.0,False,,qwen2.5:7b,v1
+013,fr,is_internship,true,true,1.0,False,,qwen2.5:7b,v1
+013,fr,required_skills,"[""python"", ""excel"", ""power bi""]","[""python"", ""excel avancé"", ""power bi""]",0.6666666666666666,False,,qwen2.5:7b,v1
+014,en,company,"""Swiss International Air Lines""","""Swiss International Air Lines AG""",1.0,False,,qwen2.5:7b,v1
+014,en,role_title,"""Internship in Customer Data Analytics & AI (limited to 6-12 months, 50-100%)""","""Internship in Customer Data Analytics & AI""",0.0,False,0.711864406779661,qwen2.5:7b,v1
+014,en,locations,"[""Zürich/Kloten""]","[""Zürich/Kloten""]",1.0,False,,qwen2.5:7b,v1
+014,en,workload_min,50,50,1.0,False,,qwen2.5:7b,v1
+014,en,workload_max,100,100,1.0,False,,qwen2.5:7b,v1
+014,en,duration_months,6,12,0.0,False,,qwen2.5:7b,v1
+014,en,start,"""January 01, 2027""","""January 01, 2027""",1.0,False,,qwen2.5:7b,v1
+014,en,german_level,"""none""","""none""",1.0,False,,qwen2.5:7b,v1
+014,en,english_required,false,true,0.0,False,,qwen2.5:7b,v1
+014,en,degree_level,"""graduate_only""","""bachelor_ok""",0.0,False,,qwen2.5:7b,v1
+014,en,is_internship,true,true,1.0,False,,qwen2.5:7b,v1
+014,en,required_skills,"[""sql"", ""python""]","[""sql"", ""python""]",1.0,False,,qwen2.5:7b,v1
+015,de,company,"""AXA""","""AXA""",1.0,False,,qwen2.5:7b,v1
+015,de,role_title,"""Werkstudent:in Date Driven WeCare""","""Werkstudent:in Date Driven WeCare""",1.0,False,1.0,qwen2.5:7b,v1
+015,de,locations,"[""Winterthur""]","[""Winterthur""]",1.0,False,,qwen2.5:7b,v1
+015,de,workload_min,50,50,1.0,False,,qwen2.5:7b,v1
+015,de,workload_max,80,80,1.0,False,,qwen2.5:7b,v1
+015,de,duration_months,null,24,0.0,False,,qwen2.5:7b,v1
+015,de,start,"""asap""","""ab sofort bis 31.12.2026""",0.0,False,,qwen2.5:7b,v1
+015,de,german_level,"""none""","""none""",1.0,False,,qwen2.5:7b,v1
+015,de,english_required,false,false,1.0,False,,qwen2.5:7b,v1
+015,de,degree_level,"""bachelor_ok""","""bachelor_ok""",1.0,False,,qwen2.5:7b,v1
+015,de,is_internship,false,true,0.0,False,,qwen2.5:7b,v1
+015,de,required_skills,"[""sql"", ""python""]","[""sql"", ""python""]",1.0,False,,qwen2.5:7b,v1
+016,en,company,"""Elca informatique""","""Elca informatique SA""",1.0,False,,qwen2.5:7b,v1
+016,en,role_title,"""Internship: AI-Powered Technology Radar""","""AI-Powered Technology Radar Internship""",0.0,False,0.7012987012987013,qwen2.5:7b,v1
+016,en,locations,"[""Zurich""]","[""Zurich""]",1.0,False,,qwen2.5:7b,v1
+016,en,workload_min,100,100,1.0,False,,qwen2.5:7b,v1
+016,en,workload_max,100,100,1.0,False,,qwen2.5:7b,v1
+016,en,duration_months,6,6,1.0,False,,qwen2.5:7b,v1
+016,en,start,"""Spring 2027""","""Spring 2027""",1.0,False,,qwen2.5:7b,v1
+016,en,german_level,"""plus""","""none""",0.0,False,,qwen2.5:7b,v1
+016,en,english_required,true,true,1.0,False,,qwen2.5:7b,v1
+016,en,degree_level,"""graduate_only""","""bachelor_ok""",0.0,False,,qwen2.5:7b,v1
+016,en,is_internship,true,true,1.0,False,,qwen2.5:7b,v1
+016,en,required_skills,"["".net"", ""javascript"", ""python"", ""azure""]","[""python"", ""javascript"", ""databases"", ""azure"", ""devops"", ""cicd""]",0.6,False,,qwen2.5:7b,v1
+017,en,company,"""ETH Zurich""","""Swiss Data Science Center (SDSC)""",0.0,False,,qwen2.5:7b,v1
+017,en,role_title,"""Machine Learning Engineer""","""Machine Learning Engineer""",1.0,False,1.0,qwen2.5:7b,v1
+017,en,locations,"[""Zurich""]","[""Zurich""]",1.0,False,,qwen2.5:7b,v1
+017,en,workload_min,100,100,1.0,False,,qwen2.5:7b,v1
+017,en,workload_max,100,100,1.0,False,,qwen2.5:7b,v1
+017,en,duration_months,null,null,1.0,False,,qwen2.5:7b,v1
+017,en,start,"""January 1st""","""January 1st""",1.0,False,,qwen2.5:7b,v1
+017,en,german_level,"""plus""","""plus""",1.0,False,,qwen2.5:7b,v1
+017,en,english_required,true,true,1.0,False,,qwen2.5:7b,v1
+017,en,degree_level,"""graduate_only""","""master_only""",0.0,False,,qwen2.5:7b,v1
+017,en,is_internship,false,false,1.0,False,,qwen2.5:7b,v1
+017,en,required_skills,[],"[""machine learning concepts"", ""machine learning engineering""]",0.0,False,,qwen2.5:7b,v1
+018,fr,company,"""Assura""","""Assura SA""",1.0,False,,qwen2.5:7b,v1
+018,fr,role_title,"""Stagiaire en analyse de données IT - Stage de 6 à 12 mois - 100%""","""Stagiaire en analyse de données IT""",0.0,False,0.6938775510204082,qwen2.5:7b,v1
+018,fr,locations,"[""Lausanne""]","[""Lausanne""]",1.0,False,,qwen2.5:7b,v1
+018,fr,workload_min,100,100,1.0,False,,qwen2.5:7b,v1
+018,fr,workload_max,100,100,1.0,False,,qwen2.5:7b,v1
+018,fr,duration_months,6,6,1.0,False,,qwen2.5:7b,v1
+018,fr,start,"""1er février 2027""","""1er février 2027""",1.0,False,,qwen2.5:7b,v1
+018,fr,german_level,"""none""","""none""",1.0,False,,qwen2.5:7b,v1
+018,fr,english_required,false,false,1.0,False,,qwen2.5:7b,v1
+018,fr,degree_level,"""bachelor_ok""","""bachelor_ok""",1.0,False,,qwen2.5:7b,v1
+018,fr,is_internship,true,true,1.0,False,,qwen2.5:7b,v1
+018,fr,required_skills,"[""python"", ""sql""]","[""python"", ""sql"", ""machine learning"", ""analyse de séries temporelles"", ""détectio d'anomalies"", ""nlp"", ""embeddings"", ""clustering"", ""modèles de langage (llm)""]",0.3636363636363636,False,,qwen2.5:7b,v1
+019,fr,company,"""Assura""","""Assura SA""",1.0,False,,qwen2.5:7b,v1
+019,fr,role_title,"""Stagiaire en Sciences des données – Stage de 6 à 12 mois – 100%""","""Stagiaire en Sciences des données""",0.0,False,0.6875,qwen2.5:7b,v1
+019,fr,locations,"[""Le Mont-sur-Lausanne""]","[""Le Mont-sur-Lausanne""]",1.0,False,,qwen2.5:7b,v1
+019,fr,workload_min,100,100,1.0,False,,qwen2.5:7b,v1
+019,fr,workload_max,100,100,1.0,False,,qwen2.5:7b,v1
+019,fr,duration_months,6,null,0.0,False,,qwen2.5:7b,v1
+019,fr,start,"""1er février 2027""","""1er février 2027""",1.0,False,,qwen2.5:7b,v1
+019,fr,german_level,"""plus""","""none""",0.0,False,,qwen2.5:7b,v1
+019,fr,english_required,false,false,1.0,False,,qwen2.5:7b,v1
+019,fr,degree_level,"""master_only""","""master_only""",1.0,False,,qwen2.5:7b,v1
+019,fr,is_internship,true,true,1.0,False,,qwen2.5:7b,v1
+019,fr,required_skills,[],"[""python"", ""statistiques""]",0.0,False,,qwen2.5:7b,v1
+020,de,company,"""santéservices""","""santéservices ag""",1.0,False,,qwen2.5:7b,v1
+020,de,role_title,"""Datenanalyst:in 80-100% | Solothurn oder Zürich""","""Datenanalyst:in""",0.0,False,0.4838709677419355,qwen2.5:7b,v1
+020,de,locations,"[""Solothurn"", ""Zürich""]","[""Solothurn"", ""Zürich""]",1.0,False,,qwen2.5:7b,v1
+020,de,workload_min,80,80,1.0,False,,qwen2.5:7b,v1
+020,de,workload_max,100,100,1.0,False,,qwen2.5:7b,v1
+020,de,duration_months,null,null,1.0,False,,qwen2.5:7b,v1
+020,de,start,"""asap""","""03 November 2026""",0.0,False,,qwen2.5:7b,v1
+020,de,german_level,"""required""","""required""",1.0,False,,qwen2.5:7b,v1
+020,de,english_required,false,true,0.0,False,,qwen2.5:7b,v1
+020,de,degree_level,"""graduate_only""","""master_only""",0.0,False,,qwen2.5:7b,v1
+020,de,is_internship,false,false,1.0,False,,qwen2.5:7b,v1
+020,de,required_skills,[],"[""r"", ""python"", ""stata""]",0.0,False,,qwen2.5:7b,v1
+021,en,company,"""Swiss Re""","""Swiss Re""",1.0,False,,qwen2.5:7b,v1
+021,en,role_title,"""Actuarial Data Analyst - Graduate""","""Actuarial Data Analyst - Graduate""",1.0,False,1.0,qwen2.5:7b,v1
+021,en,locations,"[""Zurich""]","[""Zurich""]",1.0,False,,qwen2.5:7b,v1
+021,en,workload_min,null,null,1.0,False,,qwen2.5:7b,v1
+021,en,workload_max,null,null,1.0,False,,qwen2.5:7b,v1
+021,en,duration_months,18,null,0.0,False,,qwen2.5:7b,v1
+021,en,start,"""1 September 2027""","""1 September 2027""",1.0,False,,qwen2.5:7b,v1
+021,en,german_level,"""none""","""none""",1.0,False,,qwen2.5:7b,v1
+021,en,english_required,true,true,1.0,False,,qwen2.5:7b,v1
+021,en,degree_level,"""graduate_only""","""bachelor_ok""",0.0,False,,qwen2.5:7b,v1
+021,en,is_internship,false,false,1.0,False,,qwen2.5:7b,v1
+021,en,required_skills,[],"[""python"", ""r"", ""sql"", ""data analysis"", ""data visualization"", ""programming""]",0.0,False,,qwen2.5:7b,v1
+022,de,company,"""Migros-Genossenschafts-Bund""","""Migros-Genossenschafts-Bund""",1.0,False,,qwen2.5:7b,v1
+022,de,role_title,"""Data Scientist""","""Data Scientist (w/m/d)""",0.0,False,0.7777777777777778,qwen2.5:7b,v1
+022,de,locations,"[""Zürich""]","[""Zürich""]",1.0,False,,qwen2.5:7b,v1
+022,de,workload_min,60,60,1.0,False,,qwen2.5:7b,v1
+022,de,workload_max,100,100,1.0,False,,qwen2.5:7b,v1
+022,de,duration_months,null,null,1.0,False,,qwen2.5:7b,v1
+022,de,start,null,"""10 November 2026""",0.0,False,,qwen2.5:7b,v1
+022,de,german_level,"""required""","""required""",1.0,False,,qwen2.5:7b,v1
+022,de,english_required,true,true,1.0,False,,qwen2.5:7b,v1
+022,de,degree_level,"""graduate_only""","""master_only""",0.0,False,,qwen2.5:7b,v1
+022,de,is_internship,false,false,1.0,False,,qwen2.5:7b,v1
+022,de,required_skills,"[""sql"", ""python""]","[""python"", ""sql"", ""gcp"", ""dbt"", ""nicegui"", ""vue.js""]",0.5,False,,qwen2.5:7b,v1
+023,en,company,"""Tufa Labs""","""Tufa Labs AG""",1.0,False,,qwen2.5:7b,v1
+023,en,role_title,"""AI Research Engineer, Reinforcement Learning & Large-Scale Model Training""","""AI Research Engineer""",0.0,False,0.43010752688172044,qwen2.5:7b,v1
+023,en,locations,"[""Zürich""]","[""Zürich""]",1.0,False,,qwen2.5:7b,v1
+023,en,workload_min,100,100,1.0,False,,qwen2.5:7b,v1
+023,en,workload_max,100,100,1.0,False,,qwen2.5:7b,v1
+023,en,duration_months,null,null,1.0,False,,qwen2.5:7b,v1
+023,en,start,"""1 March 2027""","""1 March 2027 or by agreement""",0.0,False,,qwen2.5:7b,v1
+023,en,german_level,"""none""","""none""",1.0,False,,qwen2.5:7b,v1
+023,en,english_required,true,true,1.0,False,,qwen2.5:7b,v1
+023,en,degree_level,"""unknown""","""master_only""",0.0,False,,qwen2.5:7b,v1
+023,en,is_internship,false,false,1.0,False,,qwen2.5:7b,v1
+023,en,required_skills,[],"[""python"", ""sql"", ""reinforcement learning"", ""large language models"", ""distributed systems""]",0.0,False,,qwen2.5:7b,v1
+024,de,company,"""Bundesamt für Informatik und Telekommunikation BIT""","""Bundesamt für Informatik und Telekommunikation BIT""",1.0,False,,qwen2.5:7b,v1
+024,de,role_title,"""Hochschulpraktikant/-in (1393)""","""Hochschulpraktikant/-in""",1.0,False,0.8679245283018868,qwen2.5:7b,v1
+024,de,locations,"[""Zollikofen""]","[""Zollikofen"", ""und Homeoffice""]",0.6666666666666666,False,,qwen2.5:7b,v1
+024,de,workload_min,80,80,1.0,False,,qwen2.5:7b,v1
+024,de,workload_max,100,100,1.0,False,,qwen2.5:7b,v1
+024,de,duration_months,null,18,0.0,False,,qwen2.5:7b,v1
+024,de,start,null,"""14 November 2026""",0.0,False,,qwen2.5:7b,v1
+024,de,german_level,"""none""","""none""",1.0,False,,qwen2.5:7b,v1
+024,de,english_required,false,false,1.0,False,,qwen2.5:7b,v1
+024,de,degree_level,"""graduate_only""","""bachelor_ok""",0.0,False,,qwen2.5:7b,v1
+024,de,is_internship,true,true,1.0,False,,qwen2.5:7b,v1
+024,de,required_skills,"[""excel""]","[""excel"", ""power bi"", ""finanz- und rechnungswesen"", ""datenanalyse"", ""automatisierung""]",0.33333333333333337,False,,qwen2.5:7b,v1
+025,en,company,"""UBS""","""UBS""",1.0,False,,qwen2.5:7b,v1
+025,en,role_title,"""2027 Internship – Marketing, Design and Digital Sales - Zurich""","""Internship – Marketing, Design and Digital Sales""",1.0,False,0.8727272727272727,qwen2.5:7b,v1
+025,en,locations,"[""Zürich""]","[""Zürich""]",1.0,False,,qwen2.5:7b,v1
+025,en,workload_min,null,null,1.0,False,,qwen2.5:7b,v1
+025,en,workload_max,null,null,1.0,False,,qwen2.5:7b,v1
+025,en,duration_months,6,6,1.0,False,,qwen2.5:7b,v1
+025,en,start,"""1 February 2027""","""1 February 2027""",1.0,False,,qwen2.5:7b,v1
+025,en,german_level,"""plus""","""plus""",1.0,False,,qwen2.5:7b,v1
+025,en,english_required,false,true,0.0,False,,qwen2.5:7b,v1
+025,en,degree_level,"""bachelor_ok""","""bachelor_ok""",1.0,False,,qwen2.5:7b,v1
+025,en,is_internship,true,true,1.0,False,,qwen2.5:7b,v1
+025,en,required_skills,[],"[""python"", ""spss"", ""power bi""]",0.0,False,,qwen2.5:7b,v1
+026,de,company,"""Stadt Bern""","""Statistik Stadt Bern""",0.0,False,,qwen2.5:7b,v1
+026,de,role_title,"""Praktikant*in Statistik""","""Praktikant*in Statistik""",1.0,False,1.0,qwen2.5:7b,v1
+026,de,locations,"[""Bern""]","[""Bern""]",1.0,False,,qwen2.5:7b,v1
+026,de,workload_min,50,50,1.0,False,,qwen2.5:7b,v1
+026,de,workload_max,100,100,1.0,False,,qwen2.5:7b,v1
+026,de,duration_months,6,6,1.0,False,,qwen2.5:7b,v1
+026,de,start,"""1. Januar 2027""","""1. Januar 2027""",1.0,False,,qwen2.5:7b,v1
+026,de,german_level,"""required""","""required""",1.0,False,,qwen2.5:7b,v1
+026,de,english_required,false,false,1.0,False,,qwen2.5:7b,v1
+026,de,degree_level,"""unknown""","""bachelor_ok""",0.0,False,,qwen2.5:7b,v1
+026,de,is_internship,true,true,1.0,False,,qwen2.5:7b,v1
+026,de,required_skills,"[""r"", ""excel""]","[""r""]",0.6666666666666666,False,,qwen2.5:7b,v1
