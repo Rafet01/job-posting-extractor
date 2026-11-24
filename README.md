@@ -201,7 +201,7 @@ A rule written more precisely helped less than avoiding copyable values would ha
 1. Write a prompt v3 without copyable example values, developed on the dev set and scored once on the test set. *Done as v3 and v4: better on skills on the dev set, no significant difference on the test set.*
 2. Label 20–30 more postings as a development set. *Done: 26 paraphrased postings in `data/dev/`, labelled with the same guidelines.*
 3. Split `degree_level` into "required level" and "degree must be finished", and store duration ranges as two numbers.
-4. Use constrained decoding (Ollama's JSON-schema output) instead of relying on retries. *Implemented as prompt version `v1-schema` (the v1 messages, schema-constrained decoding). On the dev set it scored clearly below v1 (workload 0.27 vs 0.92): fields with a default are optional in the schema, so the grammar let the model close the object without them. `v1-strict` lists every field as required and matches v1 on the dev set with no retries. See [docs/experiments-phase-2.md](docs/experiments-phase-2.md).*
+4. Use constrained decoding (Ollama's JSON-schema output) instead of relying on retries. *Implemented as prompt version `v1-schema` (the v1 messages, schema-constrained decoding). On the dev set it scored clearly below v1 (workload 0.35 vs 0.92): fields with a default are optional in the schema, so the grammar let the model close the object without them. `v1-strict` lists every field as required and matches v1 on the dev set with no retries. See [docs/experiments-phase-2.md](docs/experiments-phase-2.md).*
 5. Have a second person label a subset, to measure agreement.
 6. Add a paid model as a reference, to separate prompt problems from model-size problems.
 
