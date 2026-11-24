@@ -12,16 +12,14 @@ from pydantic import ValidationError
 
 from extractor.llm import ExtractionError, extract_posting, get_client, get_default_model
 from extractor.schema import JobPosting
-
-POSTINGS_DIR = Path("data/postings")
-CACHE_DIR = Path("outputs/cache")
+from extractor.splits import TEST, Split
 
 
-def cache_path(model: str, prompt_version: str, posting_id: str) -> Path:
+def cache_path(model: str, prompt_version: str, posting_id: str, split: Split = TEST) -> Path:
     """Where the result for one posting/model/prompt combination is stored."""
     # ':' is not allowed in Windows folder names, e.g. 'qwen2.5:7b'.
     safe_model = model.replace(":", "_").replace("/", "_")
-    return CACHE_DIR / safe_model / prompt_version / f"{posting_id}.json"
+    return split.cache_dir / safe_model / prompt_version / f"{posting_id}.json"
 
 
 def load_cached(path: Path) -> JobPosting | None:
@@ -38,17 +36,17 @@ def save_cached(path: Path, posting: JobPosting) -> None:
     path.write_text(posting.model_dump_json(indent=2), encoding="utf-8")
 
 
-def run(model: str, prompt_version: str, force: bool = False) -> None:
+def run(model: str, prompt_version: str, force: bool = False, split: Split = TEST) -> None:
     """Extract postings that lack a valid cached result, or all postings if forced."""
     client = get_client()
-    files = sorted(POSTINGS_DIR.glob("*.txt"))
+    files = sorted(split.postings_dir.glob("*.txt"))
     counts = {"cached": 0, "extracted": 0, "failed": 0, "skipped": 0}
 
     print(f"{len(files)} postings, model={model}, prompt={prompt_version}")
 
     for file in files:
         posting_id = file.stem  # '001.txt' -> '001'
-        path = cache_path(model, prompt_version, posting_id)
+        path = cache_path(model, prompt_version, posting_id, split)
 
         if not force and load_cached(path) is not None:
             counts["cached"] += 1

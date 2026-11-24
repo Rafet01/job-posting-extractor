@@ -11,6 +11,7 @@ from extractor.metrics import classification_report, exact_match, location_prf, 
 from extractor.normalize import normalize_company, normalize_start
 from extractor.run import cache_path, load_cached
 from extractor.schema import JobPosting
+from extractor.splits import TEST, Split
 
 # Bump when a scoring rule changes, then re-evaluate every run. See docs/experiments.md.
 # 1: first version. 2: gender markers in titles and guideline start wordings normalised.
@@ -29,10 +30,10 @@ METRICS = {
 }
 
 
-def output_path(kind: str, model: str, prompt: str) -> Path:
+def output_path(kind: str, model: str, prompt: str, split: Split = TEST) -> Path:
     """Where the details or summary CSV of one run is written, e.g. outputs/summary_qwen2.5_7b_v1.csv."""
-    run_dir = cache_path(model, prompt, "001").parent
-    return Path("outputs") / f"{kind}_{run_dir.parent.name}_{run_dir.name}.csv"
+    run_dir = cache_path(model, prompt, "001", split).parent
+    return split.output_dir / f"{kind}_{run_dir.parent.name}_{run_dir.name}.csv"
 
 
 def detail_rows(labels: dict[str, JobPosting], predictions: dict[str, JobPosting | None],
@@ -119,16 +120,17 @@ def main() -> None:
     parser.add_argument("--overwrite", action="store_true",
                         help="Replace result CSVs that already exist, e.g. after a metric change")
     args = parser.parse_args()
-    path = Path("data/labels.csv")
-    labels = load_labels(path)
+    split = TEST
+    path = split.labels_path
+    labels = load_labels(path, split.id_pattern)
     metadata = pd.read_csv(path, usecols=["id", "language"], dtype=str, keep_default_na=False)
     languages = dict(zip(metadata.id.str.strip(), metadata.language.str.strip()))
     if not labels or set(languages.values()) - {"en", "de", "fr"}:
         parser.error("Expected labelled postings with language en, de or fr")
-    predictions = {key: load_cached(cache_path(args.model, args.prompt, key)) for key in labels}
+    predictions = {key: load_cached(cache_path(args.model, args.prompt, key, split)) for key in labels}
     if all(prediction is None for prediction in predictions.values()):
         # Most likely a fresh clone: the cache is not in git. Scoring it would publish all zeros.
-        run_dir = cache_path(args.model, args.prompt, "001").parent
+        run_dir = cache_path(args.model, args.prompt, "001", split).parent
         raise SystemExit(f"No valid cached predictions in {run_dir}. Nothing was written. "
                          f"Extract first: python -m extractor.run --model {args.model} --prompt {args.prompt}")
     details = detail_rows(labels, predictions, languages)
@@ -140,7 +142,7 @@ def main() -> None:
     export = details.copy()
     for column in ("gold", "pred"):
         export[column] = export[column].map(lambda value: json.dumps(value, ensure_ascii=False))
-    outputs = {name: output_path(name, args.model, args.prompt) for name in ("details", "summary")}
+    outputs = {name: output_path(name, args.model, args.prompt, split) for name in ("details", "summary")}
     existing = [str(output) for output in outputs.values() if output.exists()]
     if existing and not args.overwrite:
         # Committed results are only replaced on purpose, never by a careless or partial run.
@@ -148,7 +150,7 @@ def main() -> None:
                          "Add --overwrite to replace them.")
     for name, frame in (("details", export), ("summary", summary)):
         output = outputs[name]
-        output.parent.mkdir(exist_ok=True)
+        output.parent.mkdir(parents=True, exist_ok=True)
         frame.assign(model=args.model, prompt=args.prompt,
                      metric_version=METRIC_VERSION).to_csv(output, index=False)
         print(output)

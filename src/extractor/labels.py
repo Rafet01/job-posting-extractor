@@ -9,9 +9,11 @@ from pydantic import ValidationError
 from extractor.schema import JobPosting
 
 
-def load_labels(path: str | Path = Path("data/labels.csv")) -> dict[str, JobPosting]:
-    """Return validated postings keyed by their original three-digit IDs.
+def load_labels(path: str | Path = Path("data/labels.csv"),
+                id_pattern: str = r"[0-9]{3}") -> dict[str, JobPosting]:
+    """Return validated postings keyed by their IDs, which must match id_pattern.
 
+    The default pattern is the test split's: three digits, as in the posting filenames.
     Language and notes are annotation metadata, outside the extraction schema.
     """
     labels: dict[str, JobPosting] = {}
@@ -28,8 +30,9 @@ def load_labels(path: str | Path = Path("data/labels.csv")) -> dict[str, JobPost
                 raise ValueError(f"{context}: wrong number of columns")
 
             posting_id = row["id"].strip()
-            if not re.fullmatch(r"[0-9]{3}", posting_id):
-                raise ValueError(f"{context}: expected a three-digit ID, got {posting_id!r}")
+            if not re.fullmatch(id_pattern, posting_id):
+                expected = "a three-digit ID" if id_pattern == r"[0-9]{3}" else f"an ID matching {id_pattern}"
+                raise ValueError(f"{context}: expected {expected}, got {posting_id!r}")
             if posting_id in labels:
                 raise ValueError(f"{context}: duplicate ID {posting_id}")
 

@@ -11,6 +11,7 @@ import extractor.run as run_module
 from extractor.llm import ExtractionError
 from extractor.run import cache_path, load_cached, run
 from extractor.schema import JobPosting
+from extractor.splits import TEST
 from tests.factories import posting, posting_fields
 
 MODEL, PROMPT = "demo:7b", "v1"
@@ -33,10 +34,9 @@ class FakeExtraction:
 @pytest.fixture
 def postings_dir(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> Path:
     """Point the run at empty temporary posting and cache folders, never at data/ or outputs/."""
-    postings = tmp_path / "postings"
-    postings.mkdir()
-    monkeypatch.setattr(run_module, "POSTINGS_DIR", postings)
-    monkeypatch.setattr(run_module, "CACHE_DIR", tmp_path / "cache")
+    monkeypatch.chdir(tmp_path)  # every split path is relative, so data/ and outputs/ are temporary
+    postings = TEST.postings_dir
+    postings.mkdir(parents=True)
     monkeypatch.setattr(run_module, "get_client", MagicMock())
     return postings
 
@@ -95,7 +95,7 @@ def test_cache_is_kept_per_model_and_prompt(postings_dir: Path, extraction: Fake
     run(MODEL, "v2")
     assert extraction.sent == ["001", "001"]
     # ':' is not allowed in Windows folder names.
-    assert cache_path("qwen2.5:7b", "v2", "001") == run_module.CACHE_DIR / "qwen2.5_7b" / "v2" / "001.json"
+    assert cache_path("qwen2.5:7b", "v2", "001") == TEST.cache_dir / "qwen2.5_7b" / "v2" / "001.json"
 
 
 def test_failed_posting_is_reported_and_not_cached(postings_dir: Path, extraction: FakeExtraction,
@@ -159,7 +159,7 @@ def test_connection_error_stops_the_run(postings_dir: Path, monkeypatch: pytest.
     with pytest.raises(openai.APIConnectionError):
         run(MODEL, PROMPT)
     assert unreachable.call_count == 1
-    assert not run_module.CACHE_DIR.exists()
+    assert not TEST.cache_dir.exists()
 
 
 def test_run_with_mocked_client_caches_the_validated_answer(postings_dir: Path,
