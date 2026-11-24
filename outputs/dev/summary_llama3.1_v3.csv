@@ -1,0 +1,49 @@
+field,metric,language,n,score,missing_predictions,model,prompt,metric_version
+company,normalized exact,overall,26,0.9230769230769231,0,llama3.1,v3,2
+role_title,title >= 0.85,overall,26,0.8461538461538461,0,llama3.1,v3,2
+locations,mean posting F1,overall,26,0.9294871794871794,0,llama3.1,v3,2
+workload_min,exact,overall,26,0.8846153846153846,0,llama3.1,v3,2
+workload_max,exact,overall,26,0.9230769230769231,0,llama3.1,v3,2
+duration_months,exact,overall,26,0.8461538461538461,0,llama3.1,v3,2
+start,normalized exact (proxy),overall,26,0.46153846153846156,0,llama3.1,v3,2
+german_level,macro F1,overall,26,0.4807017543859649,0,llama3.1,v3,2
+english_required,macro F1,overall,26,0.91875,0,llama3.1,v3,2
+degree_level,macro F1,overall,26,0.31666666666666665,0,llama3.1,v3,2
+is_internship,macro F1,overall,26,0.9423503325942351,0,llama3.1,v3,2
+required_skills,mean posting F1,overall,26,0.6162087912087912,0,llama3.1,v3,2
+company,normalized exact,en,13,1.0,0,llama3.1,v3,2
+role_title,title >= 0.85,en,13,1.0,0,llama3.1,v3,2
+locations,mean posting F1,en,13,0.9102564102564101,0,llama3.1,v3,2
+workload_min,exact,en,13,0.7692307692307693,0,llama3.1,v3,2
+workload_max,exact,en,13,0.8461538461538461,0,llama3.1,v3,2
+duration_months,exact,en,13,0.8461538461538461,0,llama3.1,v3,2
+start,normalized exact (proxy),en,13,0.5384615384615384,0,llama3.1,v3,2
+german_level,macro F1,en,13,0.6521739130434783,0,llama3.1,v3,2
+english_required,macro F1,en,13,0.9212121212121211,0,llama3.1,v3,2
+degree_level,macro F1,en,13,0.3666666666666667,0,llama3.1,v3,2
+is_internship,macro F1,en,13,0.9022556390977443,0,llama3.1,v3,2
+required_skills,mean posting F1,en,13,0.7987179487179487,0,llama3.1,v3,2
+company,normalized exact,de,8,0.875,0,llama3.1,v3,2
+role_title,title >= 0.85,de,8,0.75,0,llama3.1,v3,2
+locations,mean posting F1,de,8,0.9583333333333333,0,llama3.1,v3,2
+workload_min,exact,de,8,1.0,0,llama3.1,v3,2
+workload_max,exact,de,8,1.0,0,llama3.1,v3,2
+duration_months,exact,de,8,0.875,0,llama3.1,v3,2
+start,normalized exact (proxy),de,8,0.25,0,llama3.1,v3,2
+german_level,macro F1,de,8,0.27777777777777773,0,llama3.1,v3,2
+english_required,macro F1,de,8,1.0,0,llama3.1,v3,2
+degree_level,macro F1,de,8,0.15,0,llama3.1,v3,2
+is_internship,macro F1,de,8,1.0,0,llama3.1,v3,2
+required_skills,mean posting F1,de,8,0.5416666666666666,0,llama3.1,v3,2
+company,normalized exact,fr,5,0.8,0,llama3.1,v3,2
+role_title,title >= 0.85,fr,5,0.6,0,llama3.1,v3,2
+locations,mean posting F1,fr,5,0.9333333333333332,0,llama3.1,v3,2
+workload_min,exact,fr,5,1.0,0,llama3.1,v3,2
+workload_max,exact,fr,5,1.0,0,llama3.1,v3,2
+duration_months,exact,fr,5,0.8,0,llama3.1,v3,2
+start,normalized exact (proxy),fr,5,0.6,0,llama3.1,v3,2
+german_level,macro F1,fr,5,0.4444444444444445,0,llama3.1,v3,2
+english_required,macro F1,fr,5,0.4444444444444445,0,llama3.1,v3,2
+degree_level,macro F1,fr,5,0.35555555555555557,0,llama3.1,v3,2
+is_internship,macro F1,fr,5,1.0,0,llama3.1,v3,2
+required_skills,mean posting F1,fr,5,0.260952380952381,0,llama3.1,v3,2
