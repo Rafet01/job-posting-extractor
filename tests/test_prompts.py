@@ -16,6 +16,7 @@ POSTINGS_DIR = Path(__file__).resolve().parents[1] / "data" / "postings"
 PROMPT_HASHES = {
     "v1": "1053ec14213c35772f3a30c93962bc6a60526763dbb0dbffe7430533d72450d8",
     "v2": "08904b5efc69372b2ff0d1e746b67d9c311661923635b6d05d3d07e24929fd06",
+    "v3": "ea32b2d0c4ddf2cfd874390ba4eaccd68d800c0dab1c5721035dbf8ea856520f",
 }
 
 

@@ -92,6 +92,44 @@ Field rules:
 
 Answer with JSON only, no explanation."""
 
+# v4 is v3 with the start, german_level, degree_level and example-list rules rewritten
+# after the errors v3 made on the development set.
+SYSTEM_PROMPT_V4 = """You extract structured information from job postings.
+Answer with one JSON object that follows this JSON Schema exactly:
+
+{schema}
+
+Rules:
+- Use null when information is not stated in the posting.
+- Do not add fields that are not in the schema.
+- Use only what the posting states. The language a posting is written in is never evidence that a language is required.
+- The first three lines are the job title, the employer and the location.
+
+Field rules:
+- role_title: copy the first line exactly, with every number, percentage and bracket in it. Remove only a gender marker such as (m/w/d), (f/m/x) or (all genders).
+- company: the employer on the second line, without a legal suffix such as AG, SA, GmbH or Ltd. Never replace it with a department or team.
+- duration_months: also look in the body. "for 4 to 8 months" gives 4, "8-12 Monate" gives 8, "a 24-month programme" gives 24.
+- start: null unless the posting names a start date, a start period or an immediate start. Copy only the date or period, in the posting's language, without words around it: "ab 1. März 2028 oder nach Vereinbarung" gives "1. März 2028". Write "asap" only when the posting itself says immediately, as soon as possible, ab sofort or dès que possible. "By agreement", "nach Vereinbarung" or "à convenir" on its own gives null.
+- german_level:
+  - "required": the candidate profile says German is needed ("fluent German", "sehr gute Deutschkenntnisse", "maîtrise de l'allemand").
+  - "plus": German is an advantage or preferred ("German is a plus", "Deutsch von Vorteil", "l'allemand est un atout"), or one of several languages is enough ("German or French", "one national language").
+  - "none": German is not mentioned as a qualification. A posting written in German without a language requirement gives "none".
+- english_required: true only if the posting says the candidate needs English, for example "fluent English". False if English is a plus or not mentioned.
+- degree_level: answer these questions in order and stop at the first "yes".
+  1. Does the posting say nothing about studies, or only name a field or background ("a background in physics")? Then "unknown".
+  2. Must the candidate already hold a degree, with no current students mentioned ("a completed degree", "Bachelorabschluss", "abgeschlossenes Studium", "diplôme en ...", "graduated within the last year")? Then "graduate_only".
+  3. Are only master's or PhD students or master's graduates mentioned ("Master's student", "working towards a Master's or PhD")? Then "master_only".
+  4. Otherwise current students can apply, at any level: "bachelor_ok".
+- is_internship: true only for an internship, Praktikum or stage. False for graduate programmes, trainee programmes, working-student roles and other jobs.
+- required_skills: named tools the candidate must already know, lowercase, with spaces instead of underscores ("power bi").
+  - Leave out general fields and methods: machine learning, AI, NLP, deep learning, statistics, data mining, MLOps, forecasting methods.
+  - Leave out tools that appear only in the tasks or the offer, and tools that are a plus.
+  - Leave out every tool in a list of examples: after "such as", "like", "e.g.", "for example", "z. B.", "wie", "par exemple", or before "or similar", "oder ähnliche", "etc." none of the listed tools is required, not even the first one.
+  - When any one of several named tools is enough ("Go, Rust or Kotlin"), list each of them.
+  - Use [] when no named tool is required.
+
+Answer with JSON only, no explanation."""
+
 PROMPTS = {
     "v1": SYSTEM_PROMPT_V1,
     "v2": SYSTEM_PROMPT_V2,
@@ -103,10 +141,11 @@ PROMPTS = {
     # the model close the object without them.
     "v1-strict": SYSTEM_PROMPT_V1,
     "v3": SYSTEM_PROMPT_V3,
+    "v4": SYSTEM_PROMPT_V4,
 }
 
 # Versions whose schema in the prompt keeps the field descriptions (see schema_for).
-DESCRIBED_SCHEMA = {"v1", "v1-schema", "v1-strict", "v3"}
+DESCRIBED_SCHEMA = {"v1", "v1-schema", "v1-strict", "v3", "v4"}
 # Versions that ask the API for schema-constrained decoding instead of plain JSON mode.
 SCHEMA_DECODING = {"v1-schema", "v1-strict"}
 # Schema-decoding versions that list every property as required. Optional values are
