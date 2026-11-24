@@ -14,6 +14,10 @@ class JobPosting(BaseModel):
     # Reject fields the LLM invents that are not in the schema.
     model_config = ConfigDict(extra="forbid")
 
+    # The Field descriptions below are sent to the LLM as part of prompt v1, so editing
+    # them changes v1 (tests/test_prompts.py fails). Some are older than the annotation
+    # guidelines, e.g. degree_level. Prompt v2 leaves them out and uses its own rules.
+
     company: str = Field(description="Name of the hiring company.")
     role_title: str = Field(description="Job title as written in the posting.")
     locations: list[str] = Field(
