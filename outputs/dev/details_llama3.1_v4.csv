@@ -1,0 +1,313 @@
+id,language,field,gold,pred,score,missing_prediction,title_similarity,model,prompt,metric_version
+d001,en,company,"""UBS""","""UBS""",1.0,False,,llama3.1,v4,2
+d001,en,role_title,"""2026 Off-cycle Internship - Data Scientist Group Internal Consulting""","""2026 Off-cycle Internship - Data Scientist Group Internal Consulting""",1.0,False,1.0,llama3.1,v4,2
+d001,en,locations,"[""Zurich""]","[""Zurich"", ""Switzerland""]",0.6666666666666666,False,,llama3.1,v4,2
+d001,en,workload_min,null,null,1.0,False,,llama3.1,v4,2
+d001,en,workload_max,null,null,1.0,False,,llama3.1,v4,2
+d001,en,duration_months,null,6,0.0,False,,llama3.1,v4,2
+d001,en,start,"""1 September 2026""","""1 September 2026 oder nach Vereinbarung""",1.0,False,,llama3.1,v4,2
+d001,en,german_level,"""none""","""none""",1.0,False,,llama3.1,v4,2
+d001,en,english_required,false,true,0.0,False,,llama3.1,v4,2
+d001,en,degree_level,"""bachelor_ok""","""bachelor_ok""",1.0,False,,llama3.1,v4,2
+d001,en,is_internship,true,true,1.0,False,,llama3.1,v4,2
+d001,en,required_skills,[],"[""python"", ""pandas"", ""scikit-learn"", ""tensorflow"", ""pytorch"", ""keras"", ""spacy""]",0.0,False,,llama3.1,v4,2
+d002,en,company,"""Pinterest""","""Pinterest""",1.0,False,,llama3.1,v4,2
+d002,en,role_title,"""Machine Learning Intern 2027 (Zurich)""","""Machine Learning Intern 2027 (Zurich)""",1.0,False,1.0,llama3.1,v4,2
+d002,en,locations,"[""Zurich""]","[""Zurich""]",1.0,False,,llama3.1,v4,2
+d002,en,workload_min,null,null,1.0,False,,llama3.1,v4,2
+d002,en,workload_max,null,null,1.0,False,,llama3.1,v4,2
+d002,en,duration_months,null,6,0.0,False,,llama3.1,v4,2
+d002,en,start,null,null,1.0,False,,llama3.1,v4,2
+d002,en,german_level,"""none""","""none""",1.0,False,,llama3.1,v4,2
+d002,en,english_required,false,true,0.0,False,,llama3.1,v4,2
+d002,en,degree_level,"""master_only""","""master_only""",1.0,False,,llama3.1,v4,2
+d002,en,is_internship,true,true,1.0,False,,llama3.1,v4,2
+d002,en,required_skills,"[""java|c++|python|tensorflow|pytorch|mlflow""]","[""tensorflow"", ""pytorch"", ""mlflow"", ""java"", ""c++"", ""python""]",1.0,False,,llama3.1,v4,2
+d003,en,company,"""comparis.ch""","""comparis.ch""",1.0,False,,llama3.1,v4,2
+d003,en,role_title,"""Machine Learning / AI Internship""","""Machine Learning / AI Internship (f/m/x)""",1.0,False,1.0,llama3.1,v4,2
+d003,en,locations,"[""Zürich""]","[""Zürich""]",1.0,False,,llama3.1,v4,2
+d003,en,workload_min,80,80,1.0,False,,llama3.1,v4,2
+d003,en,workload_max,100,100,1.0,False,,llama3.1,v4,2
+d003,en,duration_months,6,6,1.0,False,,llama3.1,v4,2
+d003,en,start,null,null,1.0,False,,llama3.1,v4,2
+d003,en,german_level,"""none""","""none""",1.0,False,,llama3.1,v4,2
+d003,en,english_required,true,true,1.0,False,,llama3.1,v4,2
+d003,en,degree_level,"""bachelor_ok""","""bachelor_ok""",1.0,False,,llama3.1,v4,2
+d003,en,is_internship,true,true,1.0,False,,llama3.1,v4,2
+d003,en,required_skills,[],"[""python"", ""scala"", ""java""]",0.0,False,,llama3.1,v4,2
+d004,en,company,"""Capgemini Invent""","""Capgemini Invent""",1.0,False,,llama3.1,v4,2
+d004,en,role_title,"""Intern Data Science / Management Consulting""","""Intern Data Science / Management Consulting (m/f/d)""",1.0,False,1.0,llama3.1,v4,2
+d004,en,locations,"[""Lausanne"", ""Geneva"", ""Basel"", ""Zurich""]","[""Lausanne"", ""Geneva"", ""Basel"", ""Zurich""]",1.0,False,,llama3.1,v4,2
+d004,en,workload_min,100,null,0.0,False,,llama3.1,v4,2
+d004,en,workload_max,100,100,1.0,False,,llama3.1,v4,2
+d004,en,duration_months,6,6,1.0,False,,llama3.1,v4,2
+d004,en,start,null,null,1.0,False,,llama3.1,v4,2
+d004,en,german_level,"""none""","""none""",1.0,False,,llama3.1,v4,2
+d004,en,english_required,false,false,1.0,False,,llama3.1,v4,2
+d004,en,degree_level,"""unknown""","""bachelor_ok""",0.0,False,,llama3.1,v4,2
+d004,en,is_internship,true,true,1.0,False,,llama3.1,v4,2
+d004,en,required_skills,[],[],1.0,False,,llama3.1,v4,2
+d005,de,company,"""Universitätsspital Zürich""","""Universitätsspital Zürich""",1.0,False,,llama3.1,v4,2
+d005,de,role_title,"""Hochschulpraktikant:in - Health Data Analyst 80-100 %""","""Hochschulpraktikant:in - Health Data Analyst 80-100%""",1.0,False,0.9904761904761905,llama3.1,v4,2
+d005,de,locations,"[""Zürich""]","[""Zürich""]",1.0,False,,llama3.1,v4,2
+d005,de,workload_min,80,80,1.0,False,,llama3.1,v4,2
+d005,de,workload_max,100,100,1.0,False,,llama3.1,v4,2
+d005,de,duration_months,null,12,0.0,False,,llama3.1,v4,2
+d005,de,start,"""15. Januar 2026""","""ab 15. Januar 2026""",0.0,False,,llama3.1,v4,2
+d005,de,german_level,"""required""","""required""",1.0,False,,llama3.1,v4,2
+d005,de,english_required,true,true,1.0,False,,llama3.1,v4,2
+d005,de,degree_level,"""graduate_only""","""bachelor_ok""",0.0,False,,llama3.1,v4,2
+d005,de,is_internship,true,true,1.0,False,,llama3.1,v4,2
+d005,de,required_skills,"[""sql"", ""python"", ""git""]","[""sql"", ""python"", ""power bi""]",0.6666666666666666,False,,llama3.1,v4,2
+d006,fr,company,"""Seculabs""","""Seculabs""",1.0,False,,llama3.1,v4,2
+d006,fr,role_title,"""Stage Intelligence Artificielle""","""Stage Intelligence Artificielle""",1.0,False,1.0,llama3.1,v4,2
+d006,fr,locations,"[""Lausanne""]","[""Lausanne""]",1.0,False,,llama3.1,v4,2
+d006,fr,workload_min,100,null,0.0,False,,llama3.1,v4,2
+d006,fr,workload_max,100,null,0.0,False,,llama3.1,v4,2
+d006,fr,duration_months,3,3,1.0,False,,llama3.1,v4,2
+d006,fr,start,"""asap""","""dès que possible""",1.0,False,,llama3.1,v4,2
+d006,fr,german_level,"""none""","""none""",1.0,False,,llama3.1,v4,2
+d006,fr,english_required,false,false,1.0,False,,llama3.1,v4,2
+d006,fr,degree_level,"""bachelor_ok""","""bachelor_ok""",1.0,False,,llama3.1,v4,2
+d006,fr,is_internship,true,true,1.0,False,,llama3.1,v4,2
+d006,fr,required_skills,"[""python""]","[""python"", ""pandas"", ""scikit-learn"", ""tensorflow"", ""pytorch""]",0.33333333333333337,False,,llama3.1,v4,2
+d007,fr,company,"""F3DL""","""F3DL (Formations 3D Léman)""",0.0,False,,llama3.1,v4,2
+d007,fr,role_title,"""Ingénieur IA & Data Science""","""Ingénieur IA & Data Science (F3DL)""",1.0,False,0.8852459016393442,llama3.1,v4,2
+d007,fr,locations,"[""Lausanne"", ""Genève""]","[""Lausanne""]",0.6666666666666666,False,,llama3.1,v4,2
+d007,fr,workload_min,50,null,0.0,False,,llama3.1,v4,2
+d007,fr,workload_max,100,null,0.0,False,,llama3.1,v4,2
+d007,fr,duration_months,null,null,1.0,False,,llama3.1,v4,2
+d007,fr,start,"""janvier 2026""",null,0.0,False,,llama3.1,v4,2
+d007,fr,german_level,"""none""","""none""",1.0,False,,llama3.1,v4,2
+d007,fr,english_required,false,false,1.0,False,,llama3.1,v4,2
+d007,fr,degree_level,"""graduate_only""","""unknown""",0.0,False,,llama3.1,v4,2
+d007,fr,is_internship,false,false,1.0,False,,llama3.1,v4,2
+d007,fr,required_skills,[],[],1.0,False,,llama3.1,v4,2
+d008,en,company,"""Zürich Versicherungs-Gesellschaft""","""Zürich Versicherungs-Gesellschaft AG""",1.0,False,,llama3.1,v4,2
+d008,en,role_title,"""Working Student Data Scientist (40-60%) 12 months""","""Working Student Data Scientist (40-60%) 12 months""",1.0,False,1.0,llama3.1,v4,2
+d008,en,locations,"[""Zürich""]","[""Zürich""]",1.0,False,,llama3.1,v4,2
+d008,en,workload_min,40,40,1.0,False,,llama3.1,v4,2
+d008,en,workload_max,60,60,1.0,False,,llama3.1,v4,2
+d008,en,duration_months,12,12,1.0,False,,llama3.1,v4,2
+d008,en,start,null,null,1.0,False,,llama3.1,v4,2
+d008,en,german_level,"""none""","""none""",1.0,False,,llama3.1,v4,2
+d008,en,english_required,true,true,1.0,False,,llama3.1,v4,2
+d008,en,degree_level,"""master_only""","""master_only""",1.0,False,,llama3.1,v4,2
+d008,en,is_internship,false,false,1.0,False,,llama3.1,v4,2
+d008,en,required_skills,"[""python"", ""pandas"", ""scikit-learn""]","[""python"", ""pandas"", ""scikit-learn"", ""arima"", ""ets""]",0.7499999999999999,False,,llama3.1,v4,2
+d009,en,company,"""Hitachi Energy""","""Hitachi Energy AG""",1.0,False,,llama3.1,v4,2
+d009,en,role_title,"""Data Analytics Internship – Quality & CI 80 - 100%""","""Data Analytics Internship – Quality & CI 80 - 100% (f/m/d)""",1.0,False,1.0,llama3.1,v4,2
+d009,en,locations,"[""Zurich""]","[""Zurich""]",1.0,False,,llama3.1,v4,2
+d009,en,workload_min,80,80,1.0,False,,llama3.1,v4,2
+d009,en,workload_max,100,100,1.0,False,,llama3.1,v4,2
+d009,en,duration_months,6,6,1.0,False,,llama3.1,v4,2
+d009,en,start,null,null,1.0,False,,llama3.1,v4,2
+d009,en,german_level,"""none""","""required""",0.0,False,,llama3.1,v4,2
+d009,en,english_required,false,true,0.0,False,,llama3.1,v4,2
+d009,en,degree_level,"""bachelor_ok""","""bachelor_ok""",1.0,False,,llama3.1,v4,2
+d009,en,is_internship,true,true,1.0,False,,llama3.1,v4,2
+d009,en,required_skills,"[""power bi"", ""dax"", ""power query"", ""sql"", ""excel""]","[""power bi"", ""dax"", ""power query"", ""sql"", ""excel"", ""statistics"", ""machine learning""]",0.8333333333333333,False,,llama3.1,v4,2
+d010,en,company,"""Mettler Toledo""","""Mettler Toledo""",1.0,False,,llama3.1,v4,2
+d010,en,role_title,"""Intern AI in Software Development Center""","""Intern AI in Software Development Center (100%, all genders)""",1.0,False,0.9195402298850575,llama3.1,v4,2
+d010,en,locations,"[""Nänikon""]","[""Nänikon""]",1.0,False,,llama3.1,v4,2
+d010,en,workload_min,100,null,0.0,False,,llama3.1,v4,2
+d010,en,workload_max,100,null,0.0,False,,llama3.1,v4,2
+d010,en,duration_months,3,3,1.0,False,,llama3.1,v4,2
+d010,en,start,"""asap""","""asap""",1.0,False,,llama3.1,v4,2
+d010,en,german_level,"""plus""","""plus""",1.0,False,,llama3.1,v4,2
+d010,en,english_required,true,true,1.0,False,,llama3.1,v4,2
+d010,en,degree_level,"""bachelor_ok""","""bachelor_ok""",1.0,False,,llama3.1,v4,2
+d010,en,is_internship,true,true,1.0,False,,llama3.1,v4,2
+d010,en,required_skills,[],[],1.0,False,,llama3.1,v4,2
+d011,en,company,"""Swiss Re""","""Swiss Re""",1.0,False,,llama3.1,v4,2
+d011,en,role_title,"""Intern Data Scientist (Hybrid; 80-100%)""","""Intern Data Scientist (Hybrid; m/f/x/d; 80-100%)""",1.0,False,0.896551724137931,llama3.1,v4,2
+d011,en,locations,"[""Adliswil""]","[""Adliswil"", ""Zurich""]",0.6666666666666666,False,,llama3.1,v4,2
+d011,en,workload_min,80,80,1.0,False,,llama3.1,v4,2
+d011,en,workload_max,100,100,1.0,False,,llama3.1,v4,2
+d011,en,duration_months,4,4,1.0,False,,llama3.1,v4,2
+d011,en,start,"""spring 2026""",null,0.0,False,,llama3.1,v4,2
+d011,en,german_level,"""none""","""none""",1.0,False,,llama3.1,v4,2
+d011,en,english_required,true,true,1.0,False,,llama3.1,v4,2
+d011,en,degree_level,"""graduate_only""","""bachelor_ok""",0.0,False,,llama3.1,v4,2
+d011,en,is_internship,true,true,1.0,False,,llama3.1,v4,2
+d011,en,required_skills,"[""python""]","[""python""]",1.0,False,,llama3.1,v4,2
+d012,en,company,"""MSCI""","""MSCI""",1.0,False,,llama3.1,v4,2
+d012,en,role_title,"""Climate Data Science Intern""","""Climate Data Science Intern (MSCI)""",1.0,False,0.8852459016393442,llama3.1,v4,2
+d012,en,locations,"[""Zurich"", ""Geneva""]","[""Zurich"", ""Geneva""]",1.0,False,,llama3.1,v4,2
+d012,en,workload_min,null,null,1.0,False,,llama3.1,v4,2
+d012,en,workload_max,null,null,1.0,False,,llama3.1,v4,2
+d012,en,duration_months,6,6,1.0,False,,llama3.1,v4,2
+d012,en,start,null,null,1.0,False,,llama3.1,v4,2
+d012,en,german_level,"""none""","""none""",1.0,False,,llama3.1,v4,2
+d012,en,english_required,false,true,0.0,False,,llama3.1,v4,2
+d012,en,degree_level,"""unknown""","""bachelor_ok""",0.0,False,,llama3.1,v4,2
+d012,en,is_internship,true,true,1.0,False,,llama3.1,v4,2
+d012,en,required_skills,"[""python"", ""pandas"", ""numpy""]","[""python"", ""pandas"", ""numpy""]",1.0,False,,llama3.1,v4,2
+d013,en,company,"""Wyss Zurich Translational Center""","""Wyss Zurich Translational Center""",1.0,False,,llama3.1,v4,2
+d013,en,role_title,"""Research Internship – Data Analyst 80 - 100 %""","""Research Internship – Data Analyst 80 - 100%""",1.0,False,0.9887640449438202,llama3.1,v4,2
+d013,en,locations,"[""Zürich""]","[""Zürich""]",1.0,False,,llama3.1,v4,2
+d013,en,workload_min,80,80,1.0,False,,llama3.1,v4,2
+d013,en,workload_max,100,100,1.0,False,,llama3.1,v4,2
+d013,en,duration_months,null,null,1.0,False,,llama3.1,v4,2
+d013,en,start,"""2nd of May""","""2nd of May or upon agreement""",0.0,False,,llama3.1,v4,2
+d013,en,german_level,"""none""","""none""",1.0,False,,llama3.1,v4,2
+d013,en,english_required,false,false,1.0,False,,llama3.1,v4,2
+d013,en,degree_level,"""bachelor_ok""","""bachelor_ok""",1.0,False,,llama3.1,v4,2
+d013,en,is_internship,true,true,1.0,False,,llama3.1,v4,2
+d013,en,required_skills,"[""python"", ""pytorch""]","[""python"", ""pytorch"", ""r""]",0.8,False,,llama3.1,v4,2
+d014,de,company,"""Kanton Zürich""","""Das Statistische Amt""",0.0,False,,llama3.1,v4,2
+d014,de,role_title,"""Praktikum «KI + Machine Learning» 80 - 100%""","""Praktikum «KI + Machine Learning» 80 - 100%""",1.0,False,1.0,llama3.1,v4,2
+d014,de,locations,"[""Zürich""]","[""Kanton Zürich"", ""Zürich""]",0.6666666666666666,False,,llama3.1,v4,2
+d014,de,workload_min,80,80,1.0,False,,llama3.1,v4,2
+d014,de,workload_max,100,100,1.0,False,,llama3.1,v4,2
+d014,de,duration_months,6,6,1.0,False,,llama3.1,v4,2
+d014,de,start,"""asap""","""ab sofort oder nach Vereinbarung""",1.0,False,,llama3.1,v4,2
+d014,de,german_level,"""none""","""none""",1.0,False,,llama3.1,v4,2
+d014,de,english_required,false,false,1.0,False,,llama3.1,v4,2
+d014,de,degree_level,"""bachelor_ok""","""bachelor_ok""",1.0,False,,llama3.1,v4,2
+d014,de,is_internship,true,true,1.0,False,,llama3.1,v4,2
+d014,de,required_skills,"[""python""]","[""python"", ""machine-learning-frameworks""]",0.6666666666666666,False,,llama3.1,v4,2
+d015,de,company,"""ewz""","""ewz""",1.0,False,,llama3.1,v4,2
+d015,de,role_title,"""Hochschulpraktikum Risk & Research""","""Hochschulpraktikum Risk & Research""",1.0,False,1.0,llama3.1,v4,2
+d015,de,locations,"[""Zürich Oerlikon""]","[""Zürich Oerlikon""]",1.0,False,,llama3.1,v4,2
+d015,de,workload_min,80,80,1.0,False,,llama3.1,v4,2
+d015,de,workload_max,100,100,1.0,False,,llama3.1,v4,2
+d015,de,duration_months,null,null,1.0,False,,llama3.1,v4,2
+d015,de,start,null,null,1.0,False,,llama3.1,v4,2
+d015,de,german_level,"""required""","""required""",1.0,False,,llama3.1,v4,2
+d015,de,english_required,false,false,1.0,False,,llama3.1,v4,2
+d015,de,degree_level,"""bachelor_ok""","""bachelor_ok""",1.0,False,,llama3.1,v4,2
+d015,de,is_internship,true,true,1.0,False,,llama3.1,v4,2
+d015,de,required_skills,"[""python""]","[""python"", ""sql"", ""power bi"", ""nlp"", ""machine learning""]",0.33333333333333337,False,,llama3.1,v4,2
+d016,de,company,"""Schweizer Radio und Fernsehen""","""Schweizer Radio und Fernsehen""",1.0,False,,llama3.1,v4,2
+d016,de,role_title,"""Praktikant:in SRF Data""","""Praktikant:in SRF Data""",1.0,False,1.0,llama3.1,v4,2
+d016,de,locations,"[""Zürich""]","[""Zürich""]",1.0,False,,llama3.1,v4,2
+d016,de,workload_min,80,80,1.0,False,,llama3.1,v4,2
+d016,de,workload_max,100,100,1.0,False,,llama3.1,v4,2
+d016,de,duration_months,6,6,1.0,False,,llama3.1,v4,2
+d016,de,start,"""1. Dezember 2025""","""1. Dezember 2025 oder nach Vereinbarung""",1.0,False,,llama3.1,v4,2
+d016,de,german_level,"""none""","""required""",0.0,False,,llama3.1,v4,2
+d016,de,english_required,false,false,1.0,False,,llama3.1,v4,2
+d016,de,degree_level,"""unknown""","""bachelor_ok""",0.0,False,,llama3.1,v4,2
+d016,de,is_internship,true,true,1.0,False,,llama3.1,v4,2
+d016,de,required_skills,"[""python|r|javascript""]","[""python"", ""r"", ""javascript""]",1.0,False,,llama3.1,v4,2
+d017,fr,company,"""Hôpitaux Universitaires de Genève""","""Hôpitaux Universitaires de Genève""",1.0,False,,llama3.1,v4,2
+d017,fr,role_title,"""Stage de Data Science - Intelligence artificielle appliquée aux données hospitalières - 100%""","""Stage de Data Science - Intelligence artificielle appliquée aux données hospitalières - 100%""",1.0,False,1.0,llama3.1,v4,2
+d017,fr,locations,"[""Genève""]","[""Genève""]",1.0,False,,llama3.1,v4,2
+d017,fr,workload_min,100,100,1.0,False,,llama3.1,v4,2
+d017,fr,workload_max,100,100,1.0,False,,llama3.1,v4,2
+d017,fr,duration_months,6,6,1.0,False,,llama3.1,v4,2
+d017,fr,start,null,null,1.0,False,,llama3.1,v4,2
+d017,fr,german_level,"""none""","""none""",1.0,False,,llama3.1,v4,2
+d017,fr,english_required,false,true,0.0,False,,llama3.1,v4,2
+d017,fr,degree_level,"""master_only""","""master_only""",1.0,False,,llama3.1,v4,2
+d017,fr,is_internship,true,true,1.0,False,,llama3.1,v4,2
+d017,fr,required_skills,"[""python|r""]","[""python"", ""r"", ""machine learning"", ""statistics"", ""data engineering""]",0.5714285714285715,False,,llama3.1,v4,2
+d018,fr,company,"""Ecorobotix""","""Ecorobotix SA""",1.0,False,,llama3.1,v4,2
+d018,fr,role_title,"""Stagiaire Data Analyst""","""Stagiaire Data Analyst (Stagiaire Data Analyst)""",0.0,False,0.6376811594202898,llama3.1,v4,2
+d018,fr,locations,"[""Yverdon-les-Bains""]","[""Yverdon-les-Bains""]",1.0,False,,llama3.1,v4,2
+d018,fr,workload_min,100,null,0.0,False,,llama3.1,v4,2
+d018,fr,workload_max,100,null,0.0,False,,llama3.1,v4,2
+d018,fr,duration_months,null,null,1.0,False,,llama3.1,v4,2
+d018,fr,start,"""asap""","""dès que possible""",1.0,False,,llama3.1,v4,2
+d018,fr,german_level,"""none""","""none""",1.0,False,,llama3.1,v4,2
+d018,fr,english_required,false,true,0.0,False,,llama3.1,v4,2
+d018,fr,degree_level,"""master_only""","""bachelor_ok""",0.0,False,,llama3.1,v4,2
+d018,fr,is_internship,true,true,1.0,False,,llama3.1,v4,2
+d018,fr,required_skills,"[""python""]","[""python"", ""sql"", ""linux"", ""sig""]",0.4,False,,llama3.1,v4,2
+d019,fr,company,"""Office fédéral de la statistique""","""Office fédéral de la statistique""",1.0,False,,llama3.1,v4,2
+d019,fr,role_title,"""Stagiaire universitaire - Analyse de données""","""Stagiaire universitaire - Analyse de données""",1.0,False,1.0,llama3.1,v4,2
+d019,fr,locations,"[""Neuchâtel""]","[""Neuchâtel""]",1.0,False,,llama3.1,v4,2
+d019,fr,workload_min,100,100,1.0,False,,llama3.1,v4,2
+d019,fr,workload_max,100,100,1.0,False,,llama3.1,v4,2
+d019,fr,duration_months,12,12,1.0,False,,llama3.1,v4,2
+d019,fr,start,null,null,1.0,False,,llama3.1,v4,2
+d019,fr,german_level,"""plus""","""none""",0.0,False,,llama3.1,v4,2
+d019,fr,english_required,false,false,1.0,False,,llama3.1,v4,2
+d019,fr,degree_level,"""graduate_only""","""bachelor_ok""",0.0,False,,llama3.1,v4,2
+d019,fr,is_internship,true,true,1.0,False,,llama3.1,v4,2
+d019,fr,required_skills,[],"[""r"", ""python""]",0.0,False,,llama3.1,v4,2
+d020,de,company,"""Schweizerische Exportrisikoversicherung SERV""","""Schweizerische Exportrisikoversicherung SERV""",1.0,False,,llama3.1,v4,2
+d020,de,role_title,"""Data Analyst (80 - 100%)""","""Data Analyst (m/w/d, 80 - 100%)""",1.0,False,0.8727272727272727,llama3.1,v4,2
+d020,de,locations,"[""Zürich""]","[""Zürich""]",1.0,False,,llama3.1,v4,2
+d020,de,workload_min,80,80,1.0,False,,llama3.1,v4,2
+d020,de,workload_max,100,100,1.0,False,,llama3.1,v4,2
+d020,de,duration_months,null,null,1.0,False,,llama3.1,v4,2
+d020,de,start,null,null,1.0,False,,llama3.1,v4,2
+d020,de,german_level,"""none""","""required""",0.0,False,,llama3.1,v4,2
+d020,de,english_required,false,false,1.0,False,,llama3.1,v4,2
+d020,de,degree_level,"""graduate_only""","""bachelor_ok""",0.0,False,,llama3.1,v4,2
+d020,de,is_internship,false,false,1.0,False,,llama3.1,v4,2
+d020,de,required_skills,"[""sql"", ""sql server""]","[""sql"", ""microsoft-sql-server-datenbanken"", ""python"", ""r""]",0.3333333333333333,False,,llama3.1,v4,2
+d021,de,company,"""Bundesamt für Sozialversicherungen BSV""","""Bundesamt für Sozialversicherungen BSV""",1.0,False,,llama3.1,v4,2
+d021,de,role_title,"""Hochschulpraktikant/in im Bereich Datengrundlagen und Analysen""","""Hochschulpraktikant/in im Bereich Datengrundlagen und Analysen""",1.0,False,1.0,llama3.1,v4,2
+d021,de,locations,"[""Bern""]","[""Bern""]",1.0,False,,llama3.1,v4,2
+d021,de,workload_min,80,80,1.0,False,,llama3.1,v4,2
+d021,de,workload_max,100,100,1.0,False,,llama3.1,v4,2
+d021,de,duration_months,12,12,1.0,False,,llama3.1,v4,2
+d021,de,start,null,null,1.0,False,,llama3.1,v4,2
+d021,de,german_level,"""plus""","""required""",0.0,False,,llama3.1,v4,2
+d021,de,english_required,false,false,1.0,False,,llama3.1,v4,2
+d021,de,degree_level,"""graduate_only""","""bachelor_ok""",0.0,False,,llama3.1,v4,2
+d021,de,is_internship,true,true,1.0,False,,llama3.1,v4,2
+d021,de,required_skills,[],"[""r"", ""sas""]",0.0,False,,llama3.1,v4,2
+d022,de,company,"""Galenica""","""Galenica""",1.0,False,,llama3.1,v4,2
+d022,de,role_title,"""Praktikum Data & Analytics""","""Praktikum Data & Analytics (60–100 %)""",0.0,False,0.8253968253968254,llama3.1,v4,2
+d022,de,locations,"[""Bern""]","[""Bern""]",1.0,False,,llama3.1,v4,2
+d022,de,workload_min,60,60,1.0,False,,llama3.1,v4,2
+d022,de,workload_max,100,100,1.0,False,,llama3.1,v4,2
+d022,de,duration_months,6,6,1.0,False,,llama3.1,v4,2
+d022,de,start,null,null,1.0,False,,llama3.1,v4,2
+d022,de,german_level,"""plus""","""none""",0.0,False,,llama3.1,v4,2
+d022,de,english_required,true,true,1.0,False,,llama3.1,v4,2
+d022,de,degree_level,"""graduate_only""","""bachelor_ok""",0.0,False,,llama3.1,v4,2
+d022,de,is_internship,true,true,1.0,False,,llama3.1,v4,2
+d022,de,required_skills,[],"[""sql"", ""python"", ""r""]",0.0,False,,llama3.1,v4,2
+d023,de,company,"""IWB Industrielle Werke Basel""","""IWB Industrielle Werke Basel""",1.0,False,,llama3.1,v4,2
+d023,de,role_title,"""Praktikantin Data Science""","""Praktikantin Data Science (w/m)""",1.0,False,1.0,llama3.1,v4,2
+d023,de,locations,"[""Basel""]","[""Basel""]",1.0,False,,llama3.1,v4,2
+d023,de,workload_min,100,100,1.0,False,,llama3.1,v4,2
+d023,de,workload_max,100,100,1.0,False,,llama3.1,v4,2
+d023,de,duration_months,null,null,1.0,False,,llama3.1,v4,2
+d023,de,start,null,null,1.0,False,,llama3.1,v4,2
+d023,de,german_level,"""none""","""required""",0.0,False,,llama3.1,v4,2
+d023,de,english_required,false,false,1.0,False,,llama3.1,v4,2
+d023,de,degree_level,"""bachelor_ok""","""bachelor_ok""",1.0,False,,llama3.1,v4,2
+d023,de,is_internship,true,true,1.0,False,,llama3.1,v4,2
+d023,de,required_skills,"[""python"", ""sql""]","[""python"", ""sql""]",1.0,False,,llama3.1,v4,2
+d024,en,company,"""Unit8""","""Unit8 SA""",1.0,False,,llama3.1,v4,2
+d024,en,role_title,"""Young Graduate in Data and Software Engineering (Zurich, Switzerland)""","""Young Graduate in Data and Software Engineering""",0.0,False,0.8103448275862069,llama3.1,v4,2
+d024,en,locations,"[""Zürich""]","[""Zurich"", ""Switzerland""]",0.6666666666666666,False,,llama3.1,v4,2
+d024,en,workload_min,null,null,1.0,False,,llama3.1,v4,2
+d024,en,workload_max,null,null,1.0,False,,llama3.1,v4,2
+d024,en,duration_months,6,6,1.0,False,,llama3.1,v4,2
+d024,en,start,"""1st of February""","""1st of February""",1.0,False,,llama3.1,v4,2
+d024,en,german_level,"""required""","""required""",1.0,False,,llama3.1,v4,2
+d024,en,english_required,true,true,1.0,False,,llama3.1,v4,2
+d024,en,degree_level,"""bachelor_ok""","""bachelor_ok""",1.0,False,,llama3.1,v4,2
+d024,en,is_internship,false,true,0.0,False,,llama3.1,v4,2
+d024,en,required_skills,"[""git"", ""docker"", ""kubernetes""]","[""git"", ""docker"", ""kubernetes""]",1.0,False,,llama3.1,v4,2
+d025,en,company,"""Julius Baer""","""Julius Baer""",1.0,False,,llama3.1,v4,2
+d025,en,role_title,"""University Graduate – Junior Data Scientist (Flex-Track) 100%""","""University Graduate – Junior Data Scientist (Flex-Track) 100% (f/m/d)""",1.0,False,1.0,llama3.1,v4,2
+d025,en,locations,"[""Zürich""]","[""Zürich""]",1.0,False,,llama3.1,v4,2
+d025,en,workload_min,100,null,0.0,False,,llama3.1,v4,2
+d025,en,workload_max,100,null,0.0,False,,llama3.1,v4,2
+d025,en,duration_months,18,18,1.0,False,,llama3.1,v4,2
+d025,en,start,"""1 October 2025""","""1 October 2025""",1.0,False,,llama3.1,v4,2
+d025,en,german_level,"""none""","""none""",1.0,False,,llama3.1,v4,2
+d025,en,english_required,true,true,1.0,False,,llama3.1,v4,2
+d025,en,degree_level,"""graduate_only""","""graduate_only""",1.0,False,,llama3.1,v4,2
+d025,en,is_internship,false,false,1.0,False,,llama3.1,v4,2
+d025,en,required_skills,"[""r|python"", ""sql""]","[""python"", ""r"", ""sql""]",1.0,False,,llama3.1,v4,2
+d026,en,company,"""Swiss Re""","""Swiss Re""",1.0,False,,llama3.1,v4,2
+d026,en,role_title,"""Junior Financial Data Analyst Graduate""","""Junior Financial Data Analyst Graduate""",1.0,False,1.0,llama3.1,v4,2
+d026,en,locations,"[""Zurich""]","[""Zurich""]",1.0,False,,llama3.1,v4,2
+d026,en,workload_min,null,null,1.0,False,,llama3.1,v4,2
+d026,en,workload_max,null,null,1.0,False,,llama3.1,v4,2
+d026,en,duration_months,18,18,1.0,False,,llama3.1,v4,2
+d026,en,start,"""1 September 2026""","""1 September 2026""",1.0,False,,llama3.1,v4,2
+d026,en,german_level,"""none""","""none""",1.0,False,,llama3.1,v4,2
+d026,en,english_required,true,true,1.0,False,,llama3.1,v4,2
+d026,en,degree_level,"""graduate_only""","""graduate_only""",1.0,False,,llama3.1,v4,2
+d026,en,is_internship,false,false,1.0,False,,llama3.1,v4,2
+d026,en,required_skills,"[""r|python""]","[""python"", ""r""]",1.0,False,,llama3.1,v4,2
