@@ -95,7 +95,7 @@ LLM_MODEL=gpt-4o-mini
 
 The results below come from local models only. No paid model was evaluated.
 
-**Note on `outputs/`.** The summary, detail and comparison files in `outputs/` are the published results. The raw cache is not committed. On a fresh clone, run the extraction before `extractor.evaluate`. Otherwise every posting is scored as missing and the committed CSVs are overwritten (`git restore outputs/` brings them back). `extractor.compare` works straight away, because it only reads the committed CSVs.
+**Note on `outputs/`.** The summary, detail and comparison files in `outputs/` are the published results. The raw cache is not committed, so on a fresh clone `extractor.evaluate` stops with a hint to run the extraction first. It also never replaces existing result CSVs unless you pass `--overwrite`, which you only need after a deliberate change such as a new metric version. `extractor.compare` works straight away, because it only reads the committed CSVs.
 
 ## The data and labels
 

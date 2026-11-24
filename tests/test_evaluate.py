@@ -122,3 +122,24 @@ def test_command_without_any_cached_prediction_writes_nothing(
 
     assert published.read_text(encoding="utf-8") == "published results"
     assert not Path("outputs/details_demo_7b_v1.csv").exists()
+
+
+def test_existing_results_are_only_replaced_with_overwrite(
+        tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    """A second run prints the report but keeps the published CSVs, unless --overwrite is given."""
+    monkeypatch.chdir(tmp_path)
+    write_labels("001")
+    write_cache("001", label(required_skills=["python", "aws"]).model_dump_json())
+    published = Path("outputs/summary_demo_7b_v1.csv")
+    published.write_text("published results", encoding="utf-8")
+    monkeypatch.setattr(sys, "argv", ["evaluate", "--model", "demo:7b", "--prompt", "v1"])
+
+    with pytest.raises(SystemExit, match="--overwrite"):
+        main()
+    assert published.read_text(encoding="utf-8") == "published results"
+    assert not Path("outputs/details_demo_7b_v1.csv").exists()
+
+    monkeypatch.setattr(sys, "argv", ["evaluate", "--model", "demo:7b", "--prompt", "v1", "--overwrite"])
+    main()
+    assert published.read_text(encoding="utf-8") != "published results"
+    assert Path("outputs/details_demo_7b_v1.csv").exists()

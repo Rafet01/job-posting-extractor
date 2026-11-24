@@ -116,6 +116,8 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--model", required=True)
     parser.add_argument("--prompt", default="v1")
+    parser.add_argument("--overwrite", action="store_true",
+                        help="Replace result CSVs that already exist, e.g. after a metric change")
     args = parser.parse_args()
     path = Path("data/labels.csv")
     labels = load_labels(path)
@@ -138,8 +140,14 @@ def main() -> None:
     export = details.copy()
     for column in ("gold", "pred"):
         export[column] = export[column].map(lambda value: json.dumps(value, ensure_ascii=False))
+    outputs = {name: output_path(name, args.model, args.prompt) for name in ("details", "summary")}
+    existing = [str(output) for output in outputs.values() if output.exists()]
+    if existing and not args.overwrite:
+        # Committed results are only replaced on purpose, never by a careless or partial run.
+        raise SystemExit(f"Not written: {', '.join(existing)} already exist. "
+                         "Add --overwrite to replace them.")
     for name, frame in (("details", export), ("summary", summary)):
-        output = output_path(name, args.model, args.prompt)
+        output = outputs[name]
         output.parent.mkdir(exist_ok=True)
         frame.assign(model=args.model, prompt=args.prompt,
                      metric_version=METRIC_VERSION).to_csv(output, index=False)
