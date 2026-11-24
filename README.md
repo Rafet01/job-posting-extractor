@@ -208,7 +208,7 @@ A rule written more precisely helped less than avoiding copyable values would ha
 python -m pytest
 ```
 
-115 tests run in about 4 seconds, **without Ollama, without a `.env` file and without the cache**. The test files read as a specification: each test name states one behaviour.
+117 tests run in about 4 seconds, **without Ollama, without a `.env` file and without the cache**. The test files read as a specification: each test name states one behaviour.
 
 - **Schema:** invalid categories, out-of-range numbers, min > max, extra fields and an empty company or title are rejected, and skills are cleaned.
 - **LLM call:** the OpenAI client is replaced by a `unittest.mock.MagicMock`. The tests check the exact request, that an invalid answer is retried with the validation error, that the call gives up with a clear error after the last attempt, and that connection errors are not swallowed.
@@ -240,7 +240,7 @@ data/                 26 test postings and labels.csv (see data/README.md)
 docs/                 annotation guidelines, experiments, error analysis
 outputs/              published scores per run and comparison.md
 scripts/              check the LLM connection and validate the labels
-tests/                115 tests, no network
+tests/                117 tests, no network
 ```
 
 ## About this project
