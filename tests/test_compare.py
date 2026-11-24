@@ -1,11 +1,15 @@
 """Comparing runs: paired changes, the sign test and the Markdown report."""
 
+import sys
+from pathlib import Path
+
 import pandas as pd
 import pytest
 
-from extractor.compare import build_report, describe_change, paired_change, sign_test
-from extractor.evaluate import detail_rows, summarize
+from extractor.compare import build_report, describe_change, main, paired_change, sign_test
+from extractor.evaluate import detail_rows, output_path, summarize
 from extractor.schema import JobPosting
+from extractor.splits import DEV
 from tests.factories import posting
 
 
@@ -54,3 +58,29 @@ def test_report_rejects_runs_scored_with_different_metric_versions() -> None:
     runs = {"a v1": evaluated({}, version=1), "a v2": evaluated({}, version=2)}
     with pytest.raises(SystemExit, match="different metric versions"):
         build_report(runs, [("a v1", "a v2")])
+
+
+def test_dev_runs_are_named_on_the_command_line_and_paired_with_the_first(
+        tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    """On the dev split the report compares each named run with the first and is written to outputs/dev."""
+    monkeypatch.chdir(tmp_path)
+    for prompt, predictions in (("v1", {"001": posting()}), ("v3", {"001": posting(start="asap"), "002": posting()})):
+        details, summary = evaluated(predictions)
+        for kind, frame in (("details", details), ("summary", summary)):
+            path = output_path(kind, "demo:7b", prompt, DEV)
+            path.parent.mkdir(parents=True, exist_ok=True)
+            frame.to_csv(path, index=False)
+    monkeypatch.setattr(sys, "argv", ["compare", "--split", "dev", "--run", "demo:7b", "v1", "--run", "demo:7b", "v3"])
+
+    main()
+
+    report = Path("outputs/dev/comparison.md").read_text(encoding="utf-8")
+    assert report.startswith("# Run comparison (dev split)")
+    assert "| demo:7b v1 → demo:7b v3 |" in report
+
+
+def test_dev_comparison_needs_named_runs(monkeypatch: pytest.MonkeyPatch) -> None:
+    """The four published runs only exist on the test split, so dev asks which runs to compare."""
+    monkeypatch.setattr(sys, "argv", ["compare", "--split", "dev"])
+    with pytest.raises(SystemExit):
+        main()
