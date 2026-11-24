@@ -1,0 +1,49 @@
+field,metric,language,n,score,missing_predictions,model,prompt,metric_version
+company,normalized exact,overall,26,0.9230769230769231,0,llama3.1,v1,2
+role_title,title >= 0.85,overall,26,0.7307692307692307,0,llama3.1,v1,2
+locations,mean posting F1,overall,26,0.9230769230769231,0,llama3.1,v1,2
+workload_min,exact,overall,26,0.9230769230769231,0,llama3.1,v1,2
+workload_max,exact,overall,26,0.8846153846153846,0,llama3.1,v1,2
+duration_months,exact,overall,26,0.8076923076923077,0,llama3.1,v1,2
+start,normalized exact (proxy),overall,26,0.8076923076923077,0,llama3.1,v1,2
+german_level,macro F1,overall,26,0.6114478114478114,0,llama3.1,v1,2
+english_required,macro F1,overall,26,0.8050974512743628,0,llama3.1,v1,2
+degree_level,macro F1,overall,26,0.4675324675324676,0,llama3.1,v1,2
+is_internship,macro F1,overall,26,0.9423503325942351,0,llama3.1,v1,2
+required_skills,mean posting F1,overall,26,0.4876373626373626,0,llama3.1,v1,2
+company,normalized exact,en,13,1.0,0,llama3.1,v1,2
+role_title,title >= 0.85,en,13,0.6153846153846154,0,llama3.1,v1,2
+locations,mean posting F1,en,13,0.8974358974358974,0,llama3.1,v1,2
+workload_min,exact,en,13,0.8461538461538461,0,llama3.1,v1,2
+workload_max,exact,en,13,0.9230769230769231,0,llama3.1,v1,2
+duration_months,exact,en,13,0.8461538461538461,0,llama3.1,v1,2
+start,normalized exact (proxy),en,13,0.7692307692307693,0,llama3.1,v1,2
+german_level,macro F1,en,13,1.0,0,llama3.1,v1,2
+english_required,macro F1,en,13,0.8375000000000001,0,llama3.1,v1,2
+degree_level,macro F1,en,13,0.32142857142857145,0,llama3.1,v1,2
+is_internship,macro F1,en,13,0.9022556390977443,0,llama3.1,v1,2
+required_skills,mean posting F1,en,13,0.6117216117216118,0,llama3.1,v1,2
+company,normalized exact,de,8,0.875,0,llama3.1,v1,2
+role_title,title >= 0.85,de,8,0.875,0,llama3.1,v1,2
+locations,mean posting F1,de,8,0.9583333333333333,0,llama3.1,v1,2
+workload_min,exact,de,8,1.0,0,llama3.1,v1,2
+workload_max,exact,de,8,0.875,0,llama3.1,v1,2
+duration_months,exact,de,8,0.875,0,llama3.1,v1,2
+start,normalized exact (proxy),de,8,0.875,0,llama3.1,v1,2
+german_level,macro F1,de,8,0.27777777777777773,0,llama3.1,v1,2
+english_required,macro F1,de,8,1.0,0,llama3.1,v1,2
+degree_level,macro F1,de,8,0.5333333333333333,0,llama3.1,v1,2
+is_internship,macro F1,de,8,1.0,0,llama3.1,v1,2
+required_skills,mean posting F1,de,8,0.39434523809523814,0,llama3.1,v1,2
+company,normalized exact,fr,5,0.8,0,llama3.1,v1,2
+role_title,title >= 0.85,fr,5,0.8,0,llama3.1,v1,2
+locations,mean posting F1,fr,5,0.9333333333333332,0,llama3.1,v1,2
+workload_min,exact,fr,5,1.0,0,llama3.1,v1,2
+workload_max,exact,fr,5,0.8,0,llama3.1,v1,2
+duration_months,exact,fr,5,0.6,0,llama3.1,v1,2
+start,normalized exact (proxy),fr,5,0.8,0,llama3.1,v1,2
+german_level,macro F1,fr,5,0.3333333333333333,0,llama3.1,v1,2
+english_required,macro F1,fr,5,0.28571428571428575,0,llama3.1,v1,2
+degree_level,macro F1,fr,5,0.5,0,llama3.1,v1,2
+is_internship,macro F1,fr,5,1.0,0,llama3.1,v1,2
+required_skills,mean posting F1,fr,5,0.31428571428571433,0,llama3.1,v1,2
