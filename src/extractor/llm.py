@@ -12,6 +12,11 @@ from extractor.schema import JobPosting
 load_dotenv()
 
 
+# A valid JobPosting answer is a few hundred tokens. The cap stops a model that keeps
+# generating, for example endless whitespace under schema-constrained decoding.
+MAX_TOKENS = 1024
+
+
 class ExtractionError(Exception):
     """Raised when the LLM gives no valid answer after all attempts."""
 
@@ -49,8 +54,22 @@ def extract_posting(
             messages=messages,
             response_format=response_format_for(prompt_version),
             temperature=0,
+            max_tokens=MAX_TOKENS,
         )
-        answer = response.choices[0].message.content or ""
+        choice = response.choices[0]
+        answer = choice.message.content or ""
+
+        if choice.finish_reason == "length":
+            print(f"  attempt {attempt}/{max_attempts} cut off at {MAX_TOKENS} tokens")
+            messages = messages + [
+                {"role": "assistant", "content": answer.strip()},
+                {
+                    "role": "user",
+                    "content": "Your answer was cut off before the JSON was complete. "
+                               "Return the complete JSON only, without extra whitespace.",
+                },
+            ]
+            continue
 
         try:
             return JobPosting.model_validate_json(answer)

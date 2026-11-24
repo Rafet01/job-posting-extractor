@@ -31,7 +31,7 @@ flowchart LR
 
 1. **Prompt** ([prompts.py](src/extractor/prompts.py)). The system prompt contains the JSON Schema generated from the Pydantic model, and the posting is the user message. Two versions exist. **v1** is short and relies on the field descriptions in the schema. **v2** restates the annotation guidelines as explicit rules per field.
 2. **LLM call** ([llm.py](src/extractor/llm.py)). It uses the OpenAI Python client in JSON mode with temperature 0, so the same code talks to a local Ollama server or to a paid API.
-3. **Validation and retries** ([schema.py](src/extractor/schema.py)). The answer must parse into a `JobPosting`: categories are fixed (`german_level` ∈ none/plus/required), percentages lie between 10 and 100, the minimum workload can't exceed the maximum, unknown fields are rejected and skills are cleaned. If validation fails, the error message is sent back to the model so it can correct itself.
+3. **Validation and retries** ([schema.py](src/extractor/schema.py)). The answer must parse into a `JobPosting`: categories are fixed (`german_level` ∈ none/plus/required), percentages lie between 10 and 100, the minimum workload can't exceed the maximum, unknown fields are rejected and skills are cleaned. If validation fails, the error message is sent back to the model so it can correct itself. Answers are capped at 1024 tokens, so a model that keeps generating counts as a failed attempt instead of blocking the run.
 4. **Cache** ([run.py](src/extractor/run.py)). Each valid result is stored as JSON per model and prompt version, so a run can be interrupted and resumed, and evaluation never needs the LLM. Failed postings are not cached and are retried on the next run.
 5. **Evaluation** ([evaluate.py](src/extractor/evaluate.py), [metrics.py](src/extractor/metrics.py), [compare.py](src/extractor/compare.py)). Predictions are compared with the labels using a metric chosen per field. Results are written as CSVs, and runs are compared posting by posting.
 
@@ -208,7 +208,7 @@ A rule written more precisely helped less than avoiding copyable values would ha
 python -m pytest
 ```
 
-111 tests run in about 4 seconds, **without Ollama, without a `.env` file and without the cache**. The test files read as a specification: each test name states one behaviour.
+112 tests run in about 4 seconds, **without Ollama, without a `.env` file and without the cache**. The test files read as a specification: each test name states one behaviour.
 
 - **Schema:** invalid categories, out-of-range numbers, min > max, extra fields and an empty company or title are rejected, and skills are cleaned.
 - **LLM call:** the OpenAI client is replaced by a `unittest.mock.MagicMock`. The tests check the exact request, that an invalid answer is retried with the validation error, that the call gives up with a clear error after the last attempt, and that connection errors are not swallowed.
@@ -240,7 +240,7 @@ data/                 26 test postings and labels.csv (see data/README.md)
 docs/                 annotation guidelines, experiments, error analysis
 outputs/              published scores per run and comparison.md
 scripts/              check the LLM connection and validate the labels
-tests/                111 tests, no network
+tests/                112 tests, no network
 ```
 
 ## About this project

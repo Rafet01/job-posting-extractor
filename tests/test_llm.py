@@ -8,7 +8,7 @@ from unittest.mock import MagicMock
 import openai
 import pytest
 
-from extractor.llm import ExtractionError, extract_posting, get_client
+from extractor.llm import MAX_TOKENS, ExtractionError, extract_posting, get_client
 from extractor.prompts import build_messages
 from extractor.schema import JobPosting
 from tests.factories import posting, posting_fields
@@ -18,9 +18,10 @@ VALID_ANSWER = json.dumps(posting_fields())
 INVALID_ANSWER = json.dumps(posting_fields(german_level="fluent"))
 
 
-def completion(content: str | None) -> SimpleNamespace:
+def completion(content: str | None, finish_reason: str = "stop") -> SimpleNamespace:
     """The part of an OpenAI chat completion response that extract_posting reads."""
-    return SimpleNamespace(choices=[SimpleNamespace(message=SimpleNamespace(content=content))])
+    message = SimpleNamespace(content=content)
+    return SimpleNamespace(choices=[SimpleNamespace(message=message, finish_reason=finish_reason)])
 
 
 def mock_client(*answers: str | None | Exception) -> MagicMock:
@@ -43,7 +44,7 @@ def test_valid_answer_is_returned_as_job_posting() -> None:
     assert extract_posting(client, POSTING_TEXT, "demo-model") == posting()
     client.chat.completions.create.assert_called_once_with(
         model="demo-model", messages=build_messages(POSTING_TEXT, "v1"),
-        response_format={"type": "json_object"}, temperature=0,
+        response_format={"type": "json_object"}, temperature=0, max_tokens=MAX_TOKENS,
     )
 
 
@@ -78,6 +79,20 @@ def test_invalid_answer_is_retried_with_the_validation_error() -> None:
     assert retry[3]["role"] == "user"
     assert "german_level" in retry[3]["content"]
     assert "Return the corrected JSON only" in retry[3]["content"]
+
+
+def test_answer_cut_off_at_the_token_limit_is_retried_without_the_padding() -> None:
+    """A model stuck in endless whitespace hits max_tokens; the retry asks for the complete JSON."""
+    client = MagicMock()
+    client.chat.completions.create.side_effect = [
+        completion('{"company": "Example",' + " " * 500, finish_reason="length"),
+        completion(VALID_ANSWER),
+    ]
+    assert extract_posting(client, POSTING_TEXT, "demo-model") == posting()
+
+    retry = sent_messages(client, 1)
+    assert retry[2] == {"role": "assistant", "content": '{"company": "Example",'}
+    assert "cut off" in retry[3]["content"]
 
 
 @pytest.mark.parametrize("answer", ["Sure! Here is the JSON you asked for.", "", None])
